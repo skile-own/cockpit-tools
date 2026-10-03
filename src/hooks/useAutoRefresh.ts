@@ -1,3 +1,4 @@
+import { ALL_PLATFORM_IDS, type PlatformId } from '../types/platform';
 import { listenSafely as listen } from "../utils/tauriEventListener";
 import { useCallback, useEffect, useRef, type MutableRefObject } from 'react';
 import { invoke } from '@tauri-apps/api/core';
@@ -779,7 +780,7 @@ export function useAutoRefresh() {
           ];
 
           const tasks: AutoRefreshSchedulerTask[] = [];
-          for (const descriptor of descriptors) {
+          for (const descriptor of descriptors.filter((item) => ALL_PLATFORM_IDS.includes(item.key as PlatformId))) {
             if (descriptor.intervalMinutes > 0) {
               console.log(`[AutoRefresh] ${descriptor.label} 已启用: 每 ${descriptor.intervalMinutes} 分钟`);
               tasks.push({

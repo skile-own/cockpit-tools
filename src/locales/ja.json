@@ -169,7 +169,7 @@
     "windowsOperation": {
       "title": "Windows 操作が完了していません",
       "accessDeniedDescription": "Windows により操作が拒否されました。対象が高い権限で実行中か、保護された場所にある可能性があります。",
-      "storeLaunchBlockedDescription": "ストア版の独立したインスタンスが正常に起動したことを確認できませんでした。Cockpit は既定のアカウントを代わりに開いていません。クライアントのパスを再検出して再試行してください。解決しない場合は診断情報をコピーして報告するか、このインスタンスを CLI モードに切り替えてください。",
+      "storeLaunchBlockedDescription": "ストア版の独立したインスタンスが正常に起動したことを確認できませんでした。polls は既定のアカウントを代わりに開いていません。クライアントのパスを再検出して再試行してください。解決しない場合は診断情報をコピーして報告するか、このインスタンスを CLI モードに切り替えてください。",
       "repairPath": "パスを再検出して再試行",
       "fileInUseDescription": "対象ファイルは別のプログラムで使用中です。そのプログラムを閉じて再試行してください。",
       "programNotFoundDescription": "操作に必要なプログラムが見つかりません。インストール状態または設定パスを確認してください。",
@@ -404,7 +404,7 @@
       "desc": "このエリアは全ページの右上に固定表示され、キャンペーン情報やブランド広告の掲載に適しています。",
       "action": "詳細を見る"
     },
-    "appName": "Cockpit Tools​",
+    "appName": "polls",
     "collapse": "折りたたむ",
     "confirmDelete": "削除を確認",
     "confirmDeleteTag": "タグ削除の確認",
@@ -462,12 +462,12 @@
   },
   "sponsors": {
     "pageTitle": "スポンサー",
-    "pageDesc": "Cockpit Tools を支援してくださるスポンサーの皆さまに感謝します。",
+    "pageDesc": "polls を支援してくださるスポンサーの皆さまに感謝します。",
     "loading": "スポンサーを読み込み中...",
     "emptyTitle": "スポンサーはまだありません",
     "emptyDesc": "リモートのスポンサーモジュールは現在無効です。",
     "listAriaLabel": "スポンサー一覧",
-    "defaultDescription": "Cockpit Tools へのご支援ありがとうございます。",
+    "defaultDescription": "polls へのご支援ありがとうございます。",
     "openSponsor": "開く"
   },
   "platformLayout": {
@@ -665,18 +665,18 @@
         "summary": "プレフィックスのないモデルは現在のサブスクリプションを使用し、cpa/gpt-5.5 などのプレフィックス付きモデルはサードパーティ API に転送されます。どちらもローカル ルーティング サービスに依存します。",
         "rowSummary": "プレフィックスのないモデルは現在のサブスクリプションを使用し、cpa/gpt-5.5 などのプレフィックス付きモデルはサードパーティ API に転送されます。どちらもローカル ルーティング サービスに依存します。",
         "confirmEnableTitle": "サードパーティ API ルーティングを有効にしますか？",
-        "confirmEnableMessage": "Codex モデルのリクエストはローカルの Cockpit Tools サービスを経由してルーティングされます。サービスが実行されていない場合、サブスクリプション モデルとサードパーティ モデルの両方が利用できなくなる可能性があります。\n\nルーティングを有効にしますか？",
+        "confirmEnableMessage": "Codex モデルのリクエストはローカルの polls サービスを経由してルーティングされます。サービスが実行されていない場合、サブスクリプション モデルとサードパーティ モデルの両方が利用できなくなる可能性があります。\n\nルーティングを有効にしますか？",
         "confirmEnableAction": "有効にする",
         "confirmDisableTitle": "サードパーティ API ルーティングを無効にしますか？",
         "confirmDisableMessage": "この変更が有効になると、ローカル ゲートウェイが停止し、ネイティブのサブスクリプション アクセスが復元され、サードパーティ モデルは利用できなくなります。\n\nルーティングを無効にしますか？",
         "confirmDisableAction": "無効にする",
-        "modalTip": "サブスクリプション モデルとサードパーティ モデルはどちらもローカル ルーティング サービスを通過します。Cockpit Tools をバックグラウンドで実行したままにしてください。サービスは自動的に回復し、連続して失敗した場合は公式設定にフォールバックします。",
+        "modalTip": "サブスクリプション モデルとサードパーティ モデルはどちらもローカル ルーティング サービスを通過します。polls をバックグラウンドで実行したままにしてください。サービスは自動的に回復し、連続して失敗した場合は公式設定にフォールバックします。",
         "modelRequired": "有効な各 API ルートには、少なくとも 1 つのモデルを含める必要があります。",
         "runningSaveTitle": "ルーティング設定はいつ有効になりますか？",
         "runningSaveMessage": "この Codex インスタンスは実行中です。今すぐローカル サービスを置き換えると、現在の会話が中断されます。\n\n今すぐ適用するには「保存して Codex を再起動」を、現在のセッションを変更しない場合は「保存して後で適用」を選択してください。",
         "saveAndRestart": "保存して Codex を再起動",
         "saveForLater": "保存して後で適用",
-        "savedForNextLaunch": "保存しました。次回 Cockpit から Codex を起動したときに反映され、現在のセッションは変更されません。",
+        "savedForNextLaunch": "保存しました。次回 polls から Codex を起動したときに反映され、現在のセッションは変更されません。",
         "restartRollbackFailed": "新しいルートの起動に失敗し、元の設定を再起動できませんでした: ",
         "restartRolledBack": "新しいルートの起動に失敗しました。元の設定が復元され、Codex が再起動されました: {{error}}"
       }
@@ -831,7 +831,7 @@
       "platform": "プラットフォーム"
     },
     "title": "アプリ設定",
-    "subtitle": "Cockpit Tools の利用体験をカスタマイズします。",
+    "subtitle": "polls の利用体験をカスタマイズします。",
     "tabs": {
       "general": "全般",
       "network": "ネットワーク設定",
@@ -914,7 +914,7 @@
       "codexSyncWsl": "Codex を WSL に同期",
       "codexSyncWslDesc": "既定の Codex アカウントを切り替えた後、auth.json と config.toml も WSL 内の Codex ディレクトリへ書き込みます。",
       "codexAppUiInjection": "API サービスのクォータ",
-      "codexAppUiInjectionDesc": "Codex インスタンスの再起動後、入力欄の下のクォータバッジは選択中のモデルに合わせて切り替わります。DeepSeek はアカウント残高、Grok は Grok クォータ、GPT は週間クォータと 5 時間クォータを表示します。Cockpit Tools をバックグラウンドで起動したままにしてください。完全に終了した場合やネットワークを利用できない場合は更新されません。",
+      "codexAppUiInjectionDesc": "Codex インスタンスの再起動後、入力欄の下のクォータバッジは選択中のモデルに合わせて切り替わります。DeepSeek はアカウント残高、Grok は Grok クォータ、GPT は週間クォータと 5 時間クォータを表示します。polls をバックグラウンドで起動したままにしてください。完全に終了した場合やネットワークを利用できない場合は更新されません。",
       "codexAppUiInjectionPoolLabel": "アカウント",
       "codexAppUiInjectionWeeklyLabel": "週",
       "codexAppUiInjectionFiveHourLabel": "5時間",
@@ -1022,7 +1022,7 @@
       "sideNavLayoutClassic": "クラシックレイアウト",
       "antigravityDualSwitchNoRestart": "再起動なしデュアル切替",
       "antigravityDualSwitchNoRestartDesc": "切替時にローカルのアカウントデータ書き込みと拡張機能のシームレス切替を1つのフローで実行し、Antigravity IDE を再起動しません。",
-      "appAutoLaunch": "ログイン時に Cockpit Tools を起動",
+      "appAutoLaunch": "ログイン時に polls を起動",
       "appAutoLaunchDesc": "サインイン後に自動起動。Windows 起動時に PowerShell エラーが出る場合はオフにしてください。",
       "startupWakeupDisabled": "無効",
       "startupWakeupImmediate": "すぐに起動",
@@ -1171,7 +1171,7 @@
       "firewallHint": "URL にアクセスできない場合は、システムのファイアウォール設定を確認してください。",
       "proxyTitle": "グローバルプロキシ",
       "proxyEnabled": "グローバルプロキシを有効化",
-      "proxyEnabledDesc": "Cockpit が起動する管理対象プラットフォームのプロセスへ、プロキシ環境変数を注入します。",
+      "proxyEnabledDesc": "polls が起動する管理対象プラットフォームのプロセスへ、プロキシ環境変数を注入します。",
       "proxyUrl": "プロキシ URL",
       "proxyUrlDesc": "例: http://127.0.0.1:7890 または socks5://127.0.0.1:7890",
       "proxyUrlPlaceholder": "例: http://127.0.0.1:7890",
@@ -1181,7 +1181,7 @@
       "proxyUrlRequired": "グローバルプロキシを有効にする場合、プロキシ URL は必須です。"
     },
     "about": {
-      "appName": "Cockpit Tools​",
+      "appName": "polls",
       "slogan": "プロフェッショナルなアカウント管理ソリューション",
       "author": "著者",
       "wechat": "WeChat 公衆号",
@@ -1381,7 +1381,7 @@
       "passwordSavedPlaceholder": "保存済み。変更しない場合は空白のままにします",
       "clearPassword": "消去",
       "remoteDirTitle": "リモートディレクトリ",
-      "remoteDirDesc": "このディレクトリ内のCockpitバックアップファイルのみが管理されます。",
+      "remoteDirDesc": "このディレクトリ内のpollsバックアップファイルのみが管理されます。",
       "statusTitle": "同期ステータス",
       "statusDesc": "リモートからの復元は手動で選択する必要があり、ローカルデータがサイレントに上書きされることはありません。",
       "lastUpload": "最終アップロード：{{time}}",
@@ -1392,7 +1392,7 @@
       "syncAction": "設定同期",
       "syncLatestConfirm": "最新のリモートバックアップ {{name}} を取得してローカルに同期しますか？これにより、既存のローカルデータが上書きされます。",
       "remoteListTitle": "リモートバックアップ",
-      "remoteListDesc": "Cockpitの自動/手動バックアップ名に一致するJSONおよびZIPファイルのみが表示されます。",
+      "remoteListDesc": "pollsの自動/手動バックアップ名に一致するJSONおよびZIPファイルのみが表示されます。",
       "emptyTitle": "リモートバックアップがありません",
       "emptyDesc": "設定を保存してから、バックアップを作成してアップロードしてください。",
       "unknownTime": "不明",
@@ -1816,7 +1816,7 @@
       "importBtn": "インポート",
       "oauthAction": "OAuth 認証",
       "fromExtension": "プラグインからインポート",
-      "syncBadge": "Antigravity Cockpit プラグインのアカウントを同期",
+      "syncBadge": "Antigravity polls プラグインのアカウントを同期",
       "fromLocalDB": "ローカル DB からインポート",
       "localDBDesc": "このマシンの Antigravity IDE クライアントからログインアカウントを読み込む",
       "toolsDescMigrate": "~/.antigravity_tools/ からアカウントを移行",
@@ -2197,7 +2197,7 @@
       "title": "表示モデル",
       "description": "表示モデル、推論強度、コンテキストウィンドウ、圧縮しきい値を一元管理します。",
       "enabledHint": "現在の表示モデル一覧を使用します。Codex を再起動してください。",
-      "disabledHint": "無効にすると Cockpit 管理のモデルカタログを削除し、公式のモデル表示に戻します。利用できるモデルは公式アカウントの権限で決まります。",
+      "disabledHint": "無効にすると polls 管理のモデルカタログを削除し、公式のモデル表示に戻します。利用できるモデルは公式アカウントの権限で決まります。",
       "models": {
         "title": "モデル一覧",
         "model": "モデル",
@@ -2323,7 +2323,7 @@
       "description": "先に設定と確認を行い、「切替」または「起動」を選んだ後にだけクライアントを変更します。",
       "notApplied": "未適用",
       "safeHint": "この画面を開くだけでは Token の更新、クライアントの終了、ログイン情報の書き込みは行いません。",
-      "modelConfigHint": "コンテキストウィンドウと圧縮しきい値は、モデルごとに Cockpit 管理モデルカタログへ書き込みます。",
+      "modelConfigHint": "コンテキストウィンドウと圧縮しきい値は、モデルごとに polls 管理モデルカタログへ書き込みます。",
       "enablePerModelHint": "モデル別設定には可視モデルが必要です。保存または起動するまでは下書きだけを変更します。",
       "enablePerModel": "モデル別設定を有効化",
       "unsavedConfig": "モデル設定に未保存の変更があります。切替または起動の前に保存されます。",
@@ -2439,11 +2439,11 @@
     },
     "exportFormat": {
       "label": "エクスポート形式",
-      "cockpitTools": "Cockpit Tools​",
+      "cockpitTools": "polls",
       "authJson": "公式 auth.json",
       "sub2api": "sub2api 形式",
       "cpa": "cpa 形式",
-      "agentIdentityCpaUnsupported": "Agent Identity アカウントは cpa 形式ではエクスポートできません。Cockpit Tools または sub2api を使用してください。",
+      "agentIdentityCpaUnsupported": "Agent Identity アカウントは cpa 形式ではエクスポートできません。polls または sub2api を使用してください。",
       "agentIdentityPrivateKeyNotice": "このエクスポートには、別のデバイスでアカウントを復元できる Agent Identity 秘密鍵が含まれます。パスワードと同様に厳重に保管してください。",
       "buildFailed": "エクスポートを作成できません。選択したアカウントに未対応の種類または不完全な認証情報が含まれています。",
       "downloadAll": "すべてダウンロード",
@@ -2527,8 +2527,8 @@
       "testAuthFailed": "サービスには到達しましたが、認証に失敗しました: {{detail}}。API サービスキーまたはアカウントのログイン状態を確認してください。",
       "testServiceUnavailable": "サービスには到達しましたが、現在利用できません: {{detail}}。サービスが有効か、アカウント集合が空でないか、アカウントが利用可能かを確認してください。",
       "gatewayErrors": {
-        "authUnavailable": "現在、ルーティング可能なアカウントがありません。冷却中、認証失敗、またはクォータ制限の可能性があります。Cockpit Tools の API サービスで状態を確認してください。",
-        "authNotFound": "利用可能なアカウントがアカウントプールに設定されていません。Cockpit Tools の API サービスで追加または有効化してください。"
+        "authUnavailable": "現在、ルーティング可能なアカウントがありません。冷却中、認証失敗、またはクォータ制限の可能性があります。polls の API サービスで状態を確認してください。",
+        "authNotFound": "利用可能なアカウントがアカウントプールに設定されていません。polls の API サービスで追加または有効化してください。"
       },
       "testRateLimited": "サービスには到達しましたが、上流でレート制限またはクォータ不足です: {{detail}}。",
       "testHttpFailed": "サービスには到達しましたが、リクエストは HTTP {{status}} を返しました: {{detail}}。",
@@ -2833,7 +2833,7 @@
       "closedWithoutLogin": "完全なログイン情報を検出する前に公式クライアントが終了しました。",
       "retryImport": "再インポート",
       "tab": "公式ログイン",
-      "desc": "公式クライアントがブラウザーを開いてログインし、認証コールバックを処理します。Cockpit は一時クライアントの終了後に最終的な認証情報を読み取り、インポートします。",
+      "desc": "公式クライアントがブラウザーを開いてログインし、認証コールバックを処理します。polls は一時クライアントの終了後に最終的な認証情報を読み取り、インポートします。",
       "note": "インポート成功後に一時設定、実行データ、関連する認証項目を削除します。最終インポートに失敗した場合は再試行用にログイン情報を保持します。既定および他のインスタンスには影響しません。",
       "start": "公式クライアントを開いてログイン",
       "cancel": "ログインを中止",
@@ -3513,7 +3513,7 @@
         "placeholder": "1 行に 1 つのモデル ID を入力するか、カンマで区切ってください。",
         "editHint": "取得したモデルはこの下書きにのみ反映されます。保存前に確認・編集できます。",
         "syncToggle": "プロバイダーのモデルを Codex に同期",
-        "syncDescription": "保存後、この一覧から Cockpit 管理の Codex モデルカタログを生成します。ユーザー独自のカタログは上書きしません。",
+        "syncDescription": "保存後、この一覧から polls 管理の Codex モデルカタログを生成します。ユーザー独自のカタログは上書きしません。",
         "fetchCredentialsRequired": "先に API Key と Base URL を入力してください。",
         "fetchEmpty": "プロバイダーからモデルが返されませんでした。現在の一覧を保持します。",
         "fetchFailed": "プロバイダーのモデルを取得できませんでした：{{error}}",
@@ -3594,7 +3594,7 @@
           "name": "SiliconFlow​"
         },
         "cockpit_api": {
-          "name": "Cockpit Api​"
+          "name": "polls API​"
         }
       },
       "oauthBinding": {
@@ -3802,7 +3802,7 @@
         "contextWindowHint": "model_context_window を書き込みます。カスタムモードでのみ編集可能です。",
         "partialDetected": "現在設定されている管理フィールドは、model_context_window={{context}}、model_auto_compact_token_limit={{compact}} の 1 つだけです。保存すると、現在のスキームを使用して両方のフィールドが書き換えられます。",
         "notSet": "未設定",
-        "modelCatalogDesc": "表示モデルとモデル別コンテキスト設定を、現在の Codex の Cockpit 管理モデルカタログへ統合して書き込みます。"
+        "modelCatalogDesc": "表示モデルとモデル別コンテキスト設定を、現在の Codex の polls 管理モデルカタログへ統合して書き込みます。"
       },
       "testing": "テスト中...",
       "testSuccess": "プロバイダー接続は正常です：{{protocol}}、{{model}}、{{latency}}。",
@@ -4134,7 +4134,7 @@
       "saveFailed": "アカウントメモの保存に失敗しました: {{error}}"
     },
     "cockpitApi": {
-      "panelTitle": "Cockpit Api サービスパネル",
+      "panelTitle": "polls API サービスパネル",
       "servicePanel": "サービスパネル",
       "balance": "残高",
       "requests": "リクエスト",
@@ -4921,7 +4921,7 @@
       "restoringEntry": "復元中…",
       "restoreEntryFailed": "デスクトップのプロキシ中継を復元できませんでした。再試行してください。",
       "restoreEntryPortBusy": "元のプロキシポートは使用中です。ポートを解放して再試行してください。デスクトップ側では別のポートへ自動変更できません。",
-      "restoreEntryNotRunning": "この Cockpit に記録されたプロキシ入口を使用する、実行中のデスクトップが見つかりません。",
+      "restoreEntryNotRunning": "この polls に記録されたプロキシ入口を使用する、実行中のデスクトップが見つかりません。",
       "restoreEntryBusy": "プロキシの復元中です。しばらくしてから再試行してください。",
       "restoreEntryTimeout": "プロキシの復元がタイムアウトしました。再試行してください。",
       "restartHint": "ローカル転送で起動したクライアントは新しい接続から切り替わります。それ以外は一度再起動が必要です。デスクトップ中継はループバックのみで待ち受けますが、他のローカルユーザーを隔離しません。システムプロキシは変更しません。",
@@ -6060,11 +6060,11 @@
     "navTitle": "機能マニュアル",
     "providers": {
       "cautions": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro で一括・高リスク操作を行う前に必ずバックアップします。",
-        "1": "Codex / GitHub Copilot / Devin / Kiro 実行前にフィルタ条件と対象を再確認します。"
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro で一括・高リスク操作を行う前に必ずバックアップします。",
+        "1": "Codex / Antigravity / ZCode / Devin / Kiro 実行前にフィルタ条件と対象を再確認します。"
       },
       "keywords": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro プラットフォーム",
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro プラットフォーム",
         "1": "ガイド",
         "2": "手順",
         "3": "アカウント",
@@ -6072,17 +6072,17 @@
         "5": "障害対応"
       },
       "outcomes": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro で何ができるかを理解します。",
-        "1": "Codex / GitHub Copilot / Devin / Kiro の推奨フローでミスを減らします。",
-        "2": "Codex / GitHub Copilot / Devin / Kiro で1回成功を確認してから拡張します。"
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro で何ができるかを理解します。",
+        "1": "Codex / Antigravity / ZCode / Devin / Kiro の推奨フローでミスを減らします。",
+        "2": "Codex / Antigravity / ZCode / Devin / Kiro で1回成功を確認してから拡張します。"
       },
       "steps": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro のページを開きます。",
-        "1": "Codex / GitHub Copilot / Devin / Kiro の基本設定と必要な紐付けを完了します。",
-        "2": "Codex / GitHub Copilot / Devin / Kiro で手動操作を1回実行し、結果を確認します。"
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro のページを開きます。",
+        "1": "Codex / Antigravity / ZCode / Devin / Kiro の基本設定と必要な紐付けを完了します。",
+        "2": "Codex / Antigravity / ZCode / Devin / Kiro で手動操作を1回実行し、結果を確認します。"
       },
-      "summary": "このセクションでは Codex / GitHub Copilot / Devin / Kiro の使い方を説明します。",
-      "title": "Codex / GitHub Copilot / Devin / Kiro プラットフォーム"
+      "summary": "このセクションでは Codex / Antigravity / ZCode / Devin / Kiro の使い方を説明します。",
+      "title": "Codex / Antigravity / ZCode / Devin / Kiro プラットフォーム"
     },
     "quickStart": {
       "cautions": {
@@ -6548,14 +6548,14 @@
     "search": "ZCode アカウントを検索...",
     "flowNotice": {
       "title": "ZCode アカウント管理について",
-      "desc": "Cockpit は ZCode の暗号化されたローカル認証情報を読み書きし、実際のアカウント切替とインスタンス連携に使用します。",
+      "desc": "polls は ZCode の暗号化されたローカル認証情報を読み書きし、実際のアカウント切替とインスタンス連携に使用します。",
       "permission": "ローカル範囲：~/.zcode/v2/credentials.json と管理対象インスタンスのディレクトリ。",
-      "network": "ネットワーク範囲：OAuth、ユーザー情報、サブスクリプション、クォータ API。アカウントを Cockpit サービスへ送信しません。"
+      "network": "ネットワーク範囲：OAuth、ユーザー情報、サブスクリプション、クォータ API。アカウントを polls サービスへ送信しません。"
     },
     "empty": "ZCode アカウントはありません",
     "addAccount": "ZCode アカウントを追加",
     "oauth": {
-      "desc": "ZCode を終了し、Cockpit の認証ウィンドウでログインしてください。コールバックは Cockpit が直接受信します。",
+      "desc": "ZCode を終了し、polls の認証ウィンドウでログインしてください。コールバックは polls が直接受信します。",
       "title": "ZCode OAuth 認証",
       "item1": "Z.ai と BigModel の公式ログインに対応。",
       "item2": "認証後にアカウントを保存し、プランとモデルクォータを更新。",
@@ -6567,7 +6567,7 @@
       "success": "ZCode OAuth ログインに成功しました"
     },
     "token": {
-      "desc": "Cockpit からエクスポートした ZCode アカウント JSON を貼り付けます。"
+      "desc": "polls からエクスポートした ZCode アカウント JSON を貼り付けます。"
     },
     "apiKey": {
       "tab": "API キー",
@@ -6694,7 +6694,7 @@
       "backToCurrent": "戻る",
       "switchToThisAccount": "切替",
       "openDetails": "詳細を開く",
-      "openCockpitTools": "Cockpit Tools を開く"
+      "openCockpitTools": "polls を開く"
     },
     "empty": {
       "title": "アカウントがありません",
@@ -6824,7 +6824,7 @@
   },
   "relay": {
     "pageTitle": "専用リレー",
-    "pageDesc": "Cockpit Tools ユーザー向けの提携 API サービスで、Codex API Key アカウントに利用できます。",
+    "pageDesc": "polls ユーザー向けの提携 API サービスで、Codex API Key アカウントに利用できます。",
     "loading": "リレーを読み込み中...",
     "emptyTitle": "リレーは無効です",
     "emptyDesc": "現在のリモート設定では専用リレーが有効になっていません。",
@@ -6854,7 +6854,7 @@
   "apiKeyFun": {
     "eyebrow": "中継サービス",
     "title": "APIKEY.FUN リレー",
-    "description": "Cockpit 公式パートナーの中継サービスで、安定したオープンで高コストパフォーマンスな大規模モデル API 接続を提供します。Claude、ChatGPT、Grok、Gemini、Zhipu GLM、Kimi、DeepSeek などの主要モデルに対応し、Codex、Gemini CLI、Claude Code などの開発ツールで統一して設定できます。Cockpit 専用リンクから登録すると、チャージが永久に最大 5% 割引になります。",
+    "description": "polls 公式パートナーの中継サービスで、安定したオープンで高コストパフォーマンスな大規模モデル API 接続を提供します。Claude、ChatGPT、Grok、Gemini、Zhipu GLM、Kimi、DeepSeek などの主要モデルに対応し、Codex、Gemini CLI、Claude Code などの開発ツールで統一して設定できます。polls 専用リンクから登録すると、チャージが永久に最大 5% 割引になります。",
     "register": "専用登録リンク",
     "docs": "公式ドキュメント",
     "viewNow": "今すぐ見る",
@@ -7001,7 +7001,7 @@
       "title": "Grok CLI アカウント管理",
       "desc": "通常は個別の GROK_HOME を使用します。公式ログイン同期を有効にすると、デフォルトインスタンスの OAuth 切替時に公式の ~/.grok/auth.json へ書き込み、追加インスタンスは分離されたままです。",
       "permission": "ローカル範囲: 既定の ~/.grok/auth.json はインポート時に読み取れます。書き込みは同期が有効なデフォルトインスタンスの OAuth 切替時のみで、API Key は公式ログインを上書きしません。",
-      "network": "ネットワーク範囲: OAuth 認証、認証情報の更新、アカウント使用量の照会。認証情報を Cockpit サービスへアップロードすることはありません。"
+      "network": "ネットワーク範囲: OAuth 認証、認証情報の更新、アカウント使用量の照会。認証情報を polls サービスへアップロードすることはありません。"
     },
     "empty": "Grok CLI アカウントはありません",
     "addAccount": "Grok CLI アカウントを追加",

@@ -364,7 +364,7 @@ pub fn run() {
             }
         }))
         .setup(|app| {
-            info!("Cockpit Tools 启动...");
+            info!("polls 启动...");
             let current_exe = std::env::current_exe()
                 .map(|path| path.display().to_string())
                 .unwrap_or_else(|err| format!("unknown: {}", err));
@@ -542,10 +542,6 @@ pub fn run() {
                 let app_handle = app.handle().clone();
                 tauri::async_runtime::spawn(async move {
                     modules::codex_oauth::restore_pending_oauth_listener(app_handle);
-                    modules::windsurf_oauth::restore_pending_oauth_listener();
-                    modules::kiro_oauth::restore_pending_oauth_listener();
-                    modules::trae_oauth::restore_pending_oauth_listener();
-                    modules::zed_oauth::restore_pending_oauth_listener();
                 });
             }
 
@@ -689,7 +685,7 @@ pub fn run() {
             }
 
             apply_startup_minimized(&app.handle());
-            modules::workbuddy_auto_checkin::start_auto_checkin_scheduler(app.handle().clone());
+            // polls does not run schedulers for retired providers.
 
             Ok(())
         })

@@ -84,11 +84,6 @@ import {
   hydrateUserMemory,
   USER_MEMORY_FLAGS,
 } from './utils/userMemory';
-import {
-  clearLegacyWorkbuddyAutoCheckinLogs,
-  getWorkbuddyAutoCheckinConfig,
-  migrateWorkbuddyAutoCheckinConfigAsync,
-} from './services/workbuddyAutoCheckinService';
 import { prepareCodexLocalAccessForRestart } from './services/codexLocalAccessService';
 import { applyReducedMotion } from './utils/reducedMotion';
 import { isCodexInstanceAccountConflict } from './utils/codexInstanceLaunchConflict';
@@ -204,37 +199,6 @@ const LogViewerModal = lazy(() =>
 );
 
 const ACTIVE_PAGE_STORAGE_KEY = 'agtools.active_page';
-const RENDERABLE_PAGE_VALUES: readonly Page[] = [
-  'dashboard',
-  'api-relay',
-  'overview',
-  'codex',
-  'claude',
-  'claude-cli',
-  'codex-api-service',
-  'github-copilot',
-  'windsurf',
-  'kiro',
-  'cursor',
-  'grok',
-  'codebuddy',
-  'codebuddy-cn',
-  'qoder',
-  'zcode',
-  'trae',
-  'trae-solo',
-  'trae-cn',
-  'trae-solo-cn',
-  'workbuddy',
-  'zed',
-  'instances',
-  'wakeup',
-  'verification',
-  '2fa',
-  'manual',
-  'settings',
-];
-const RENDERABLE_PAGE_SET = new Set<string>(RENDERABLE_PAGE_VALUES);
 
 const TOP_PROMO_DEFAULT_EXCLUDED_PAGES: readonly Page[] = ['api-relay', 'settings'];
 const TOP_PROMO_PAGE_PLATFORM_TARGETS: Partial<Record<Page, readonly string[]>> = {
@@ -338,7 +302,7 @@ function normalizeStoredActivePage(value: string | null): Page | null {
   if (!normalized) {
     return null;
   }
-  return RENDERABLE_PAGE_SET.has(normalized) ? (normalized as Page) : null;
+  return (isMainWindowNavigablePage(normalized) || ['instances', 'codex-instances', 'accounts', 'wakeup', 'verification', '2fa'].includes(normalized)) ? (normalized as Page) : null;
 }
 
 /** 启动页偏好：`last` 表示恢复上次页面，其它为具体 Page id */
@@ -347,7 +311,7 @@ function normalizeStartupPagePreference(value: string | null | undefined): 'last
   if (!normalized || normalized === 'last') {
     return 'last';
   }
-  return RENDERABLE_PAGE_SET.has(normalized) ? (normalized as Page) : 'last';
+  return (isMainWindowNavigablePage(normalized) || ['instances', 'codex-instances', 'accounts', 'wakeup', 'verification', '2fa'].includes(normalized)) ? (normalized as Page) : 'last';
 }
 
 interface GeneralConfigTheme {
@@ -764,6 +728,9 @@ function MainApp() {
     } catch {}
     return 'dashboard';
   });
+  useEffect(() => {
+    if (!isMainWindowNavigablePage(page) && !['instances', 'codex-instances', 'accounts', 'wakeup', 'verification', '2fa'].includes(page)) setPage('dashboard');
+  }, [page]);
   const isCodexSuitePage = page === 'codex' || page === 'codex-api-service';
   const [codexSuiteKeepAlive, setCodexSuiteKeepAlive] = useState(isCodexSuitePage);
   const shouldMountCodexSuite = isCodexSuitePage || codexSuiteKeepAlive;
@@ -1283,7 +1250,7 @@ function MainApp() {
   useEffect(() => {
     const handleSponsorRoutesUpdated = () => {
       void useCodexAccountStore.getState().fetchAccounts();
-      void useClaudeAccountStore.getState().fetchAccounts();
+
     };
     window.addEventListener('sponsor-routes-updated', handleSponsorRoutesUpdated);
     return () => {
@@ -2312,10 +2279,7 @@ function MainApp() {
 
   // 将旧版本保存在 WebView localStorage 中的设置迁移到 Rust 后台调度器。
   useEffect(() => {
-    clearLegacyWorkbuddyAutoCheckinLogs();
-    void migrateWorkbuddyAutoCheckinConfigAsync(getWorkbuddyAutoCheckinConfig()).catch((err) => {
-      console.warn('[WorkbuddyAutoCheckin] 迁移旧版自动签到配置失败:', err);
-    });
+
   }, []);
 
   // Check for updates on startup

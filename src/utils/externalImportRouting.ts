@@ -21,7 +21,7 @@ export function applyExplicitApiBaseUrlToExternalImportItems(
     throw new Error(invalidUrlMessage);
   }
   const baseUrl = raw.replace(/\/+$/, '');
-  // Preserve the host's Cockpit Api import classification. The download URL may
+  // Preserve the host's polls API import classification. The download URL may
   // identify the bundle format, but it must never determine a credential endpoint.
   let cockpitBundle = false;
   try {
@@ -46,7 +46,7 @@ export function applyExplicitApiBaseUrlToExternalImportItems(
       api_provider_mode: readString(value, ['api_provider_mode', 'apiProviderMode']) ?? 'custom',
       ...(cockpitAccount ? {
         api_provider_id: readString(value, ['api_provider_id', 'apiProviderId']) ?? 'cockpit_api',
-        api_provider_name: readString(value, ['api_provider_name', 'apiProviderName']) ?? 'Cockpit Api',
+        api_provider_name: readString(value, ['api_provider_name', 'apiProviderName']) ?? 'polls API',
         plan_type: readString(value, ['plan_type', 'planType']) ?? 'Cockpit Api',
       } : {}),
     };

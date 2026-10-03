@@ -169,7 +169,7 @@
     "windowsOperation": {
       "title": "Thao tác Windows chưa hoàn tất",
       "accessDeniedDescription": "Windows đã từ chối thao tác. Chương trình đích có thể chạy với quyền cao hơn hoặc nằm trong vị trí được bảo vệ.",
-      "storeLaunchBlockedDescription": "Không thể xác nhận phiên bản cô lập từ cửa hàng đã khởi động thành công. Cockpit không chuyển sang mở tài khoản mặc định. Hãy dò lại đường dẫn ứng dụng rồi thử lại. Nếu vẫn thất bại, hãy sao chép thông tin chẩn đoán hoặc chuyển phiên bản này sang chế độ CLI.",
+      "storeLaunchBlockedDescription": "Không thể xác nhận phiên bản cô lập từ cửa hàng đã khởi động thành công. polls không chuyển sang mở tài khoản mặc định. Hãy dò lại đường dẫn ứng dụng rồi thử lại. Nếu vẫn thất bại, hãy sao chép thông tin chẩn đoán hoặc chuyển phiên bản này sang chế độ CLI.",
       "repairPath": "Dò lại đường dẫn và thử lại",
       "fileInUseDescription": "Tệp đích đang được chương trình khác sử dụng. Hãy đóng chương trình rồi thử lại.",
       "programNotFoundDescription": "Windows không tìm thấy chương trình cần thiết. Hãy kiểm tra cài đặt hoặc đường dẫn đã cấu hình.",
@@ -404,7 +404,7 @@
       "desc": "Khu vực này được cố định ở góc trên bên phải trên mọi trang, phù hợp cho chiến dịch hoặc quảng cáo thương hiệu.",
       "action": "Xem chi tiết"
     },
-    "appName": "Cockpit Tools​",
+    "appName": "polls",
     "collapse": "Thu gọn",
     "confirmDelete": "Xác nhận xóa",
     "confirmDeleteTag": "Xác nhận xóa thẻ",
@@ -462,12 +462,12 @@
   },
   "sponsors": {
     "pageTitle": "Nhà tài trợ",
-    "pageDesc": "Cảm ơn các nhà tài trợ đã hỗ trợ Cockpit Tools.",
+    "pageDesc": "Cảm ơn các nhà tài trợ đã hỗ trợ polls.",
     "loading": "Đang tải nhà tài trợ...",
     "emptyTitle": "Chưa có nhà tài trợ",
     "emptyDesc": "Mô-đun nhà tài trợ từ xa hiện đang tắt.",
     "listAriaLabel": "Danh sách nhà tài trợ",
-    "defaultDescription": "Cảm ơn bạn đã hỗ trợ Cockpit Tools.",
+    "defaultDescription": "Cảm ơn bạn đã hỗ trợ polls.",
     "openSponsor": "Mở"
   },
   "platformLayout": {
@@ -665,18 +665,18 @@
         "summary": "Các mô hình không có tiền tố sử dụng gói đăng ký hiện tại; các mô hình có tiền tố như cpa/gpt-5.5 được chuyển tiếp đến API của bên thứ ba. Cả hai đều phụ thuộc vào dịch vụ định tuyến cục bộ.",
         "rowSummary": "Các mô hình không có tiền tố sử dụng gói đăng ký hiện tại; các mô hình có tiền tố như cpa/gpt-5.5 được chuyển tiếp đến API của bên thứ ba. Cả hai đều phụ thuộc vào dịch vụ định tuyến cục bộ.",
         "confirmEnableTitle": "Bật định tuyến API của bên thứ ba?",
-        "confirmEnableMessage": "Các yêu cầu mô hình Codex sẽ được định tuyến qua dịch vụ Cockpit Tools cục bộ. Nếu dịch vụ không chạy, cả mô hình đăng ký và bên thứ ba có thể không khả dụng.\n\nBật định tuyến?",
+        "confirmEnableMessage": "Các yêu cầu mô hình Codex sẽ được định tuyến qua dịch vụ polls cục bộ. Nếu dịch vụ không chạy, cả mô hình đăng ký và bên thứ ba có thể không khả dụng.\n\nBật định tuyến?",
         "confirmEnableAction": "Bật",
         "confirmDisableTitle": "Tắt định tuyến API của bên thứ ba?",
         "confirmDisableMessage": "Sau khi thay đổi này có hiệu lực, cổng cục bộ sẽ dừng, quyền truy cập đăng ký chính thức sẽ được khôi phục và các mô hình của bên thứ ba sẽ không khả dụng.\n\nTắt định tuyến?",
         "confirmDisableAction": "Tắt",
-        "modalTip": "Cả mô hình đăng ký và bên thứ ba đều đi qua dịch vụ định tuyến cục bộ. Vui lòng duy trì Cockpit Tools chạy ngầm. Dịch vụ tự động phục hồi và chuyển về cấu hình chính thức sau nhiều lần thất bại.",
+        "modalTip": "Cả mô hình đăng ký và bên thứ ba đều đi qua dịch vụ định tuyến cục bộ. Vui lòng duy trì polls chạy ngầm. Dịch vụ tự động phục hồi và chuyển về cấu hình chính thức sau nhiều lần thất bại.",
         "modelRequired": "Mỗi tuyến API được bật phải bao gồm ít nhất một mô hình.",
         "runningSaveTitle": "Khi nào định tuyến có hiệu lực?",
         "runningSaveMessage": "Phiên bản Codex này đang chạy. Thay thế dịch vụ cục bộ ngay bây giờ sẽ làm gián đoạn cuộc trò chuyện hiện tại.\n\nChọn «Lưu và khởi động lại Codex» để áp dụng ngay, hoặc «Lưu để dùng sau» để giữ nguyên phiên hiện tại.",
         "saveAndRestart": "Lưu và khởi động lại Codex",
         "saveForLater": "Lưu để dùng sau",
-        "savedForNextLaunch": "Đã lưu. Thay đổi sẽ có hiệu lực vào lần tới khi bạn khởi động Codex qua Cockpit; phiên hiện tại vẫn giữ nguyên.",
+        "savedForNextLaunch": "Đã lưu. Thay đổi sẽ có hiệu lực vào lần tới khi bạn khởi động Codex qua polls; phiên hiện tại vẫn giữ nguyên.",
         "restartRollbackFailed": "Không thể khởi động tuyến mới và không thể khởi động lại cấu hình gốc: ",
         "restartRolledBack": "Không thể khởi động tuyến mới. Cấu hình gốc đã được khôi phục và Codex đã khởi động lại: {{error}}"
       }
@@ -831,7 +831,7 @@
       "platform": "Nền tảng"
     },
     "title": "Cài đặt ứng dụng",
-    "subtitle": "Cá nhân hóa trải nghiệm Antigravity Cockpit Tools của bạn.",
+    "subtitle": "Cá nhân hóa trải nghiệm Antigravity polls của bạn.",
     "tabs": {
       "general": "Chung",
       "network": "Dịch vụ mạng",
@@ -914,7 +914,7 @@
       "codexSyncWsl": "Đồng bộ Codex sang WSL",
       "codexSyncWslDesc": "Sau khi chuyển tài khoản Codex mặc định, auth.json và config.toml cũng được ghi vào thư mục Codex trong WSL.",
       "codexAppUiInjection": "Hạn mức dịch vụ API",
-      "codexAppUiInjectionDesc": "Sau khi khởi động lại phiên Codex, huy hiệu hạn mức bên dưới trình soạn thảo sẽ thay đổi theo mô hình đang chọn: DeepSeek hiển thị số dư tài khoản, Grok hiển thị hạn mức Grok, các mô hình GPT hiển thị hạn mức tuần và 5 giờ. Cần giữ Cockpit Tools chạy trong nền; dữ liệu sẽ ngừng cập nhật khi thoát hoàn toàn hoặc khi mạng không khả dụng.",
+      "codexAppUiInjectionDesc": "Sau khi khởi động lại phiên Codex, huy hiệu hạn mức bên dưới trình soạn thảo sẽ thay đổi theo mô hình đang chọn: DeepSeek hiển thị số dư tài khoản, Grok hiển thị hạn mức Grok, các mô hình GPT hiển thị hạn mức tuần và 5 giờ. Cần giữ polls chạy trong nền; dữ liệu sẽ ngừng cập nhật khi thoát hoàn toàn hoặc khi mạng không khả dụng.",
       "codexAppUiInjectionPoolLabel": "Tài khoản",
       "codexAppUiInjectionWeeklyLabel": "Tuần",
       "codexAppUiInjectionFiveHourLabel": "5 giờ",
@@ -1022,7 +1022,7 @@
       "sideNavLayoutClassic": "Bố cục cổ điển",
       "antigravityDualSwitchNoRestart": "Chuyển đôi không cần khởi động lại",
       "antigravityDualSwitchNoRestartDesc": "Khi chuyển tài khoản, việc ghi dữ liệu cục bộ và chuyển đổi liền mạch qua tiện ích mở rộng được thực hiện trong một luồng, không cần khởi động lại Antigravity IDE.",
-      "appAutoLaunch": "Khởi chạy Cockpit Tools khi đăng nhập",
+      "appAutoLaunch": "Khởi chạy polls khi đăng nhập",
       "appAutoLaunchDesc": "Tự khởi động sau đăng nhập. Nếu Windows báo lỗi PowerShell lúc boot, hãy tắt.",
       "startupWakeupDisabled": "Tắt",
       "startupWakeupImmediate": "Đánh thức ngay",
@@ -1142,7 +1142,7 @@
       "codexHideRelayQuotaDesc": "Ẩn bảng hạn mức relay / New API trên tổng quan tài khoản Codex."
     },
     "network": {
-      "apiTitle": "API Antigravity Cockpit",
+      "apiTitle": "API Antigravity polls",
       "wsService": "Dịch vụ WebSocket",
       "wsServiceDesc": "Cho phép các chương trình bên ngoài (như plugin VS Code) kết nối điều khiển",
       "preferredPort": "Cổng ưu tiên",
@@ -1171,7 +1171,7 @@
       "firewallHint": "Nếu URL không truy cập được, hãy kiểm tra cài đặt tường lửa của hệ thống.",
       "proxyTitle": "Proxy toàn cục",
       "proxyEnabled": "Bật proxy toàn cục",
-      "proxyEnabledDesc": "Chèn biến môi trường proxy vào các tiến trình nền tảng được Cockpit quản lý khi khởi chạy.",
+      "proxyEnabledDesc": "Chèn biến môi trường proxy vào các tiến trình nền tảng được polls quản lý khi khởi chạy.",
       "proxyUrl": "URL proxy",
       "proxyUrlDesc": "Ví dụ: http://127.0.0.1:7890 hoặc socks5://127.0.0.1:7890",
       "proxyUrlPlaceholder": "ví dụ: http://127.0.0.1:7890",
@@ -1181,7 +1181,7 @@
       "proxyUrlRequired": "Không được để trống URL proxy khi bật proxy toàn cục."
     },
     "about": {
-      "appName": "Cockpit Tools​",
+      "appName": "polls",
       "slogan": "Giải pháp quản lý tài khoản chuyên nghiệp",
       "author": "Tác giả chính",
       "wechat": "Tài khoản WeChat chính thức",
@@ -1381,7 +1381,7 @@
       "passwordSavedPlaceholder": "Đã lưu; để trống để giữ lại",
       "clearPassword": "Xóa",
       "remoteDirTitle": "Thư mục từ xa",
-      "remoteDirDesc": "Chỉ các tệp sao lưu Cockpit trong thư mục này mới được quản lý.",
+      "remoteDirDesc": "Chỉ các tệp sao lưu polls trong thư mục này mới được quản lý.",
       "statusTitle": "Trạng thái đồng bộ",
       "statusDesc": "Khôi phục từ xa yêu cầu chọn thủ công và không bao giờ âm thầm ghi đè lên dữ liệu cục bộ.",
       "lastUpload": "Tải lên cuối: {{time}}",
@@ -1392,7 +1392,7 @@
       "syncAction": "Đồng bộ cấu hình",
       "syncLatestConfirm": "Bạn có chắc chắn muốn tải bản sao lưu từ xa mới nhất {{name}} và đồng bộ hóa cục bộ không? Việc này sẽ ghi đè lên dữ liệu cục bộ hiện có.",
       "remoteListTitle": "Bản sao lưu từ xa",
-      "remoteListDesc": "Chỉ hiển thị các tệp JSON và ZIP khớp với tên sao lưu tự động/thủ công của Cockpit.",
+      "remoteListDesc": "Chỉ hiển thị các tệp JSON và ZIP khớp với tên sao lưu tự động/thủ công của polls.",
       "emptyTitle": "Không có bản sao lưu từ xa",
       "emptyDesc": "Lưu cài đặt, sau đó tạo và tải bản sao lưu lên.",
       "unknownTime": "Không xác định",
@@ -1816,7 +1816,7 @@
       "importBtn": "Nhập",
       "oauthAction": "Ủy quyền OAuth",
       "fromExtension": "Nhập từ Plugin",
-      "syncBadge": "Đồng bộ tài khoản plugin Antigravity Cockpit",
+      "syncBadge": "Đồng bộ tài khoản plugin Antigravity polls",
       "fromLocalDB": "Nhập từ DB cục bộ",
       "localDBDesc": "Đọc tài khoản đăng nhập từ Antigravity IDE Client trên máy này",
       "toolsDescMigrate": "Di chuyển tài khoản từ ~/.antigravity_tools/",
@@ -2197,7 +2197,7 @@
       "title": "Mô hình hiển thị",
       "description": "Quản lý tập trung mô hình hiển thị, mức suy luận, ngữ cảnh và ngưỡng nén.",
       "enabledHint": "Sử dụng danh sách mô hình hiển thị hiện tại. Khởi động lại Codex để áp dụng.",
-      "disabledHint": "Khi tắt, danh mục mô hình do Cockpit quản lý sẽ bị xóa và khả năng hiển thị mô hình chính thức được khôi phục; các mô hình khả dụng phụ thuộc vào quyền của tài khoản chính thức.",
+      "disabledHint": "Khi tắt, danh mục mô hình do polls quản lý sẽ bị xóa và khả năng hiển thị mô hình chính thức được khôi phục; các mô hình khả dụng phụ thuộc vào quyền của tài khoản chính thức.",
       "models": {
         "title": "Danh sách mô hình",
         "model": "Mô hình",
@@ -2323,7 +2323,7 @@
       "description": "Hãy cấu hình và kiểm tra trước; ứng dụng chỉ thay đổi sau khi bạn chọn Chuyển hoặc Khởi động.",
       "notApplied": "Chưa áp dụng",
       "safeHint": "Việc mở cửa sổ này không làm mới Token, đóng ứng dụng hay ghi thông tin đăng nhập.",
-      "modelConfigHint": "Cửa sổ ngữ cảnh và ngưỡng nén được ghi theo từng mô hình vào danh mục do Cockpit quản lý.",
+      "modelConfigHint": "Cửa sổ ngữ cảnh và ngưỡng nén được ghi theo từng mô hình vào danh mục do polls quản lý.",
       "enablePerModelHint": "Cấu hình theo mô hình yêu cầu Mô hình hiển thị. Ở đây chỉ thay đổi bản nháp cho đến khi lưu hoặc khởi động.",
       "enablePerModel": "Bật cấu hình theo mô hình",
       "unsavedConfig": "Cấu hình mô hình có thay đổi chưa lưu; chúng sẽ được lưu trước khi chuyển hoặc khởi động.",
@@ -2439,11 +2439,11 @@
     },
     "exportFormat": {
       "label": "Định dạng xuất",
-      "cockpitTools": "Cockpit Tools​",
+      "cockpitTools": "polls",
       "authJson": "auth.json chính thức",
       "sub2api": "Định dạng sub2api",
       "cpa": "Định dạng cpa",
-      "agentIdentityCpaUnsupported": "Không thể xuất tài khoản Agent Identity ở định dạng cpa. Hãy dùng Cockpit Tools hoặc sub2api.",
+      "agentIdentityCpaUnsupported": "Không thể xuất tài khoản Agent Identity ở định dạng cpa. Hãy dùng polls hoặc sub2api.",
       "agentIdentityPrivateKeyNotice": "Bản xuất này chứa khóa riêng Agent Identity có thể khôi phục tài khoản trên thiết bị khác. Hãy bảo vệ khóa như mật khẩu.",
       "buildFailed": "Không thể tạo bản xuất: các tài khoản đã chọn có loại không được hỗ trợ hoặc thông tin xác thực chưa đầy đủ.",
       "downloadAll": "Tải xuống tất cả",
@@ -2527,8 +2527,8 @@
       "testAuthFailed": "Dịch vụ truy cập được nhưng xác thực thất bại: {{detail}}. Hãy kiểm tra khóa dịch vụ API hoặc trạng thái đăng nhập tài khoản.",
       "testServiceUnavailable": "Dịch vụ truy cập được nhưng hiện không khả dụng: {{detail}}. Hãy kiểm tra dịch vụ đã bật chưa, bộ sưu tập tài khoản có trống không hoặc tài khoản có dùng được không.",
       "gatewayErrors": {
-        "authUnavailable": "Hiện không có tài khoản nào có thể định tuyến. Tài khoản có thể đang tạm nghỉ, mất xác thực hoặc bị giới hạn hạn mức. Kiểm tra trạng thái trong dịch vụ API của Cockpit Tools.",
-        "authNotFound": "Chưa cấu hình tài khoản khả dụng trong nhóm tài khoản. Hãy thêm hoặc bật tài khoản trong dịch vụ API của Cockpit Tools."
+        "authUnavailable": "Hiện không có tài khoản nào có thể định tuyến. Tài khoản có thể đang tạm nghỉ, mất xác thực hoặc bị giới hạn hạn mức. Kiểm tra trạng thái trong dịch vụ API của polls.",
+        "authNotFound": "Chưa cấu hình tài khoản khả dụng trong nhóm tài khoản. Hãy thêm hoặc bật tài khoản trong dịch vụ API của polls."
       },
       "testRateLimited": "Dịch vụ truy cập được nhưng upstream bị giới hạn hoặc hết hạn mức: {{detail}}.",
       "testHttpFailed": "Dịch vụ truy cập được nhưng yêu cầu trả về HTTP {{status}}: {{detail}}.",
@@ -2833,7 +2833,7 @@
       "closedWithoutLogin": "Ứng dụng chính thức đã đóng trước khi phát hiện đầy đủ thông tin đăng nhập.",
       "retryImport": "Thử nhập lại",
       "tab": "Đăng nhập chính thức",
-      "desc": "Ứng dụng chính thức mở trình duyệt để đăng nhập và xử lý phản hồi ủy quyền. Cockpit đọc và nhập thông tin xác thực cuối cùng sau khi ứng dụng tạm đóng.",
+      "desc": "Ứng dụng chính thức mở trình duyệt để đăng nhập và xử lý phản hồi ủy quyền. polls đọc và nhập thông tin xác thực cuối cùng sau khi ứng dụng tạm đóng.",
       "note": "Sau khi nhập thành công, cấu hình tạm, dữ liệu chạy và các mục xác thực liên quan sẽ được xóa. Nếu lần nhập cuối thất bại, thông tin đăng nhập được giữ để thử lại. Các phiên bản khác không bị ảnh hưởng.",
       "start": "Mở ứng dụng chính thức và đăng nhập",
       "cancel": "Hủy đăng nhập",
@@ -3513,7 +3513,7 @@
         "placeholder": "Nhập một ID mô hình trên mỗi dòng hoặc phân tách các ID bằng dấu phẩy.",
         "editHint": "Các mô hình đã lấy chỉ được thêm vào bản nháp này. Hãy xem lại và chỉnh sửa trước khi lưu.",
         "syncToggle": "Đồng bộ mô hình nhà cung cấp với Codex",
-        "syncDescription": "Sau khi lưu, danh sách này được dùng để tạo danh mục mô hình Codex do Cockpit quản lý. Danh mục tùy chỉnh không bị ghi đè.",
+        "syncDescription": "Sau khi lưu, danh sách này được dùng để tạo danh mục mô hình Codex do polls quản lý. Danh mục tùy chỉnh không bị ghi đè.",
         "fetchCredentialsRequired": "Hãy nhập API Key và Base URL trước.",
         "fetchEmpty": "Nhà cung cấp không trả về mô hình nào. Danh sách hiện tại được giữ nguyên.",
         "fetchFailed": "Không thể lấy mô hình từ nhà cung cấp: {{error}}",
@@ -3594,7 +3594,7 @@
           "name": "SiliconFlow​"
         },
         "cockpit_api": {
-          "name": "Cockpit Api​"
+          "name": "polls API​"
         }
       },
       "oauthBinding": {
@@ -3802,7 +3802,7 @@
         "contextWindowHint": "Viết model_context_window. Chỉ có thể chỉnh sửa ở chế độ Tùy chỉnh.",
         "partialDetected": "Hiện chỉ có một trường được quản lý được đặt: model_context_window={{context}}, model_auto_compact_token_limit={{compact}}. Việc lưu sẽ ghi lại cả hai trường bằng cách sử dụng lược đồ hiện tại.",
         "notSet": "Chưa đặt",
-        "modelCatalogDesc": "Mô hình hiển thị và cấu hình ngữ cảnh theo mô hình được ghi vào danh mục mô hình do Cockpit quản lý của Codex hiện tại."
+        "modelCatalogDesc": "Mô hình hiển thị và cấu hình ngữ cảnh theo mô hình được ghi vào danh mục mô hình do polls quản lý của Codex hiện tại."
       },
       "testing": "Đang kiểm tra...",
       "testSuccess": "Kết nối nhà cung cấp ổn định: {{protocol}}, {{model}}, {{latency}}.",
@@ -4134,7 +4134,7 @@
       "saveFailed": "Không thể lưu ghi chú tài khoản: {{error}}"
     },
     "cockpitApi": {
-      "panelTitle": "Bảng dịch vụ Cockpit Api",
+      "panelTitle": "Bảng dịch vụ polls API",
       "servicePanel": "Bảng dịch vụ",
       "balance": "Số dư",
       "requests": "Yêu cầu",
@@ -4921,7 +4921,7 @@
       "restoringEntry": "Đang khôi phục…",
       "restoreEntryFailed": "Không thể khôi phục chuyển tiếp proxy cho máy tính. Vui lòng thử lại.",
       "restoreEntryPortBusy": "Cổng proxy ban đầu đang được sử dụng. Hãy giải phóng cổng rồi thử lại; ứng dụng máy tính không thể tự động đổi sang cổng khác.",
-      "restoreEntryNotRunning": "Không tìm thấy ứng dụng máy tính đang chạy sử dụng đầu vào proxy đã ghi thuộc phiên bản Cockpit này.",
+      "restoreEntryNotRunning": "Không tìm thấy ứng dụng máy tính đang chạy sử dụng đầu vào proxy đã ghi thuộc phiên bản polls này.",
       "restoreEntryBusy": "Proxy đang được khôi phục. Vui lòng thử lại sau ít phút.",
       "restoreEntryTimeout": "Khôi phục proxy đã hết thời gian chờ. Vui lòng thử lại.",
       "restartHint": "Ứng dụng khởi chạy qua bộ chuyển tiếp cục bộ chuyển ở kết nối mới. Ứng dụng khác đang chạy cần khởi động lại một lần. Cầu nối máy tính chỉ lắng nghe trên loopback nhưng không cách ly người dùng khác trên máy. Proxy hệ thống không thay đổi.",
@@ -6060,11 +6060,11 @@
     "navTitle": "Sổ tay sử dụng",
     "providers": {
       "cautions": {
-        "0": "Sao lưu dữ liệu trước thao tác rủi ro hoặc hàng loạt trong Codex / GitHub Copilot / Devin / Kiro.",
-        "1": "Kiểm tra bộ lọc và phạm vi mục tiêu trước khi chạy trong Codex / GitHub Copilot / Devin / Kiro."
+        "0": "Sao lưu dữ liệu trước thao tác rủi ro hoặc hàng loạt trong Codex / Antigravity / ZCode / Devin / Kiro.",
+        "1": "Kiểm tra bộ lọc và phạm vi mục tiêu trước khi chạy trong Codex / Antigravity / ZCode / Devin / Kiro."
       },
       "keywords": {
-        "0": "Nền tảng Codex / GitHub Copilot / Devin / Kiro",
+        "0": "Nền tảng Codex / Antigravity / ZCode / Devin / Kiro",
         "1": "hướng dẫn",
         "2": "quy trình",
         "3": "tài khoản",
@@ -6072,17 +6072,17 @@
         "5": "khắc phục lỗi"
       },
       "outcomes": {
-        "0": "Hiểu Codex / GitHub Copilot / Devin / Kiro giúp giải quyết điều gì.",
-        "1": "Dùng quy trình đề xuất trong Codex / GitHub Copilot / Devin / Kiro để giảm lỗi thao tác.",
-        "2": "Xác nhận một lần chạy thành công trong Codex / GitHub Copilot / Devin / Kiro trước khi mở rộng."
+        "0": "Hiểu Codex / Antigravity / ZCode / Devin / Kiro giúp giải quyết điều gì.",
+        "1": "Dùng quy trình đề xuất trong Codex / Antigravity / ZCode / Devin / Kiro để giảm lỗi thao tác.",
+        "2": "Xác nhận một lần chạy thành công trong Codex / Antigravity / ZCode / Devin / Kiro trước khi mở rộng."
       },
       "steps": {
-        "0": "Mở trang Codex / GitHub Copilot / Devin / Kiro.",
-        "1": "Hoàn tất cấu hình cơ bản và liên kết bắt buộc cho Codex / GitHub Copilot / Devin / Kiro.",
-        "2": "Chạy một thao tác thủ công trong Codex / GitHub Copilot / Devin / Kiro để xác minh kết quả."
+        "0": "Mở trang Codex / Antigravity / ZCode / Devin / Kiro.",
+        "1": "Hoàn tất cấu hình cơ bản và liên kết bắt buộc cho Codex / Antigravity / ZCode / Devin / Kiro.",
+        "2": "Chạy một thao tác thủ công trong Codex / Antigravity / ZCode / Devin / Kiro để xác minh kết quả."
       },
-      "summary": "Mục này giải thích cách dùng Codex / GitHub Copilot / Devin / Kiro trong quy trình hàng ngày.",
-      "title": "Nền tảng Codex / GitHub Copilot / Devin / Kiro"
+      "summary": "Mục này giải thích cách dùng Codex / Antigravity / ZCode / Devin / Kiro trong quy trình hàng ngày.",
+      "title": "Nền tảng Codex / Antigravity / ZCode / Devin / Kiro"
     },
     "quickStart": {
       "cautions": {
@@ -6548,14 +6548,14 @@
     "search": "Tìm tài khoản ZCode...",
     "flowNotice": {
       "title": "Hướng dẫn quản lý ZCode",
-      "desc": "Cockpit đọc và ghi lại thông tin đăng nhập ZCode cục bộ đã mã hóa để chuyển tài khoản thực và liên kết phiên bản.",
+      "desc": "polls đọc và ghi lại thông tin đăng nhập ZCode cục bộ đã mã hóa để chuyển tài khoản thực và liên kết phiên bản.",
       "permission": "Phạm vi cục bộ: ~/.zcode/v2/credentials.json và thư mục phiên bản được quản lý.",
-      "network": "Phạm vi mạng: API OAuth, người dùng, gói đăng ký và hạn mức. Tài khoản không được tải lên dịch vụ Cockpit."
+      "network": "Phạm vi mạng: API OAuth, người dùng, gói đăng ký và hạn mức. Tài khoản không được tải lên dịch vụ polls."
     },
     "empty": "Chưa có tài khoản ZCode",
     "addAccount": "Thêm tài khoản ZCode",
     "oauth": {
-      "desc": "Đóng ZCode rồi đăng nhập trong cửa sổ ủy quyền của Cockpit; Cockpit sẽ nhận callback trực tiếp.",
+      "desc": "Đóng ZCode rồi đăng nhập trong cửa sổ ủy quyền của polls; polls sẽ nhận callback trực tiếp.",
       "title": "OAuth ZCode",
       "item1": "Đăng nhập chính thức qua Z.ai và BigModel.",
       "item2": "Lưu tài khoản và làm mới gói cùng hạn mức mô hình.",
@@ -6567,7 +6567,7 @@
       "success": "Đăng nhập OAuth ZCode thành công"
     },
     "token": {
-      "desc": "Dán JSON tài khoản ZCode đã xuất từ Cockpit."
+      "desc": "Dán JSON tài khoản ZCode đã xuất từ polls."
     },
     "apiKey": {
       "tab": "Khóa API",
@@ -6694,7 +6694,7 @@
       "backToCurrent": "Quay lại",
       "switchToThisAccount": "Chuyển",
       "openDetails": "Mở chi tiết",
-      "openCockpitTools": "Mở Cockpit Tools"
+      "openCockpitTools": "Mở polls"
     },
     "empty": {
       "title": "Không có tài khoản",
@@ -6824,7 +6824,7 @@
   },
   "relay": {
     "pageTitle": "Trạm chuyển riêng",
-    "pageDesc": "Dịch vụ API đối tác dành cho người dùng Cockpit Tools, dùng được với tài khoản Codex API Key.",
+    "pageDesc": "Dịch vụ API đối tác dành cho người dùng polls, dùng được với tài khoản Codex API Key.",
     "loading": "Đang tải trạm chuyển...",
     "emptyTitle": "Trạm chuyển chưa bật",
     "emptyDesc": "Cấu hình từ xa chưa bật trạm chuyển riêng.",
@@ -6854,7 +6854,7 @@
   "apiKeyFun": {
     "eyebrow": "Trung chuyển",
     "title": "Relay APIKEY.FUN",
-    "description": "Relay đối tác chính thức của Cockpit cung cấp quyền truy cập API mô hình lớn ổn định, mở và có hiệu quả chi phí cao. Nền tảng hỗ trợ các mô hình phổ biến như Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi và DeepSeek, phù hợp để cấu hình thống nhất trong Codex, Gemini CLI, Claude Code và các công cụ phát triển khác. Đăng ký qua liên kết độc quyền của Cockpit để nhận ưu đãi nạp tiền vĩnh viễn lên tới 5%.",
+    "description": "Relay đối tác chính thức của polls cung cấp quyền truy cập API mô hình lớn ổn định, mở và có hiệu quả chi phí cao. Nền tảng hỗ trợ các mô hình phổ biến như Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi và DeepSeek, phù hợp để cấu hình thống nhất trong Codex, Gemini CLI, Claude Code và các công cụ phát triển khác. Đăng ký qua liên kết độc quyền của polls để nhận ưu đãi nạp tiền vĩnh viễn lên tới 5%.",
     "register": "Liên kết độc quyền",
     "docs": "Tài liệu chính thức",
     "viewNow": "Xem ngay",
@@ -7001,7 +7001,7 @@
       "title": "Quản lý tài khoản Grok CLI",
       "desc": "Mặc định dùng các GROK_HOME riêng. Khi bật đồng bộ, việc chuyển OAuth ở phiên bản mặc định sẽ ghi vào ~/.grok/auth.json; các phiên bản bổ sung vẫn được cách ly.",
       "permission": "Phạm vi cục bộ: có thể đọc ~/.grok/auth.json để nhập và chỉ ghi khi bật đồng bộ trong lúc chuyển OAuth ở phiên bản mặc định. API Key không ghi đè đăng nhập chính thức.",
-      "network": "Phạm vi mạng: ủy quyền OAuth, làm mới thông tin xác thực và truy vấn mức sử dụng tài khoản. Thông tin xác thực không được tải lên dịch vụ Cockpit."
+      "network": "Phạm vi mạng: ủy quyền OAuth, làm mới thông tin xác thực và truy vấn mức sử dụng tài khoản. Thông tin xác thực không được tải lên dịch vụ polls."
     },
     "empty": "Chưa có tài khoản Grok CLI",
     "addAccount": "Thêm tài khoản Grok CLI",

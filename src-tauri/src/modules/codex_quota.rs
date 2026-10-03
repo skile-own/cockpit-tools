@@ -16,7 +16,7 @@ const SUBSCRIPTION_ACCOUNTS_CHECK_URL: &str =
 const SUBSCRIPTIONS_URL: &str = "https://chatgpt.com/backend-api/subscriptions";
 const COCKPIT_API_PROVIDER_ID: &str = "cockpit_api";
 const LEGACY_NEW_API_PROVIDER_ID: &str = "new_api";
-const COCKPIT_API_PLAN_TYPE: &str = "Cockpit Api";
+const COCKPIT_API_PLAN_TYPE: &str = "polls API";
 const LEGACY_NEW_API_EXCLUSIVE_PLAN_TYPE: &str = "NEW_API_EXCLUSIVE";
 const COCKPIT_API_BASE_URL: &str = "https://chongcodex.cn/v1";
 const CODEX_DESKTOP_ORIGINATOR: &str = "Codex Desktop";
@@ -1160,11 +1160,11 @@ fn build_new_api_profile_url(account: &CodexAccount) -> Result<String, String> {
         .as_deref()
         .map(str::trim)
         .filter(|value| !value.is_empty())
-        .ok_or("Cockpit Api 账号缺少 Base URL")?;
+        .ok_or("polls API 账号缺少 Base URL")?;
     let mut parsed = reqwest::Url::parse(base_url)
-        .map_err(|err| format!("Cockpit Api Base URL 无效: {}", err))?;
+        .map_err(|err| format!("polls API Base URL 无效: {}", err))?;
     if !matches!(parsed.scheme(), "http" | "https") {
-        return Err("Cockpit Api Base URL 仅支持 http/https".to_string());
+        return Err("polls API Base URL 仅支持 http/https".to_string());
     }
     parsed.set_path("/api/cockpit-tools/token-profile");
     parsed.set_query(None);
@@ -1206,7 +1206,7 @@ async fn fetch_new_api_quota(account: &CodexAccount) -> Result<FetchQuotaResult,
         .as_deref()
         .map(str::trim)
         .filter(|value| !value.is_empty())
-        .ok_or("Cockpit Api 账号缺少 OPENAI_API_KEY")?;
+        .ok_or("polls API 账号缺少 OPENAI_API_KEY")?;
     let profile_url = build_new_api_profile_url(account)?;
     let client = reqwest::Client::new();
     let response = client
@@ -1215,27 +1215,27 @@ async fn fetch_new_api_quota(account: &CodexAccount) -> Result<FetchQuotaResult,
         .header(ACCEPT, "application/json")
         .send()
         .await
-        .map_err(|err| format!("请求 Cockpit Api 额度失败: {}", err))?;
+        .map_err(|err| format!("请求 polls API 额度失败: {}", err))?;
     let status = response.status();
     let body = response
         .text()
         .await
-        .map_err(|err| format!("读取 Cockpit Api 额度响应失败: {}", err))?;
+        .map_err(|err| format!("读取 polls API 额度响应失败: {}", err))?;
     if !status.is_success() {
-        return Err(format!("Cockpit Api 额度接口返回 HTTP {}", status.as_u16()));
+        return Err(format!("polls API 额度接口返回 HTTP {}", status.as_u16()));
     }
 
     let root: serde_json::Value = serde_json::from_str(&body)
-        .map_err(|err| format!("解析 Cockpit Api 额度 JSON 失败: {}", err))?;
+        .map_err(|err| format!("解析 polls API 额度 JSON 失败: {}", err))?;
     if root.get("success").and_then(|item| item.as_bool()) == Some(false) {
         let message = root
             .get("message")
             .and_then(|item| item.as_str())
-            .unwrap_or("Cockpit Api 额度接口返回失败");
+            .unwrap_or("polls API 额度接口返回失败");
         return Err(message.to_string());
     }
     let data = root.get("data").unwrap_or(&root);
-    let usage = data.get("usage").ok_or("Cockpit Api 额度响应缺少 usage")?;
+    let usage = data.get("usage").ok_or("polls API 额度响应缺少 usage")?;
     let total = read_i64(usage, "total_granted");
     let used = read_i64(usage, "total_used");
     let available = read_i64(usage, "total_available");
@@ -1688,7 +1688,7 @@ async fn refresh_account_quota_once(
                 Err(e) => {
                     if write_quota_error(&mut account, e.clone()) {
                         if let Err(save_err) = codex_account::save_account(&account) {
-                            logger::log_warn(&format!("写入 Cockpit Api 配额错误失败: {}", save_err));
+                            logger::log_warn(&format!("写入 polls API 配额错误失败: {}", save_err));
                         }
                     }
                     return Err(e);

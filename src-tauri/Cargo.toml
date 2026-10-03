@@ -1,7 +1,7 @@
 [package]
 name = "cockpit-tools"
 version = "1.3.65"
-description = "Cockpit Tools"
+description = "polls - accounts for Codex, Antigravity and ZCode"
 authors = ["jlcodes"]
 license = "CC-BY-NC-SA-4.0"
 edition = "2021"

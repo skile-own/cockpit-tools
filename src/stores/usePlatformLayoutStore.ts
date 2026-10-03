@@ -5,24 +5,8 @@ import { persistPlatformLayout } from '../utils/uiPreferences';
 import { CLASSIC_SIDEBAR_ENTRY_LIMIT } from './useSideNavLayoutStore';
 
 const PLATFORM_LAYOUT_STORAGE_KEY = 'agtools.platform_layout.v1';
-const LEGACY_TRAY_CORE_IDS: PlatformId[] = ['antigravity', 'codex', 'github-copilot', 'windsurf'];
-const TRAY_MIGRATED_PLATFORM_IDS: PlatformId[] = [
-  'antigravity_ide',
-  'claude_manager',
-  'zed',
-  'kiro',
-  'cursor',
-  'grok',
-  'codebuddy',
-  'codebuddy_cn',
-  'qoder',
-  'zcode',
-  'trae',
-  'trae_solo',
-  'trae_cn',
-  'trae_solo_cn',
-  'workbuddy',
-];
+const LEGACY_TRAY_CORE_IDS: PlatformId[] = ['antigravity', 'codex'];
+const TRAY_MIGRATED_PLATFORM_IDS: PlatformId[] = ['antigravity_ide', 'zcode'];
 const DEFAULT_CODEBUDDY_GROUP_ID = 'codebuddy-suite';
 const DEFAULT_ANTIGRAVITY_GROUP_ID = 'antigravity-suite';
 const DEFAULT_TRAE_GROUP_ID = 'trae-suite';
@@ -1219,8 +1203,8 @@ function normalizeStateData(
       raw.antigravityGroupFirstMigrated !== false || options.promoteAntigravityGroupEntry === true,
     traeSuiteDefaultGroupRestored: raw.traeSuiteDefaultGroupRestored !== false,
     codexApiServiceSuiteMigrated: raw.codexApiServiceSuiteMigrated !== false,
-    apiRelaySidebarVisible: raw.apiRelaySidebarVisible !== false,
-    apiRelayDashboardVisible: raw.apiRelayDashboardVisible !== false,
+    apiRelaySidebarVisible: false,
+    apiRelayDashboardVisible: false,
     apiRelayEntryOrder: normalizeApiRelayEntryOrder(raw.apiRelayEntryOrder, orderedEntryIds.length),
   };
 }
@@ -1244,8 +1228,8 @@ function loadPersistedState(): NormalizedLayoutStateData {
         antigravityGroupFirstMigrated: true,
         traeSuiteDefaultGroupRestored: true,
         codexApiServiceSuiteMigrated: true,
-        apiRelaySidebarVisible: true,
-        apiRelayDashboardVisible: true,
+        apiRelaySidebarVisible: false,
+        apiRelayDashboardVisible: false,
         apiRelayEntryOrder: 0,
       });
       return defaults;
@@ -1328,8 +1312,8 @@ function loadPersistedState(): NormalizedLayoutStateData {
       antigravityGroupFirstMigrated: true,
       traeSuiteDefaultGroupRestored: true,
       codexApiServiceSuiteMigrated: true,
-      apiRelaySidebarVisible: true,
-      apiRelayDashboardVisible: true,
+      apiRelaySidebarVisible: false,
+      apiRelayDashboardVisible: false,
       apiRelayEntryOrder: 0,
     });
   }
@@ -1643,7 +1627,8 @@ export const usePlatformLayoutStore = create<PlatformLayoutState>((set, get) => 
     get().toggleSidebarEntry(id);
   },
 
-  setApiRelaySidebarVisible: (visible) => {
+  setApiRelaySidebarVisible: (_visible) => {
+    const visible = false;
     if (get().apiRelaySidebarVisible === visible) {
       return;
     }
@@ -1655,7 +1640,8 @@ export const usePlatformLayoutStore = create<PlatformLayoutState>((set, get) => 
     persist(next);
   },
 
-  setApiRelayDashboardVisible: (visible) => {
+  setApiRelayDashboardVisible: (_visible) => {
+    const visible = false;
     if (get().apiRelayDashboardVisible === visible) {
       return;
     }
@@ -1866,8 +1852,8 @@ export const usePlatformLayoutStore = create<PlatformLayoutState>((set, get) => 
       antigravityGroupFirstMigrated: true,
       traeSuiteDefaultGroupRestored: true,
       codexApiServiceSuiteMigrated: true,
-      apiRelaySidebarVisible: true,
-      apiRelayDashboardVisible: true,
+      apiRelaySidebarVisible: false,
+      apiRelayDashboardVisible: false,
       apiRelayEntryOrder: 0,
     });
 

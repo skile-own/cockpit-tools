@@ -1,7 +1,6 @@
 import { useMemo, useState, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
-  BookOpen,
   ChevronDown,
   Compass,
   LayoutGrid,
@@ -141,43 +140,6 @@ export function ManualPage({ onNavigate, onOpenPlatformLayout }: ManualPageProps
         ],
         actions: [
           { id: 'go-overview', kind: 'navigate', page: 'overview', label: t('manual.actions.goAntigravity', '前往 Antigravity IDE'), primary: true },
-        ],
-      },
-      {
-        id: 'providers',
-        icon: <BookOpen size={18} />,
-        title: t('manual.providers.title', 'Codex / GitHub Copilot / Windsurf / Kiro'),
-        summary: t(
-          'manual.providers.summary',
-          '四个平台页结构一致：账号总览 + 应用多开，支持 OAuth、Token/JSON 导入与切换。',
-        ),
-        outcomes: [
-          t('manual.providers.outcomes.0', 'Codex：账号切换 + 配额刷新。'),
-          t('manual.providers.outcomes.1', 'GitHub Copilot/Windsurf/Kiro：支持注入到 VS Code 链路。'),
-          t('manual.providers.outcomes.2', '每个平台都可独立做筛选、分组、导入导出。'),
-        ],
-        steps: [
-          t('manual.providers.steps.0', '先完成 OAuth 或 Token 导入。'),
-          t('manual.providers.steps.1', '确认账号列表中能看到计划/配额和重置时间。'),
-          t('manual.providers.steps.2', '执行“切换/注入”并在客户端验证生效。'),
-        ],
-        cautions: [
-          t('manual.providers.cautions.0', '账号管理说明条里写了本地读写和权限范围，建议先读再操作。'),
-          t('manual.providers.cautions.1', '部分平台或能力受系统限制，请按页面提示处理。'),
-        ],
-        keywords: [
-          t('manual.providers.keywords.0', 'codex'),
-          t('manual.providers.keywords.1', 'github copilot'),
-          t('manual.providers.keywords.2', 'windsurf'),
-          t('manual.providers.keywords.3', 'kiro'),
-          t('manual.providers.keywords.4', '注入'),
-          t('manual.providers.keywords.5', '切号'),
-        ],
-        actions: [
-          { id: 'go-codex', kind: 'navigate', page: 'codex', label: t('manual.actions.goCodex', '前往 Codex'), primary: true },
-          { id: 'go-ghcp', kind: 'navigate', page: 'github-copilot', label: t('manual.actions.goGitHubCopilot', '前往 GitHub Copilot') },
-          { id: 'go-windsurf', kind: 'navigate', page: 'windsurf', label: t('manual.actions.goWindsurf', '前往 Windsurf') },
-          { id: 'go-kiro', kind: 'navigate', page: 'kiro', label: t('manual.actions.goKiro', '前往 Kiro') },
         ],
       },
       {

@@ -169,7 +169,7 @@
     "windowsOperation": {
       "title": "Windows 操作未完成",
       "accessDeniedDescription": "Windows 拒绝了本次操作。目标程序可能以更高权限运行，或位于受保护目录中。",
-      "storeLaunchBlockedDescription": "未能确认商店版隔离实例已正常启动，Cockpit 未回退打开默认账号。请重新检测客户端路径并重试；仍失败时可复制诊断信息反馈，或将该实例切换为 CLI 模式。",
+      "storeLaunchBlockedDescription": "未能确认商店版隔离实例已正常启动，polls 未回退打开默认账号。请重新检测客户端路径并重试；仍失败时可复制诊断信息反馈，或将该实例切换为 CLI 模式。",
       "repairPath": "重新检测路径并重试",
       "fileInUseDescription": "目标文件正在被其他程序使用。请关闭占用程序后重试。",
       "programNotFoundDescription": "Windows 找不到完成本次操作所需的程序。请检查安装状态或路径设置。",
@@ -404,7 +404,7 @@
       "loginSuccess": "登录成功",
       "switchAccount": "切换账号"
     },
-    "appName": "Cockpit Tools",
+    "appName": "polls",
     "collapse": "收起",
     "confirmDelete": "确认删除",
     "confirmDeleteTag": "确认删除标签",
@@ -442,7 +442,7 @@
       "backToCurrent": "返回",
       "switchToThisAccount": "切换",
       "openDetails": "打开详情页",
-      "openCockpitTools": "打开 Cockpit Tools"
+      "openCockpitTools": "打开 polls"
     },
     "empty": {
       "title": "暂无账号",
@@ -509,17 +509,17 @@
   },
   "sponsors": {
     "pageTitle": "赞助商",
-    "pageDesc": "感谢以下赞助商支持 Cockpit Tools。",
+    "pageDesc": "感谢以下赞助商支持 polls。",
     "loading": "正在加载赞助商...",
     "emptyTitle": "暂无赞助商",
     "emptyDesc": "当前远端未开启赞助商模块。",
     "listAriaLabel": "赞助商列表",
-    "defaultDescription": "感谢支持 Cockpit Tools。",
+    "defaultDescription": "感谢支持 polls。",
     "openSponsor": "查看"
   },
   "relay": {
     "pageTitle": "专属中转站",
-    "pageDesc": "为 Cockpit Tools 用户提供的合作 API 服务，可用于 Codex API Key 账号。",
+    "pageDesc": "为 polls 用户提供的合作 API 服务，可用于 Codex API Key 账号。",
     "loading": "正在加载中转站...",
     "emptyTitle": "中转站未开启",
     "emptyDesc": "当前远端配置未开启专属中转站。",
@@ -549,7 +549,7 @@
   "apiKeyFun": {
     "eyebrow": "中转站",
     "title": "APIKEY.FUN 中转站",
-    "description": "Cockpit 官方合作中转站，为用户提供稳定、开放、高性价比的大模型 API 接入服务。支持 Claude、ChatGPT、Grok、Gemini、智谱 GLM、Kimi、DeepSeek 等主流模型，适合在 Codex、Gemini CLI、Claude Code 及其他开发工具中统一配置使用。通过 Cockpit 专属链接注册，可享受最高充值永久 95 折优惠。",
+    "description": "polls 官方合作中转站，为用户提供稳定、开放、高性价比的大模型 API 接入服务。支持 Claude、ChatGPT、Grok、Gemini、智谱 GLM、Kimi、DeepSeek 等主流模型，适合在 Codex、Gemini CLI、Claude Code 及其他开发工具中统一配置使用。通过 polls 专属链接注册，可享受最高充值永久 95 折优惠。",
     "register": "专属注册链接",
     "docs": "官方文档",
     "viewNow": "立即查看",
@@ -890,18 +890,18 @@
         "summary": "普通模型使用当前订阅；带前缀模型（如 cpa/gpt-5.5）转发到第三方 API。两者都依赖本地分流服务。",
         "rowSummary": "普通模型使用当前订阅；带前缀模型（如 cpa/gpt-5.5）转发到第三方 API。两者都依赖本地分流服务。",
         "confirmEnableTitle": "开启第三方 API 路由？",
-        "confirmEnableMessage": "开启后，Codex 的模型请求将通过 Cockpit Tools 本地服务分流。服务未运行时，官方订阅和第三方模型都可能无法使用。\n\n确认开启吗？",
+        "confirmEnableMessage": "开启后，Codex 的模型请求将通过 polls 本地服务分流。服务未运行时，官方订阅和第三方模型都可能无法使用。\n\n确认开启吗？",
         "confirmEnableAction": "确认开启",
         "confirmDisableTitle": "关闭第三方 API 路由？",
         "confirmDisableMessage": "关闭并生效后将停止本地网关、恢复官方原生直连，所有第三方模型将不可用。\n\n确认关闭吗？",
         "confirmDisableAction": "确认关闭",
-        "modalTip": "开启后，官方订阅和第三方模型都会经过本地分流服务。请保持 Cockpit Tools 后台运行；服务异常时会自动恢复，连续失败则回退官方配置。",
+        "modalTip": "开启后，官方订阅和第三方模型都会经过本地分流服务。请保持 polls 后台运行；服务异常时会自动恢复，连续失败则回退官方配置。",
         "modelRequired": "每个已启用的 API 路由至少需要选择一个模型。",
         "runningSaveTitle": "路由配置何时生效？",
         "runningSaveMessage": "此 Codex 实例正在运行。立即替换本地服务会中断当前对话。\n\n选择“保存并重启 Codex”立即生效；选择“仅保存，稍后生效”不会影响当前会话。",
         "saveAndRestart": "保存并重启 Codex",
         "saveForLater": "仅保存，稍后生效",
-        "savedForNextLaunch": "已保存，下次通过 Cockpit 启动 Codex 时生效；当前会话保持不变。",
+        "savedForNextLaunch": "已保存，下次通过 polls 启动 Codex 时生效；当前会话保持不变。",
         "restartRollbackFailed": "新路由启动失败，恢复原配置后仍无法启动：",
         "restartRolledBack": "新路由启动失败，已恢复原配置并重新启动 Codex：{{error}}"
       },
@@ -1051,7 +1051,7 @@
       "platform": "平台"
     },
     "title": "应用设置",
-    "subtitle": "个性化您的 Cockpit Tools 体验。",
+    "subtitle": "个性化您的 polls 体验。",
     "general": {
       "appearance": "界面外观",
       "language": "显示语言",
@@ -1111,7 +1111,7 @@
       "floatingCardStartupDesc": "应用启动后默认展示悬浮账号卡片",
       "floatingCardAlwaysOnTop": "悬浮卡片默认置顶",
       "floatingCardAlwaysOnTopDesc": "新打开的悬浮卡片窗口默认保持置顶",
-      "appAutoLaunch": "开机自启动 Cockpit Tools",
+      "appAutoLaunch": "开机自启动 polls",
       "appAutoLaunchDesc": "系统登录后自动启动应用。若 Windows 开机时出现 PowerShell 报错，请先关闭此选项。",
       "startupWakeupDisabled": "关闭",
       "startupWakeupImmediate": "立即唤醒",
@@ -1143,7 +1143,7 @@
       "codexSyncWsl": "同步 Codex 到 WSL",
       "codexSyncWslDesc": "切换默认 Codex 账号后，同时把 auth.json 和 config.toml 写入 WSL 的 Codex 配置目录。",
       "codexAppUiInjection": "显示 API 服务额度",
-      "codexAppUiInjectionDesc": "重启 Codex 实例后，输入框下方的额度徽章跟随当前所选模型：DeepSeek 显示账号余额、Grok 显示 Grok 额度、GPT 显示周额度和 5h 额度。需保持 Cockpit Tools 在后台运行；完全退出或网络不可用时，额度不会继续刷新。",
+      "codexAppUiInjectionDesc": "重启 Codex 实例后，输入框下方的额度徽章跟随当前所选模型：DeepSeek 显示账号余额、Grok 显示 Grok 额度、GPT 显示周额度和 5h 额度。需保持 polls 在后台运行；完全退出或网络不可用时，额度不会继续刷新。",
       "codexAppUiInjectionPoolLabel": "账号",
       "codexAppUiInjectionWeeklyLabel": "周",
       "codexAppUiInjectionFiveHourLabel": "5h",
@@ -1383,7 +1383,7 @@
         "retentionDesc": "超过天数的备份会在下次检查时自动清理。",
         "retentionUnit": "天",
         "directoryTitle": "备份目录",
-        "directoryDesc": "定时备份和 Cockpit 行为快照都保存到此目录；可迁移到其他磁盘。",
+        "directoryDesc": "定时备份和 polls 行为快照都保存到此目录；可迁移到其他磁盘。",
         "changeDirectory": "更换目录",
         "migrating": "迁移中...",
         "migrationConfirm": "是否将现有备份从 {{oldPath}} 迁移到 {{newPath}}？\n\n选择“取消”仍会切换目录，但不会迁移旧文件。",
@@ -1530,7 +1530,7 @@
       "passwordSavedPlaceholder": "已保存，留空保持不变",
       "clearPassword": "清除",
       "remoteDirTitle": "远端目录",
-      "remoteDirDesc": "只管理该目录下的 Cockpit 备份文件。",
+      "remoteDirDesc": "只管理该目录下的 polls 备份文件。",
       "retentionTitle": "云端保留天数",
       "retentionDesc": "云端超过天数的备份会在下次同步时自动清理。",
       "retentionUnit": "天",
@@ -1544,7 +1544,7 @@
       "syncAction": "同步配置",
       "syncLatestConfirm": "确认拉取最新的远端备份 {{name}} 并同步到本地？此操作将覆盖本地现有数据。",
       "remoteListTitle": "远端备份",
-      "remoteListDesc": "仅显示匹配 Cockpit 自动/手动备份命名的 JSON 与 ZIP 文件。",
+      "remoteListDesc": "仅显示匹配 polls 自动/手动备份命名的 JSON 与 ZIP 文件。",
       "emptyTitle": "暂无远端备份",
       "emptyDesc": "保存设置后可以生成并上传一份备份。",
       "unknownTime": "未知",
@@ -1605,7 +1605,7 @@
       "firewallHint": "如果访问不了，请检查系统防火墙设置。",
       "proxyTitle": "全局代理",
       "proxyEnabled": "启用全局代理",
-      "proxyEnabledDesc": "对 Cockpit 启动的受管平台进程统一注入代理环境变量",
+      "proxyEnabledDesc": "对 polls 启动的受管平台进程统一注入代理环境变量",
       "proxyUrl": "代理地址",
       "proxyUrlDesc": "示例：http://127.0.0.1:7890 或 socks5://127.0.0.1:7890",
       "proxyUrlPlaceholder": "例如：http://127.0.0.1:7890",
@@ -1615,7 +1615,7 @@
       "proxyUrlRequired": "启用全局代理时，代理地址不能为空。"
     },
     "about": {
-      "appName": "Cockpit Tools",
+      "appName": "polls",
       "slogan": "专业账号管理解决方案",
       "author": "主作者",
       "wechat": "微信公众号",
@@ -2036,7 +2036,7 @@
       "importBtn": "导入",
       "oauthAction": "OAuth 授权",
       "fromExtension": "从插件导入",
-      "syncBadge": "同步 Antigravity Cockpit 插件账号",
+      "syncBadge": "同步 Antigravity polls 插件账号",
       "fromLocalDB": "从本地数据库导入",
       "localDBDesc": "读取本机 Antigravity IDE 客户端登录账号",
       "toolsDescMigrate": "从 ~/.antigravity_tools/ 迁移历史账号",
@@ -2417,7 +2417,7 @@
       "title": "可见模型",
       "description": "统一管理可见模型、推理强度、上下文窗口和压缩阈值。",
       "enabledHint": "启用后使用当前可见模型列表，重启 Codex 生效。",
-      "disabledHint": "关闭后会移除 Cockpit 受管模型目录，恢复官方模型可见性；具体可用模型由官方账号权限决定。",
+      "disabledHint": "关闭后会移除 polls 受管模型目录，恢复官方模型可见性；具体可用模型由官方账号权限决定。",
       "models": {
         "title": "模型列表",
         "model": "模型",
@@ -2543,7 +2543,7 @@
       "description": "先配置和检查；只有点击切换或启动后才会修改客户端状态。",
       "notApplied": "尚未应用",
       "safeHint": "打开此窗口不会刷新 Token、关闭客户端或写入登录凭据。",
-      "modelConfigHint": "上下文窗口和压缩阈值按模型写入 Cockpit 受管模型目录。",
+      "modelConfigHint": "上下文窗口和压缩阈值按模型写入 polls 受管模型目录。",
       "enablePerModelHint": "按模型配置需要启用可见模型；这里只修改草稿，保存或启动时才会写入。",
       "enablePerModel": "启用按模型配置",
       "unsavedConfig": "模型配置有未保存的更改；切换或启动前会先保存。",
@@ -2726,11 +2726,11 @@
     },
     "exportFormat": {
       "label": "导出格式",
-      "cockpitTools": "Cockpit Tools",
+      "cockpitTools": "polls",
       "authJson": "官方 auth.json",
       "sub2api": "sub2api 格式",
       "cpa": "cpa 格式",
-      "agentIdentityCpaUnsupported": "Agent Identity 账号不支持 cpa 格式，请使用 Cockpit Tools 或 sub2api 格式导出。",
+      "agentIdentityCpaUnsupported": "Agent Identity 账号不支持 cpa 格式，请使用 polls 或 sub2api 格式导出。",
       "agentIdentityPrivateKeyNotice": "导出内容包含 Agent Identity 私钥，可用于在其他设备恢复账号。请像密码一样妥善保管。",
       "buildFailed": "无法生成导出内容：所选账号包含不支持的类型或认证信息不完整。",
       "downloadAll": "一键下载全部",
@@ -2893,8 +2893,8 @@
       "testAuthFailed": "服务可达，但鉴权失败：{{detail}}。请检查 API 服务密钥或账号登录状态。",
       "testServiceUnavailable": "服务可达，但当前不可用：{{detail}}。请检查服务是否启用、账号集合是否为空或账号是否可用。",
       "gatewayErrors": {
-        "authUnavailable": "账号池当前没有可调度账号；账号可能正在冷却、授权失效或额度受限，请在 Cockpit Tools 的 API 服务页查看账号状态。",
-        "authNotFound": "账号池当前没有已配置的可用账号，请在 Cockpit Tools 的 API 服务页添加或启用账号。"
+        "authUnavailable": "账号池当前没有可调度账号；账号可能正在冷却、授权失效或额度受限，请在 polls 的 API 服务页查看账号状态。",
+        "authNotFound": "账号池当前没有已配置的可用账号，请在 polls 的 API 服务页添加或启用账号。"
       },
       "testRateLimited": "服务可达，但上游限流或额度不足：{{detail}}。",
       "testHttpFailed": "服务可达，但请求返回 HTTP {{status}}：{{detail}}。",
@@ -3190,7 +3190,7 @@
         "placeholder": "每行填写一个模型 ID，也可以使用逗号分隔。",
         "editHint": "上游结果仅填入当前草稿，可在保存前删除、补充或调整模型。",
         "syncToggle": "同步供应商模型到 Codex",
-        "syncDescription": "保存后使用当前模型列表生成 Cockpit 受管的 Codex 模型目录，不覆盖用户自定义目录。",
+        "syncDescription": "保存后使用当前模型列表生成 polls 受管的 Codex 模型目录，不覆盖用户自定义目录。",
         "fetchCredentialsRequired": "请先填写 API Key 和 Base URL。",
         "fetchEmpty": "上游未返回可用模型，已保留当前列表。",
         "fetchFailed": "获取上游模型失败：{{error}}",
@@ -3211,7 +3211,7 @@
       },
       "providers": {
         "cockpit_api": {
-          "name": "Cockpit Api"
+          "name": "polls API"
         },
         "openai_official": {
           "name": "OpenAI Official"
@@ -3307,7 +3307,7 @@
       }
     },
     "cockpitApi": {
-      "panelTitle": "Cockpit Api 服务面板",
+      "panelTitle": "polls API 服务面板",
       "servicePanel": "服务面板",
       "balance": "额度",
       "requests": "请求",
@@ -3499,7 +3499,7 @@
           "contextWindowInvalid": "上下文窗口必须是大于 0 的整数",
           "autoCompactInvalid": "自动压缩阈值必须是大于 0 的整数"
         },
-        "modelCatalogDesc": "可见模型及每个模型的上下文配置统一写入当前 Codex 的 Cockpit 受管模型目录。"
+        "modelCatalogDesc": "可见模型及每个模型的上下文配置统一写入当前 Codex 的 polls 受管模型目录。"
       },
       "testing": "测试中...",
       "testSuccess": "供应商连接正常：{{protocol}}，{{model}}，{{latency}}。",
@@ -3698,7 +3698,7 @@
       "closedWithoutLogin": "官方客户端已关闭，尚未检测到完整登录凭据。",
       "retryImport": "重试导入",
       "tab": "官方登录",
-      "desc": "由官方客户端打开浏览器完成登录并处理授权回调。Cockpit 在临时客户端关闭后读取最终凭据并导入。",
+      "desc": "由官方客户端打开浏览器完成登录并处理授权回调。polls 在临时客户端关闭后读取最终凭据并导入。",
       "note": "成功导入后会清理临时配置、运行目录和对应认证条目；最终导入失败时保留凭据供重试。默认实例和多开实例不受影响。",
       "start": "打开官方客户端并登录",
       "cancel": "取消登录",
@@ -5141,7 +5141,7 @@
       "restoringEntry": "恢复中…",
       "restoreEntryFailed": "桌面代理转接恢复失败，请重试。",
       "restoreEntryPortBusy": "原代理端口已被占用，请释放端口后重试；桌面端无法自动改用其他端口。",
-      "restoreEntryNotRunning": "未找到仍在运行且使用当前 Cockpit 已记录代理入口的桌面端。",
+      "restoreEntryNotRunning": "未找到仍在运行且使用当前 polls 已记录代理入口的桌面端。",
       "restoreEntryBusy": "代理正在恢复，请稍后重试。",
       "restoreEntryTimeout": "代理恢复超时，请重试。",
       "restartHint": "通过本地转接启动的客户端，新连接自动使用新出口；其他运行中的客户端需重启一次。桌面转接仅监听本机，但不隔离本机其他用户；不修改系统代理。",
@@ -6384,7 +6384,7 @@
         "1": "部分平台或能力受系统限制，请按页面提示处理。"
       },
       "keywords": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro 平台",
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro 平台",
         "1": "GitHub Copilot 平台",
         "2": "Devin 平台",
         "3": "Kiro 平台",
@@ -6402,7 +6402,7 @@
         "2": "执行“切换/注入”并在客户端验证生效。"
       },
       "summary": "四个平台页结构一致：账号总览 + 应用多开，支持 OAuth、Token/JSON 导入与切换。",
-      "title": "Codex / GitHub Copilot / Devin / Kiro 平台"
+      "title": "Codex / Antigravity / ZCode / Devin / Kiro 平台"
     },
     "quickStart": {
       "cautions": {
@@ -6422,7 +6422,7 @@
       },
       "steps": {
         "0": "打开“仪表盘”，确认你需要管理的平台已经可见。",
-        "1": "进入目标平台页（如 Codex / GitHub Copilot），先添加 1 个账号。",
+        "1": "进入目标平台页（如 Codex / Antigravity / ZCode），先添加 1 个账号。",
         "2": "使用“切换/注入”按钮验证切号生效。",
         "3": "再进入“应用多开”创建 1 个实例，验证隔离和并行运行。"
       },
@@ -6531,14 +6531,14 @@
     "search": "搜索 ZCode 账号...",
     "flowNotice": {
       "title": "ZCode 账号管理说明",
-      "desc": "Cockpit 按 ZCode 官方格式管理 OAuth 凭据与 API Key，用于真实切号与实例绑定。",
+      "desc": "polls 按 ZCode 官方格式管理 OAuth 凭据与 API Key，用于真实切号与实例绑定。",
       "permission": "本地范围：~/.zcode/v2/credentials.json、config.json、setting.json 与受管实例目录。",
-      "network": "网络范围：OAuth、用户信息、订阅与配额接口；不会将账号上传到 Cockpit 服务。"
+      "network": "网络范围：OAuth、用户信息、订阅与配额接口；不会将账号上传到 polls 服务。"
     },
     "empty": "暂无 ZCode 账号",
     "addAccount": "添加 ZCode 账号",
     "oauth": {
-      "desc": "关闭 ZCode 后，在 Cockpit 授权窗口完成登录；回调将由 Cockpit 直接接收。",
+      "desc": "关闭 ZCode 后，在 polls 授权窗口完成登录；回调将由 polls 直接接收。",
       "title": "ZCode 授权登录",
       "item1": "支持 Z.ai 与 BigModel 官方登录。",
       "item2": "授权后自动保存账号并刷新套餐与模型额度。",
@@ -6550,7 +6550,7 @@
       "success": "ZCode OAuth 登录成功"
     },
     "token": {
-      "desc": "粘贴由 Cockpit 导出的 ZCode 账号 JSON。"
+      "desc": "粘贴由 polls 导出的 ZCode 账号 JSON。"
     },
     "apiKey": {
       "tab": "API 密钥",
@@ -7001,7 +7001,7 @@
       "title": "Grok CLI 账号管理说明",
       "desc": "默认使用独立 GROK_HOME；开启“切号同步官方登录”后，默认实例切换 OAuth 账号会写入官方 ~/.grok/auth.json，多开实例仍保持隔离。",
       "permission": "本地范围：可读取默认 ~/.grok/auth.json 用于导入；仅在开关开启且默认实例切换 OAuth 账号时写入该文件，API Key 不会覆盖官方登录。",
-      "network": "网络范围：OAuth 授权、凭据刷新及账号用量查询；不会上传凭据到 Cockpit 服务。"
+      "network": "网络范围：OAuth 授权、凭据刷新及账号用量查询；不会上传凭据到 polls 服务。"
     },
     "empty": "暂无 Grok CLI 账号",
     "addAccount": "添加 Grok CLI 账号",

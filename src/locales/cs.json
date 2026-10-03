@@ -169,7 +169,7 @@
     "windowsOperation": {
       "title": "Operace Windows nebyla dokončena",
       "accessDeniedDescription": "Windows tuto operaci zamítl. Cílový program může běžet s vyšším oprávněním nebo být v chráněném umístění.",
-      "storeLaunchBlockedDescription": "Nepodařilo se potvrdit spuštění izolované instance z obchodu. Cockpit nepoužil výchozí účet. Znovu vyhledejte cestu ke klientovi a opakujte pokus. Pokud chyba přetrvá, zkopírujte diagnostické údaje nebo přepněte tuto instanci do režimu CLI.",
+      "storeLaunchBlockedDescription": "Nepodařilo se potvrdit spuštění izolované instance z obchodu. polls nepoužil výchozí účet. Znovu vyhledejte cestu ke klientovi a opakujte pokus. Pokud chyba přetrvá, zkopírujte diagnostické údaje nebo přepněte tuto instanci do režimu CLI.",
       "repairPath": "Znovu zjistit cestu a zkusit to",
       "fileInUseDescription": "Cílový soubor používá jiný program. Zavřete jej a zkuste to znovu.",
       "programNotFoundDescription": "Windows nenašel program potřebný pro tuto operaci. Zkontrolujte instalaci nebo nastavenou cestu.",
@@ -404,7 +404,7 @@
       "desc": "Tato oblast je pevně umístěná vpravo nahoře na všech stránkách pro kampaně nebo brandové reklamy.",
       "action": "Zobrazit podrobnosti"
     },
-    "appName": "Cockpit Tools​",
+    "appName": "polls",
     "collapse": "Sbalit",
     "confirmDelete": "Potvrdit smazání",
     "confirmDeleteTag": "Potvrdit smazání štítku",
@@ -462,12 +462,12 @@
   },
   "sponsors": {
     "pageTitle": "Sponzoři",
-    "pageDesc": "Děkujeme těmto sponzorům za podporu Cockpit Tools.",
+    "pageDesc": "Děkujeme těmto sponzorům za podporu polls.",
     "loading": "Načítání sponzorů...",
     "emptyTitle": "Zatím žádní sponzoři",
     "emptyDesc": "Vzdálený modul sponzorů je aktuálně vypnutý.",
     "listAriaLabel": "Seznam sponzorů",
-    "defaultDescription": "Děkujeme za podporu Cockpit Tools.",
+    "defaultDescription": "Děkujeme za podporu polls.",
     "openSponsor": "Otevřít"
   },
   "platformLayout": {
@@ -665,18 +665,18 @@
         "summary": "Modely bez předpony používají aktuální předplatné; modely s předponou jako cpa/gpt-5.5 jsou předávány do API třetích stran. Obojí závisí na místní službě směrování.",
         "rowSummary": "Modely bez předpony používají aktuální předplatné; modely s předponou jako cpa/gpt-5.5 jsou předávány do API třetích stran. Obojí závisí na místní službě směrování.",
         "confirmEnableTitle": "Povolit směrování API třetích stran?",
-        "confirmEnableMessage": "Požadavky na modely Codex budou směrovány přes místní službu Cockpit Tools. Pokud služba neběží, modely předplatného i modely třetích stran mohou být nedostupné.\n\nPovolit směrování?",
+        "confirmEnableMessage": "Požadavky na modely Codex budou směrovány přes místní službu polls. Pokud služba neběží, modely předplatného i modely třetích stran mohou být nedostupné.\n\nPovolit směrování?",
         "confirmEnableAction": "Povolit",
         "confirmDisableTitle": "Zakázat směrování API třetích stran?",
         "confirmDisableMessage": "Jakmile tato změna vstoupí v platnost, místní brána se zastaví, obnoví se přímý přístup k oficiálnímu předplatnému a modely třetích stran nebudou k dispozici.\n\nZakázat směrování?",
         "confirmDisableAction": "Zakázat",
-        "modalTip": "Modely předplatného i modely třetích stran procházejí místní službou směrování. Ponechte Cockpit Tools spuštěné na pozadí. Služba se automaticky obnoví a po opakovaných selháních se vrátí k oficiální konfiguraci.",
+        "modalTip": "Modely předplatného i modely třetích stran procházejí místní službou směrování. Ponechte polls spuštěné na pozadí. Služba se automaticky obnoví a po opakovaných selháních se vrátí k oficiální konfiguraci.",
         "modelRequired": "Každá povolená trasa API musí obsahovat alespoň jeden model.",
         "runningSaveTitle": "Kdy má směrování vstoupit v platnost?",
         "runningSaveMessage": "Tato instance Codexu je spuštěna. Nahrazení místní služby nyní přeruší probíhající konverzaci.\n\nZvolte „Uložit a restartovat Codex“ pro okamžité použití, nebo „Uložit na později“ pro zachování aktuální relace.",
         "saveAndRestart": "Uložit a restartovat Codex",
         "saveForLater": "Uložit na později",
-        "savedForNextLaunch": "Uloženo. Změna se projeví při příštím spuštění Codexu přes Cockpit; aktuální relace zůstane beze změny.",
+        "savedForNextLaunch": "Uloženo. Změna se projeví při příštím spuštění Codexu přes polls; aktuální relace zůstane beze změny.",
         "restartRollbackFailed": "Nová trasa se nepodařila spustit a původní konfiguraci nebylo možné restartovat: ",
         "restartRolledBack": "Nová trasa se nepodařila spustit. Byla obnovena původní konfigurace a Codex byl restartován: {{error}}"
       }
@@ -831,7 +831,7 @@
       "platform": "Platforma"
     },
     "title": "Nastavení aplikace",
-    "subtitle": "Přizpůsobte si prostředí Cockpit Tools.",
+    "subtitle": "Přizpůsobte si prostředí polls.",
     "tabs": {
       "general": "Obecné",
       "network": "Síť",
@@ -910,7 +910,7 @@
       "codexSyncWsl": "Synchronizovat Codex do WSL",
       "codexSyncWslDesc": "Po přepnutí výchozího účtu Codex se auth.json a config.toml zapíší také do adresáře Codex ve WSL.",
       "codexAppUiInjection": "Kvóta API služby",
-      "codexAppUiInjectionDesc": "Po restartování instance Codex sleduje odznak kvóty pod kompozitorem zvolený model: DeepSeek zobrazuje zůstatek účtu, Grok svou kvótu a modely GPT týdenní a 5hodinovou kvótu. Cockpit Tools musí běžet na pozadí; po úplném ukončení nebo bez sítě se údaje neobnovují.",
+      "codexAppUiInjectionDesc": "Po restartování instance Codex sleduje odznak kvóty pod kompozitorem zvolený model: DeepSeek zobrazuje zůstatek účtu, Grok svou kvótu a modely GPT týdenní a 5hodinovou kvótu. polls musí běžet na pozadí; po úplném ukončení nebo bez sítě se údaje neobnovují.",
       "codexAppUiInjectionPoolLabel": "Účty",
       "codexAppUiInjectionWeeklyLabel": "Týden",
       "codexAppUiInjectionFiveHourLabel": "5 h",
@@ -1018,7 +1018,7 @@
       "sideNavLayoutClassic": "Klasické rozložení",
       "antigravityDualSwitchNoRestart": "Duální přepnutí bez restartu",
       "antigravityDualSwitchNoRestartDesc": "Při přepnutí účtu se v jednom kroku zapíší lokální data účtu a provede plynulé přepnutí rozšíření bez restartu Antigravity IDE.",
-      "appAutoLaunch": "Spustit Cockpit Tools po přihlášení",
+      "appAutoLaunch": "Spustit polls po přihlášení",
       "appAutoLaunchDesc": "Spustit po přihlášení. Při chybě PowerShell při startu Windows vypněte.",
       "startupWakeupDisabled": "Vypnuto",
       "startupWakeupImmediate": "Probudit okamžitě",
@@ -1142,7 +1142,7 @@
       "codexHideRelayQuotaDesc": "Skryje panely kvóty relay / New API v přehledu účtů Codex."
     },
     "network": {
-      "apiTitle": "Antigravity Cockpit API​",
+      "apiTitle": "Antigravity polls API​",
       "wsService": "Služba WebSocket",
       "wsServiceDesc": "Povolit připojení externím programům (např. rozšíření VS Code)",
       "preferredPort": "Preferovaný port",
@@ -1171,7 +1171,7 @@
       "firewallHint": "Pokud URL není dostupná, zkontrolujte nastavení systémového firewallu.",
       "proxyTitle": "Globální proxy",
       "proxyEnabled": "Povolit globální proxy",
-      "proxyEnabledDesc": "Vloží proxy proměnné prostředí do spravovaných procesů platforem spuštěných aplikací Cockpit.",
+      "proxyEnabledDesc": "Vloží proxy proměnné prostředí do spravovaných procesů platforem spuštěných aplikací polls.",
       "proxyUrl": "URL proxy",
       "proxyUrlDesc": "Příklad: http://127.0.0.1:7890 nebo socks5://127.0.0.1:7890",
       "proxyUrlPlaceholder": "např. http://127.0.0.1:7890",
@@ -1181,7 +1181,7 @@
       "proxyUrlRequired": "Když je globální proxy zapnutá, URL proxy nesmí být prázdná."
     },
     "about": {
-      "appName": "Cockpit Tools​",
+      "appName": "polls",
       "slogan": "Profesionální řešení pro správu účtů",
       "author": "Autor",
       "wechat": "WeChat​",
@@ -1381,7 +1381,7 @@
       "passwordSavedPlaceholder": "Uloženo; ponechte prázdné pro zachování",
       "clearPassword": "Vymazat",
       "remoteDirTitle": "Vzdálený adresář",
-      "remoteDirDesc": "Spravují se pouze záložní soubory Cockpit v tomto adresáři.",
+      "remoteDirDesc": "Spravují se pouze záložní soubory polls v tomto adresáři.",
       "statusTitle": "Stav synchronizace",
       "statusDesc": "Vzdálená obnova vyžaduje ruční výběr a nikdy tiše nepřepíše lokální data.",
       "lastUpload": "Poslední nahrání: {{time}}",
@@ -1392,7 +1392,7 @@
       "syncAction": "Synchronizovat nastavení",
       "syncLatestConfirm": "Opravdu chcete stáhnout nejnovější vzdálenou zálohu {{name}} a synchronizovat ji lokálně? Tím dojde k přepsání stávajících lokálních dat.",
       "remoteListTitle": "Vzdálené zálohy",
-      "remoteListDesc": "Zobrazují se pouze soubory JSON a ZIP odpovídající názvům automatických/ručních záloh Cockpit.",
+      "remoteListDesc": "Zobrazují se pouze soubory JSON a ZIP odpovídající názvům automatických/ručních záloh polls.",
       "emptyTitle": "Žádné vzdálené zálohy",
       "emptyDesc": "Uložte nastavení, poté vytvořte a nahrajte zálohu.",
       "unknownTime": "Neznámé",
@@ -1816,7 +1816,7 @@
       "importBtn": "Importovat",
       "oauthAction": "OAuth autorizace",
       "fromExtension": "Import z pluginu",
-      "syncBadge": "Synchronizovat účty pluginu Antigravity Cockpit",
+      "syncBadge": "Synchronizovat účty pluginu Antigravity polls",
       "fromLocalDB": "Import z lokální DB",
       "localDBDesc": "Načte přihlašovací účty z Antigravity IDE klienta v tomto zařízení",
       "toolsDescMigrate": "Migrace účtů z ~/.antigravity_tools/",
@@ -2439,11 +2439,11 @@
     },
     "exportFormat": {
       "label": "Formát exportu",
-      "cockpitTools": "Cockpit Tools​",
+      "cockpitTools": "polls",
       "authJson": "Oficiální auth.json",
       "sub2api": "sub2api formát",
       "cpa": "cpa formát",
-      "agentIdentityCpaUnsupported": "Účty Agent Identity nelze exportovat ve formátu cpa. Použijte Cockpit Tools nebo sub2api.",
+      "agentIdentityCpaUnsupported": "Účty Agent Identity nelze exportovat ve formátu cpa. Použijte polls nebo sub2api.",
       "agentIdentityPrivateKeyNotice": "Export obsahuje soukromý klíč Agent Identity, který umožňuje obnovit účet na jiném zařízení. Chraňte jej jako heslo.",
       "buildFailed": "Export nelze vytvořit: vybrané účty obsahují nepodporovaný typ nebo neúplné přihlašovací údaje.",
       "downloadAll": "Stáhnout vše",
@@ -2527,8 +2527,8 @@
       "testAuthFailed": "Služba je dosažitelná, ale ověření selhalo: {{detail}}. Zkontrolujte klíč API služby nebo stav přihlášení účtu.",
       "testServiceUnavailable": "Služba je dosažitelná, ale momentálně není dostupná: {{detail}}. Zkontrolujte, zda je služba zapnutá, kolekce účtů není prázdná a účty jsou použitelné.",
       "gatewayErrors": {
-        "authUnavailable": "Momentálně není k dispozici žádný účet pro směrování. Účet může být v čekací lhůtě, bez ověření nebo omezený kvótou. Zkontrolujte jeho stav v API službě Cockpit Tools.",
-        "authNotFound": "V kolekci účtů není nastaven žádný použitelný účet. Přidejte nebo aktivujte účet v API službě Cockpit Tools."
+        "authUnavailable": "Momentálně není k dispozici žádný účet pro směrování. Účet může být v čekací lhůtě, bez ověření nebo omezený kvótou. Zkontrolujte jeho stav v API službě polls.",
+        "authNotFound": "V kolekci účtů není nastaven žádný použitelný účet. Přidejte nebo aktivujte účet v API službě polls."
       },
       "testRateLimited": "Služba je dosažitelná, ale upstream je omezen nebo kvóta vyčerpána: {{detail}}.",
       "testHttpFailed": "Služba je dosažitelná, ale požadavek vrátil HTTP {{status}}: {{detail}}.",
@@ -2833,7 +2833,7 @@
       "closedWithoutLogin": "Oficiální klient se zavřel před zjištěním úplných přihlašovacích údajů.",
       "retryImport": "Opakovat import",
       "tab": "Oficiální přihlášení",
-      "desc": "Oficiální klient otevře prohlížeč pro přihlášení a zpracuje odpověď autorizace. Cockpit načte a importuje konečné údaje po zavření dočasného klienta.",
+      "desc": "Oficiální klient otevře prohlížeč pro přihlášení a zpracuje odpověď autorizace. polls načte a importuje konečné údaje po zavření dočasného klienta.",
       "note": "Po úspěšném importu se odstraní dočasná nastavení, data aplikace a související záznamy ověření. Pokud závěrečný import selže, přihlašovací údaje zůstanou pro další pokus. Ostatní instance nejsou ovlivněny.",
       "start": "Otevřít oficiálního klienta a přihlásit se",
       "cancel": "Zrušit přihlášení",
@@ -3594,7 +3594,7 @@
           "name": "SiliconFlow​"
         },
         "cockpit_api": {
-          "name": "Cockpit Api​"
+          "name": "polls API​"
         }
       },
       "oauthBinding": {
@@ -3802,7 +3802,7 @@
         "contextWindowHint": "Zapíše model_context_window. Upravitelné pouze v uživatelském režimu.",
         "partialDetected": "Aktuálně je nastaveno pouze jedno spravované pole: model_context_window={{context}}, model_auto_compact_token_limit={{compact}}. Uložením se přepíší obě pole podle aktuálního schématu.",
         "notSet": "Nenastaveno",
-        "modelCatalogDesc": "Viditelné modely a jejich nastavení kontextu se zapisují do katalogu modelů aktivního Codex spravovaného nástrojem Cockpit."
+        "modelCatalogDesc": "Viditelné modely a jejich nastavení kontextu se zapisují do katalogu modelů aktivního Codex spravovaného nástrojem polls."
       },
       "testing": "Testování...",
       "testSuccess": "Připojení poskytovatele je v pořádku: {{protocol}}, {{model}}, {{latency}}.",
@@ -4134,7 +4134,7 @@
       "saveFailed": "Uložení poznámky účtu selhalo: {{error}}"
     },
     "cockpitApi": {
-      "panelTitle": "Panel služby Cockpit Api",
+      "panelTitle": "Panel služby polls API",
       "servicePanel": "Panel služby",
       "balance": "Zůstatek",
       "requests": "Požadavky",
@@ -4921,7 +4921,7 @@
       "restoringEntry": "Obnovování…",
       "restoreEntryFailed": "Přenos přes proxy pro desktop se nepodařilo obnovit. Zkuste to znovu.",
       "restoreEntryPortBusy": "Původní port proxy je obsazený. Uvolněte jej a zkuste to znovu; desktop nemůže automaticky použít jiný port.",
-      "restoreEntryNotRunning": "Nebyl nalezen spuštěný desktop využívající zaznamenaný vstup proxy spravovaný touto instancí Cockpit.",
+      "restoreEntryNotRunning": "Nebyl nalezen spuštěný desktop využívající zaznamenaný vstup proxy spravovaný touto instancí polls.",
       "restoreEntryBusy": "Obnova proxy již probíhá. Zkuste to za chvíli znovu.",
       "restoreEntryTimeout": "Časový limit obnovy proxy vypršel. Zkuste to znovu.",
       "restartHint": "Klienti spuštění přes místní přeposílání přejdou při novém spojení. Ostatní běžící klienti vyžadují jeden restart. Most klienta naslouchá pouze na místní smyčce, ale neizoluje ostatní místní uživatele. Systémová proxy zůstává beze změny.",
@@ -6060,11 +6060,11 @@
     "navTitle": "Uživatelská příručka",
     "providers": {
       "cautions": {
-        "0": "Před rizikovými nebo hromadnými akcemi v Codex / GitHub Copilot / Devin / Kiro zálohujte data.",
-        "1": "Před spuštěním v Codex / GitHub Copilot / Devin / Kiro zkontrolujte filtry a cíle."
+        "0": "Před rizikovými nebo hromadnými akcemi v Codex / Antigravity / ZCode / Devin / Kiro zálohujte data.",
+        "1": "Před spuštěním v Codex / Antigravity / ZCode / Devin / Kiro zkontrolujte filtry a cíle."
       },
       "keywords": {
-        "0": "Platformy Codex / GitHub Copilot / Devin / Kiro",
+        "0": "Platformy Codex / Antigravity / ZCode / Devin / Kiro",
         "1": "návod",
         "2": "postup",
         "3": "účet",
@@ -6072,17 +6072,17 @@
         "5": "řešení problémů"
       },
       "outcomes": {
-        "0": "Pochopte, co vám Codex / GitHub Copilot / Devin / Kiro přináší.",
-        "1": "Použijte doporučený postup v Codex / GitHub Copilot / Devin / Kiro a snižte chyby.",
-        "2": "Než půjdete do hromadných akcí, ověřte jeden úspěšný běh v Codex / GitHub Copilot / Devin / Kiro."
+        "0": "Pochopte, co vám Codex / Antigravity / ZCode / Devin / Kiro přináší.",
+        "1": "Použijte doporučený postup v Codex / Antigravity / ZCode / Devin / Kiro a snižte chyby.",
+        "2": "Než půjdete do hromadných akcí, ověřte jeden úspěšný běh v Codex / Antigravity / ZCode / Devin / Kiro."
       },
       "steps": {
-        "0": "Otevřete stránku Codex / GitHub Copilot / Devin / Kiro.",
-        "1": "Dokončete základní nastavení a potřebné vazby pro Codex / GitHub Copilot / Devin / Kiro.",
-        "2": "Proveďte jednu ruční operaci v Codex / GitHub Copilot / Devin / Kiro a ověřte výsledek."
+        "0": "Otevřete stránku Codex / Antigravity / ZCode / Devin / Kiro.",
+        "1": "Dokončete základní nastavení a potřebné vazby pro Codex / Antigravity / ZCode / Devin / Kiro.",
+        "2": "Proveďte jednu ruční operaci v Codex / Antigravity / ZCode / Devin / Kiro a ověřte výsledek."
       },
-      "summary": "Tato sekce vysvětluje, jak používat Codex / GitHub Copilot / Devin / Kiro v běžném workflow.",
-      "title": "Platformy Codex / GitHub Copilot / Devin / Kiro"
+      "summary": "Tato sekce vysvětluje, jak používat Codex / Antigravity / ZCode / Devin / Kiro v běžném workflow.",
+      "title": "Platformy Codex / Antigravity / ZCode / Devin / Kiro"
     },
     "quickStart": {
       "cautions": {
@@ -6548,14 +6548,14 @@
     "search": "Hledat účty ZCode...",
     "flowNotice": {
       "title": "Správa účtů ZCode",
-      "desc": "Cockpit čte a zapisuje šifrované místní přihlašovací údaje ZCode pro skutečné přepínání účtů a propojení instancí.",
+      "desc": "polls čte a zapisuje šifrované místní přihlašovací údaje ZCode pro skutečné přepínání účtů a propojení instancí.",
       "permission": "Místní rozsah: ~/.zcode/v2/credentials.json a adresáře spravovaných instancí.",
-      "network": "Síťový rozsah: API OAuth, uživatele, předplatného a kvót. Účty se neodesílají do služby Cockpit."
+      "network": "Síťový rozsah: API OAuth, uživatele, předplatného a kvót. Účty se neodesílají do služby polls."
     },
     "empty": "Žádné účty ZCode",
     "addAccount": "Přidat účet ZCode",
     "oauth": {
-      "desc": "Zavřete ZCode a přihlaste se v autorizačním okně Cockpit; zpětné volání převezme Cockpit přímo.",
+      "desc": "Zavřete ZCode a přihlaste se v autorizačním okně polls; zpětné volání převezme polls přímo.",
       "title": "OAuth ZCode",
       "item1": "Oficiální přihlášení přes Z.ai a BigModel.",
       "item2": "Uloží účet a obnoví tarif a kvóty modelů.",
@@ -6567,7 +6567,7 @@
       "success": "Přihlášení OAuth ZCode bylo úspěšné"
     },
     "token": {
-      "desc": "Vložte JSON účtu ZCode exportovaný z Cockpit."
+      "desc": "Vložte JSON účtu ZCode exportovaný z polls."
     },
     "apiKey": {
       "tab": "Klíč API",
@@ -6694,7 +6694,7 @@
       "backToCurrent": "Zpět",
       "switchToThisAccount": "Přepnout",
       "openDetails": "Otevřít detail",
-      "openCockpitTools": "Otevřít Cockpit Tools"
+      "openCockpitTools": "Otevřít polls"
     },
     "empty": {
       "title": "Žádné účty",
@@ -6824,7 +6824,7 @@
   },
   "relay": {
     "pageTitle": "Exkluzivní relay",
-    "pageDesc": "Partnerská API služba pro uživatele Cockpit Tools použitelná s účty Codex API Key.",
+    "pageDesc": "Partnerská API služba pro uživatele polls použitelná s účty Codex API Key.",
     "loading": "Načítání relay...",
     "emptyTitle": "Relay vypnutý",
     "emptyDesc": "Vzdálená konfigurace exkluzivní relay nepovolila.",
@@ -6854,7 +6854,7 @@
   "apiKeyFun": {
     "eyebrow": "Přepojení",
     "title": "Relay APIKEY.FUN",
-    "description": "Oficiální partnerský relay Cockpit poskytuje stabilní, otevřený a cenově výhodný API přístup k velkým modelům. Podporuje hlavní modely jako Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi a DeepSeek a hodí se pro jednotnou konfiguraci v Codex, Gemini CLI, Claude Code a dalších vývojářských nástrojích. Registrací přes exkluzivní odkaz Cockpit můžete získat trvalou slevu až 5% na dobíjení.",
+    "description": "Oficiální partnerský relay polls poskytuje stabilní, otevřený a cenově výhodný API přístup k velkým modelům. Podporuje hlavní modely jako Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi a DeepSeek a hodí se pro jednotnou konfiguraci v Codex, Gemini CLI, Claude Code a dalších vývojářských nástrojích. Registrací přes exkluzivní odkaz polls můžete získat trvalou slevu až 5% na dobíjení.",
     "register": "Exkluzivní odkaz",
     "docs": "Oficiální dokumentace",
     "viewNow": "Zobrazit",
@@ -7001,7 +7001,7 @@
       "title": "Správa účtů Grok CLI",
       "desc": "Ve výchozím stavu se používají samostatné adresáře GROK_HOME. Při zapnuté synchronizaci změna účtu OAuth ve výchozí instanci zapíše ~/.grok/auth.json; další instance zůstávají izolované.",
       "permission": "Místní rozsah: ~/.grok/auth.json lze číst při importu a zapisuje se jen při zapnuté synchronizaci během změny OAuth ve výchozí instanci. Klíče API oficiální přihlášení nepřepisují.",
-      "network": "Síťový rozsah: autorizace OAuth, obnova přihlašovacích údajů a dotazy na využití účtu. Přihlašovací údaje se do služeb Cockpit neodesílají."
+      "network": "Síťový rozsah: autorizace OAuth, obnova přihlašovacích údajů a dotazy na využití účtu. Přihlašovací údaje se do služeb polls neodesílají."
     },
     "empty": "Zatím žádné účty Grok CLI",
     "addAccount": "Přidat účet Grok CLI",

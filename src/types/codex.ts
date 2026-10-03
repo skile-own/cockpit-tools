@@ -1140,7 +1140,7 @@ function getCodexProTier(account: CodexAccount): 100 | 200 | 500 {
 
 function getCodexPlanBadgeLabel(account: CodexAccount): string {
   if (isCodexNewApiAccount(account)) {
-    return account.plan_type?.trim() || "Cockpit Api";
+    return account.plan_type?.trim() || "polls API";
   }
   if (isCodexApiKeyAccount(account)) {
     return "API";

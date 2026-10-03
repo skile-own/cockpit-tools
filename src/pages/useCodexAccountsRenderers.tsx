@@ -2879,7 +2879,7 @@ export function useCodexAccountsRenderers(context: Pick<ReturnType<typeof useCod
             <div className="modal-header cockpit-api-panel-header">
               <div>
                 <h2>
-                  {t("codex.cockpitApi.panelTitle", "Cockpit Api 服务面板")}
+                  {t("codex.cockpitApi.panelTitle", "polls API 服务面板")}
                 </h2>
                 <span className="cockpit-api-panel-subtitle">
                   {maskAccountText(panelDisplayName)}

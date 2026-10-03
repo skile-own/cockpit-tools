@@ -36,6 +36,7 @@ function findExecutable(releaseDir, explicitPath) {
   const candidates = explicitPath
     ? [explicitPath]
     : [
+        path.join(releaseDir, 'polls.exe'),
         path.join(releaseDir, 'cockpit_tools.exe'),
         path.join(releaseDir, 'cockpit-tools.exe'),
         path.join(releaseDir, 'Cockpit.Tools.exe'),
@@ -72,7 +73,7 @@ function collectPortableFiles({ releaseDir, executablePath }) {
     for (const sourcePath of listFilesRecursive(resourcesDir)) {
       files.push({
         sourcePath,
-        archivePath: path.join('resources', path.relative(resourcesDir, sourcePath)),
+        archivePath: path.posix.join('resources', path.relative(resourcesDir, sourcePath).split(path.sep).join('/')),
       });
     }
   }
@@ -196,7 +197,7 @@ function buildWindowsPortableArchive({ releaseDir, outputDir, version, executabl
   const releaseRoot = path.resolve(releaseDir);
   const executablePath = findExecutable(releaseRoot, executable && path.resolve(executable));
   const files = collectPortableFiles({ releaseDir: releaseRoot, executablePath });
-  const archiveRoot = `Cockpit.Tools_${version}_x64-portable`;
+  const archiveRoot = `polls_${version}_x64-portable`;
   const entries = files.map((file) => ({
     sourcePath: file.sourcePath,
     archivePath: path.join(archiveRoot, file.archivePath),
@@ -204,7 +205,7 @@ function buildWindowsPortableArchive({ releaseDir, outputDir, version, executabl
   entries.push({
     archivePath: path.join(archiveRoot, 'README.txt'),
     content: Buffer.from(
-      'Cockpit Tools portable edition\r\n\r\n' +
+      'polls portable edition\r\n\r\n' +
       `Extract this folder and run ${path.basename(executablePath)}.\r\n` +
         'Windows 10/11 with Microsoft Edge WebView2 Runtime is required.\r\n' +
         '账号和配置仍按当前 Windows 用户目录保存，不会随 ZIP 文件夹自动迁移。\r\n',

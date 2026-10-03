@@ -1,5 +1,5 @@
 {
-  "name": "cockpit-tools",
+  "name": "polls",
   "private": true,
   "version": "1.3.65",
   "type": "module",
@@ -21,7 +21,8 @@
     "pretauri": "npm run typecheck",
     "tauri": "node scripts/tauri.cjs",
     "sync-version": "node scripts/sync-version.js",
-    "test:rust:core": "cargo test --package cockpit-core -- --test-threads=1"
+    "test:rust:core": "cargo test --package cockpit-core -- --test-threads=1",
+    "brand:icons": "node scripts/generate-brand-icons.cjs"
   },
   "dependencies": {
     "@tauri-apps/api": "~2.10.0",

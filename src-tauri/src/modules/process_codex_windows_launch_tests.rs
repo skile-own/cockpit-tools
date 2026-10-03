@@ -353,10 +353,10 @@ fn activation_only_invokes_gui_helper_and_does_not_query_registration() {
         &[("HTTPS_PROXY".into(), "secret-proxy-value".into())],
     );
     let script =
-        build_codex_package_activation_script(&request, Path::new(r"C:\O'Brien\Cockpit Tools.exe"))
+        build_codex_package_activation_script(&request, Path::new(r"C:\O'Brien\polls.exe"))
             .unwrap();
     assert!(script.contains("-PreventBreakaway"));
-    assert!(script.contains("-Command 'C:\\O''Brien\\Cockpit Tools.exe'"));
+    assert!(script.contains("-Command 'C:\\O''Brien\\polls.exe'"));
     assert!(script.contains(codex_package_launcher::HELPER_ARG));
     assert!(!script.contains("Get-AppxPackage"));
     assert!(!script.contains("powershell.exe"));

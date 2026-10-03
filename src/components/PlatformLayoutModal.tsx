@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 import apiKeyFunIcon from '../assets/icons/apikey-fun.png';
 import { isMenuVisiblePlatform, MENU_VISIBLE_PLATFORM_IDS, PlatformId } from '../types/platform';
-import { useSponsorStore } from '../stores/useSponsorStore';
+
 import {
   API_RELAY_LAYOUT_ENTRY_ID,
   ApiRelayLayoutEntryId,
@@ -385,7 +385,7 @@ export function PlatformLayoutModal({
     removePlatformGroup,
     resetPlatformLayout,
   } = usePlatformLayoutStore();
-  const apiRelayEntryEnabled = useSponsorStore((state) => Boolean(state.state.sponsorModule));
+  const apiRelayEntryEnabled = false;
 
   const [draggingId, setDraggingId] = useState<LayoutEntryId | null>(null);
   const [dropTargetId, setDropTargetId] = useState<LayoutEntryId | null>(null);
@@ -432,7 +432,7 @@ export function PlatformLayoutModal({
   const [groupDraftPlatformIds, setGroupDraftPlatformIds] = useState<PlatformId[]>([]);
   const [groupDraftDefaultPlatformId, setGroupDraftDefaultPlatformId] = useState<PlatformId | ''>('');
   const [groupDraftIconKind, setGroupDraftIconKind] = useState<PlatformGroupIconKind>('platform');
-  const [groupDraftIconPlatformId, setGroupDraftIconPlatformId] = useState<PlatformId>('codebuddy');
+  const [groupDraftIconPlatformId, setGroupDraftIconPlatformId] = useState<PlatformId>('codex');
   const [groupDraftIconCustomDataUrl, setGroupDraftIconCustomDataUrl] = useState('');
   const [groupDraftError, setGroupDraftError] = useState('');
   const [handledRequestedEditGroupId, setHandledRequestedEditGroupId] = useState<string | null>(null);
@@ -442,7 +442,7 @@ export function PlatformLayoutModal({
   const [childEditorPlatformId, setChildEditorPlatformId] = useState<PlatformId | null>(null);
   const [childDraftName, setChildDraftName] = useState('');
   const [childDraftIconKind, setChildDraftIconKind] = useState<PlatformGroupIconKind>('platform');
-  const [childDraftIconPlatformId, setChildDraftIconPlatformId] = useState<PlatformId>('codebuddy');
+  const [childDraftIconPlatformId, setChildDraftIconPlatformId] = useState<PlatformId>('codex');
   const [childDraftIconCustomDataUrl, setChildDraftIconCustomDataUrl] = useState('');
   const [childDraftSetDefault, setChildDraftSetDefault] = useState(false);
   const [childDraftError, setChildDraftError] = useState('');

@@ -302,7 +302,7 @@ requires_openai_auth = true
 experimental_bearer_token = "sk-history"
 
 [model_providers.cockpit_api]
-name = "Cockpit Api"
+name = "polls API"
 base_url = "https://chongcodex.cn/v1"
 wire_api = "responses"
 requires_openai_auth = false
