@@ -1,3 +1,4 @@
+import { isMenuVisiblePlatform } from '../types/platform';
 import { invoke } from '@tauri-apps/api/core';
 import { normalizeLanguage } from '../i18n';
 import * as accountService from '../services/accountService';
@@ -155,7 +156,6 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
     renderPlatformAutoRefreshRow,
     renderPlatformQuotaAlertRows,
     renderSessionSharingRow,
-    renderTraeVariantSettingsGroup,
     sanitizeNumberInput,
     saveGrokCliPath,
     setAntigravityAppPath,
@@ -251,24 +251,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
     setTraeAppPath,
     setTraeAutoRefresh,
     setTraeAutoRefreshCustomMode,
-    setTraeCnAutoRefresh,
-    setTraeCnAutoRefreshCustomMode,
-    setTraeCnQuotaAlertEnabled,
-    setTraeCnQuotaAlertThreshold,
-    setTraeCnQuotaAlertThresholdCustomMode,
     setTraeQuotaAlertEnabled,
     setTraeQuotaAlertThreshold,
     setTraeQuotaAlertThresholdCustomMode,
-    setTraeSoloAutoRefresh,
-    setTraeSoloAutoRefreshCustomMode,
-    setTraeSoloCnAutoRefresh,
-    setTraeSoloCnAutoRefreshCustomMode,
-    setTraeSoloCnQuotaAlertEnabled,
-    setTraeSoloCnQuotaAlertThreshold,
-    setTraeSoloCnQuotaAlertThresholdCustomMode,
-    setTraeSoloQuotaAlertEnabled,
-    setTraeSoloQuotaAlertThreshold,
-    setTraeSoloQuotaAlertThresholdCustomMode,
     setTrayIconStyle,
     setUiScale,
     setUpdateRemindersEnabled,
@@ -310,33 +295,12 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
     traeAutoRefresh,
     traeAutoRefreshCustomMode,
     traeAutoRefreshIsPreset,
-    traeCnAutoRefresh,
-    traeCnAutoRefreshCustomMode,
-    traeCnAutoRefreshIsPreset,
-    traeCnQuotaAlertEnabled,
-    traeCnQuotaAlertThreshold,
-    traeCnQuotaAlertThresholdCustomMode,
-    traeCnQuotaAlertThresholdIsPreset,
     traeLaunchCandidates,
     traeLaunchCandidatesTarget,
     traeQuotaAlertEnabled,
     traeQuotaAlertThreshold,
     traeQuotaAlertThresholdCustomMode,
     traeQuotaAlertThresholdIsPreset,
-    traeSoloAutoRefresh,
-    traeSoloAutoRefreshCustomMode,
-    traeSoloAutoRefreshIsPreset,
-    traeSoloCnAutoRefresh,
-    traeSoloCnAutoRefreshCustomMode,
-    traeSoloCnAutoRefreshIsPreset,
-    traeSoloCnQuotaAlertEnabled,
-    traeSoloCnQuotaAlertThreshold,
-    traeSoloCnQuotaAlertThresholdCustomMode,
-    traeSoloCnQuotaAlertThresholdIsPreset,
-    traeSoloQuotaAlertEnabled,
-    traeSoloQuotaAlertThreshold,
-    traeSoloQuotaAlertThresholdCustomMode,
-    traeSoloQuotaAlertThresholdIsPreset,
     trayIconStyle,
     uiScale,
     updateRemindersEnabled,
@@ -408,9 +372,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                   <div className="row-desc">{t('settings.general.languageDesc')}</div>
                 </div>
                 <div className="row-control">
-                  <select 
-                    className="settings-select" 
-                    value={language} 
+                  <select
+                    className="settings-select"
+                    value={language}
                     onChange={(e) => setLanguage(normalizeLanguage(e.target.value))}
                   >
                     {languageOptions.map((option) => (
@@ -426,9 +390,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                   <div className="row-desc">{t('settings.general.themeDesc')}</div>
                 </div>
                 <div className="row-control">
-                  <select 
-                    className="settings-select" 
-                    value={theme} 
+                  <select
+                    className="settings-select"
+                    value={theme}
                     onChange={(e) => setTheme(e.target.value)}
                   >
                     <option value="light">{t('settings.general.themeLight')}</option>
@@ -468,9 +432,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                   <div className="row-desc">{t('settings.general.defaultTerminalDesc', 'CLI 打开时使用的终端')}</div>
                 </div>
                 <div className="row-control">
-                  <select 
-                    className="settings-select" 
-                    value={defaultTerminal} 
+                  <select
+                    className="settings-select"
+                    value={defaultTerminal}
                     onChange={(e) => setDefaultTerminal(e.target.value)}
                   >
                     {terminalOptions.map((option) => (
@@ -521,9 +485,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                   <div className="row-desc">{t('settings.general.closeBehaviorDesc')}</div>
                 </div>
                 <div className="row-control">
-                  <select 
-                    className="settings-select" 
-                    value={closeBehavior} 
+                  <select
+                    className="settings-select"
+                    value={closeBehavior}
                     onChange={(e) => setCloseBehavior(e.target.value as 'ask' | 'minimize' | 'quit')}
                   >
                     <option value="ask">{t('settings.general.closeBehaviorAsk')}</option>
@@ -1027,26 +991,26 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                     <option value="codex-api-service">
                       {t('settings.general.startupPageCodexApi', 'Codex API 服务')}
                     </option>
-                    <option value="claude">{t('nav.claude', 'Claude')}</option>
-                    <option value="github-copilot">{t('nav.githubCopilot', 'GitHub Copilot')}</option>
-                    <option value="windsurf">{t('nav.windsurf', 'Devin')}</option>
-                    <option value="kiro">Kiro</option>
-                    <option value="cursor">Cursor</option>
-                    <option value="grok">Grok CLI</option>
-                    <option value="codebuddy">{t('nav.codebuddy', 'CodeBuddy')}</option>
-                    <option value="codebuddy-cn">{t('nav.codebuddyCn', 'CodeBuddy CN')}</option>
-                    <option value="qoder">{t('nav.qoder', 'Qoder')}</option>
+
+
+
+
+
+
+
+
+
                     <option value="zcode">ZCode</option>
-                    <option value="trae">{t('nav.trae', 'Trae')}</option>
-                    <option value="trae-solo">{t('nav.traeSolo', 'TRAE SOLO')}</option>
-                    <option value="trae-cn">{t('nav.traeCn', 'Trae CN')}</option>
-                    <option value="trae-solo-cn">{t('nav.traeSoloCn', 'TRAE SOLO CN')}</option>
-                    <option value="workbuddy">WorkBuddy</option>
-                    <option value="zed">{t('nav.zed', 'Zed')}</option>
+
+
+
+
+
+
                     <option value="instances">{t('nav.instances', '应用多开')}</option>
                     <option value="wakeup">{t('nav.wakeup', '唤醒任务')}</option>
                     <option value="2fa">{t('nav.2faManager', '2FA 管理')}</option>
-                    <option value="api-relay">{t('nav.apiRelay', '中转站')}</option>
+
                     <option value="manual">{t('nav.manual', '使用手册')}</option>
                     <option value="settings">{t('nav.settings', '设置')}</option>
                   </select>
@@ -1210,7 +1174,7 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                       </select>
                     )}
                   </div>
-                  
+
                   {hasActiveResetTasks && (
                     <div style={{
                       display: 'flex',
@@ -1601,7 +1565,7 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
 
               <SettingsCodexPlatformPanel {...props} />
 
-              <div style={{ order: platformSettingsOrder.claude_manager }}>
+              {isMenuVisiblePlatform('claude_manager') && (<div style={{ order: platformSettingsOrder.claude_manager }}>
                 <div className="group-title">
                   {t('settings.general.claudeSettingsTitle', 'Claude 设置')}
                 </div>
@@ -1744,9 +1708,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                     isPreset: claudeQuotaAlertThresholdIsPreset,
                   })}
                 </div>
-              </div>
+              </div>)}
 
-              <div style={{ order: platformSettingsOrder['github-copilot'] }}>
+              {isMenuVisiblePlatform('github-copilot') && (<div style={{ order: platformSettingsOrder['github-copilot'] }}>
                 <div className="group-title">{t('settings.general.githubCopilotSettingsTitle', 'GitHub Copilot 设置')}</div>
                 <div className="settings-group">
               <div className="settings-row">
@@ -1932,9 +1896,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
               )}
             </div>
 
-              </div>
+              </div>)}
 
-              <div style={{ order: platformSettingsOrder.windsurf }}>
+              {isMenuVisiblePlatform('windsurf') && (<div style={{ order: platformSettingsOrder.windsurf }}>
                 <div className="group-title">{t('settings.general.windsurfSettingsTitle', 'Windsurf 设置')}</div>
                 <div className="settings-group">
               <div className="settings-row">
@@ -2120,9 +2084,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
               )}
             </div>
 
-              </div>
+              </div>)}
 
-              <div style={{ order: platformSettingsOrder.kiro }}>
+              {isMenuVisiblePlatform('kiro') && (<div style={{ order: platformSettingsOrder.kiro }}>
                 <div className="group-title">{t('settings.general.kiroSettingsTitle', 'Kiro 设置')}</div>
                 <div className="settings-group">
               <div className="settings-row">
@@ -2307,9 +2271,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                 </div>
               )}
             </div>
-              </div>
+              </div>)}
 
-              <div style={{ order: platformSettingsOrder.codebuddy }}>
+              {isMenuVisiblePlatform('codebuddy') && (<div style={{ order: platformSettingsOrder.codebuddy }}>
                 <div className="group-title">{t('settings.general.codebuddySettingsTitle', 'CodeBuddy 设置')}</div>
                 <div className="settings-group">
               <div className="settings-row">
@@ -2519,9 +2483,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                 </div>
               )}
             </div>
-              </div>
+              </div>)}
 
-              <div style={{ order: platformSettingsOrder.codebuddy_cn }}>
+              {isMenuVisiblePlatform('codebuddy_cn') && (<div style={{ order: platformSettingsOrder.codebuddy_cn }}>
                 <div className="group-title">{t('settings.general.codebuddyCnSettingsTitle', 'CodeBuddy CN 设置')}</div>
                 <div className="settings-group">
                   <div className="settings-row">
@@ -2716,9 +2680,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                     </div>
                   )}
                 </div>
-              </div>
+              </div>)}
 
-              <div style={{ order: platformSettingsOrder.qoder }}>
+              {isMenuVisiblePlatform('qoder') && (<div style={{ order: platformSettingsOrder.qoder }}>
                 <div className="group-title">{t('quickSettings.qoder.title', 'Qoder 设置')}</div>
                 <div className="settings-group">
                   <div className="settings-row">
@@ -2907,7 +2871,7 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                     </div>
                   )}
                 </div>
-              </div>
+              </div>)}
 
               <div style={{ order: platformSettingsOrder.zcode }}>
                 <div className="group-title">{t('quickSettings.zcode.title', 'ZCode 设置')}</div>
@@ -3027,7 +2991,7 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                 </div>
               </div>
 
-              <div style={{ order: platformSettingsOrder.trae }}>
+              {isMenuVisiblePlatform('trae') && (<div style={{ order: platformSettingsOrder.trae }}>
                 <div className="group-title">{t('quickSettings.trae.title', 'Trae 设置')}</div>
                 <div className="settings-group">
                   <div className="settings-row">
@@ -3238,72 +3202,15 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                     </div>
                   )}
                 </div>
-              </div>
+              </div>)}
 
-              {renderTraeVariantSettingsGroup({
-                target: 'trae_solo',
-                order: platformSettingsOrder.trae_solo,
-                titleKey: 'quickSettings.traeSolo.title',
-                titleDefault: 'TRAE SOLO 设置',
-                appPathTitleKey: 'settings.general.traeSoloAppPath',
-                appPathTitleDefault: 'TRAE SOLO 启动路径',
-                autoRefresh: traeSoloAutoRefresh,
-                setAutoRefresh: setTraeSoloAutoRefresh,
-                autoRefreshCustomMode: traeSoloAutoRefreshCustomMode,
-                setAutoRefreshCustomMode: setTraeSoloAutoRefreshCustomMode,
-                autoRefreshIsPreset: traeSoloAutoRefreshIsPreset,
-                quotaAlertEnabled: traeSoloQuotaAlertEnabled,
-                setQuotaAlertEnabled: setTraeSoloQuotaAlertEnabled,
-                quotaAlertThreshold: traeSoloQuotaAlertThreshold,
-                setQuotaAlertThreshold: setTraeSoloQuotaAlertThreshold,
-                quotaAlertThresholdCustomMode: traeSoloQuotaAlertThresholdCustomMode,
-                setQuotaAlertThresholdCustomMode: setTraeSoloQuotaAlertThresholdCustomMode,
-                quotaAlertThresholdIsPreset: traeSoloQuotaAlertThresholdIsPreset,
-              })}
 
-              {renderTraeVariantSettingsGroup({
-                target: 'trae_cn',
-                order: platformSettingsOrder.trae_cn,
-                titleKey: 'quickSettings.traeCn.title',
-                titleDefault: 'Trae CN 设置',
-                appPathTitleKey: 'settings.general.traeCnAppPath',
-                appPathTitleDefault: 'Trae CN 启动路径',
-                autoRefresh: traeCnAutoRefresh,
-                setAutoRefresh: setTraeCnAutoRefresh,
-                autoRefreshCustomMode: traeCnAutoRefreshCustomMode,
-                setAutoRefreshCustomMode: setTraeCnAutoRefreshCustomMode,
-                autoRefreshIsPreset: traeCnAutoRefreshIsPreset,
-                quotaAlertEnabled: traeCnQuotaAlertEnabled,
-                setQuotaAlertEnabled: setTraeCnQuotaAlertEnabled,
-                quotaAlertThreshold: traeCnQuotaAlertThreshold,
-                setQuotaAlertThreshold: setTraeCnQuotaAlertThreshold,
-                quotaAlertThresholdCustomMode: traeCnQuotaAlertThresholdCustomMode,
-                setQuotaAlertThresholdCustomMode: setTraeCnQuotaAlertThresholdCustomMode,
-                quotaAlertThresholdIsPreset: traeCnQuotaAlertThresholdIsPreset,
-              })}
 
-              {renderTraeVariantSettingsGroup({
-                target: 'trae_solo_cn',
-                order: platformSettingsOrder.trae_solo_cn,
-                titleKey: 'quickSettings.traeSoloCn.title',
-                titleDefault: 'TRAE SOLO CN 设置',
-                appPathTitleKey: 'settings.general.traeSoloCnAppPath',
-                appPathTitleDefault: 'TRAE SOLO CN 启动路径',
-                autoRefresh: traeSoloCnAutoRefresh,
-                setAutoRefresh: setTraeSoloCnAutoRefresh,
-                autoRefreshCustomMode: traeSoloCnAutoRefreshCustomMode,
-                setAutoRefreshCustomMode: setTraeSoloCnAutoRefreshCustomMode,
-                autoRefreshIsPreset: traeSoloCnAutoRefreshIsPreset,
-                quotaAlertEnabled: traeSoloCnQuotaAlertEnabled,
-                setQuotaAlertEnabled: setTraeSoloCnQuotaAlertEnabled,
-                quotaAlertThreshold: traeSoloCnQuotaAlertThreshold,
-                setQuotaAlertThreshold: setTraeSoloCnQuotaAlertThreshold,
-                quotaAlertThresholdCustomMode: traeSoloCnQuotaAlertThresholdCustomMode,
-                setQuotaAlertThresholdCustomMode: setTraeSoloCnQuotaAlertThresholdCustomMode,
-                quotaAlertThresholdIsPreset: traeSoloCnQuotaAlertThresholdIsPreset,
-              })}
 
-              <div style={{ order: platformSettingsOrder.workbuddy }}>
+
+
+
+              {isMenuVisiblePlatform('workbuddy') && (<div style={{ order: platformSettingsOrder.workbuddy }}>
                 <div className="group-title">{t('quickSettings.workbuddy.title', 'WorkBuddy 设置')}</div>
                 <div className="settings-group">
                   <div className="settings-row">
@@ -3515,9 +3422,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                     </div>
                   )}
                 </div>
-              </div>
+              </div>)}
 
-              <div style={{ order: platformSettingsOrder.zed }}>
+              {isMenuVisiblePlatform('zed') && (<div style={{ order: platformSettingsOrder.zed }}>
                 <div className="group-title">{t('quickSettings.zed.title', 'Zed 设置')}</div>
                 <div className="settings-group">
                   <div className="settings-row">
@@ -3702,9 +3609,9 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                     </div>
                   )}
                 </div>
-              </div>
+              </div>)}
 
-              <div style={{ order: platformSettingsOrder.cursor }}>
+              {isMenuVisiblePlatform('cursor') && (<div style={{ order: platformSettingsOrder.cursor }}>
                 <div className="group-title">{t('quickSettings.cursor.title', 'Cursor 设置')}</div>
                 <div className="settings-group">
               <div className="settings-row">
@@ -3889,8 +3796,8 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                 </div>
               )}
             </div>
-              </div>
-<div style={{ order: platformSettingsOrder.grok }}>
+              </div>)}
+{isMenuVisiblePlatform('grok') && (<div style={{ order: platformSettingsOrder.grok }}>
                 <div className="group-title">{t('quickSettings.grok.title', 'Grok CLI 设置')}</div>
                 <div className="settings-group">
                   <div className="settings-row">
@@ -4084,7 +3991,7 @@ export function SettingsGeneralPanel(props: SettingsPageViewProps) {
                     </div>
                   )}
                 </div>
-              </div>
+              </div>)}
             </div>
 
           </fieldset>

@@ -22,27 +22,13 @@ export type PlatformId =
   | 'trae_solo_cn'
   | 'workbuddy';
 
+/** Platforms shipped by polls. Legacy IDs remain in the type for persisted-data compatibility. */
 export const ALL_PLATFORM_IDS: PlatformId[] = [
-  'claude_manager',
-  'codex',
-  'codex_api_service',
-  'antigravity',
-  'antigravity_ide',
-  'zed',
-  'github-copilot',
-  'windsurf',
-  'kiro',
-  'cursor',
-  'grok',
-  'codebuddy',
-  'codebuddy_cn',
-  'qoder',
-  'zcode',
-  'trae',
-  'trae_solo',
-  'trae_cn',
-  'trae_solo_cn',
-  'workbuddy',
+  "codex",
+  "codex_api_service",
+  "antigravity",
+  "antigravity_ide",
+  "zcode"
 ];
 
 /** Platforms that do not own account lists (service / feature pages). */
@@ -59,7 +45,7 @@ export const MENU_VISIBLE_PLATFORM_IDS: PlatformId[] = ALL_PLATFORM_IDS.filter(
 );
 
 export function isMenuVisiblePlatform(platformId: PlatformId): boolean {
-  return !MENU_HIDDEN_PLATFORM_IDS.includes(platformId);
+  return ALL_PLATFORM_IDS.includes(platformId) && !MENU_HIDDEN_PLATFORM_IDS.includes(platformId);
 }
 
 export const PLATFORM_PAGE_MAP: Record<PlatformId, Page> = {

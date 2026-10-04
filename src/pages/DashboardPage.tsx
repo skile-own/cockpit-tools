@@ -448,7 +448,6 @@ export function DashboardPage({
   const {
     accounts: claudeAccounts,
     currentAccountId: claudeCurrentId,
-    fetchAccounts: fetchClaudeAccounts,
     switchAccount: switchClaudeAccount,
   } = useClaudeAccountStore();
 
@@ -456,7 +455,6 @@ export function DashboardPage({
   const {
     accounts: githubCopilotAccounts,
     currentAccountId: githubCopilotCurrentId,
-    fetchAccounts: fetchGitHubCopilotAccounts,
     switchAccount: switchGitHubCopilotAccount,
   } = useGitHubCopilotAccountStore();
 
@@ -464,7 +462,6 @@ export function DashboardPage({
   const {
     accounts: windsurfAccounts,
     currentAccountId: windsurfCurrentId,
-    fetchAccounts: fetchWindsurfAccounts,
     switchAccount: switchWindsurfAccount,
   } = useWindsurfAccountStore();
 
@@ -472,7 +469,6 @@ export function DashboardPage({
   const {
     accounts: kiroAccounts,
     currentAccountId: kiroCurrentId,
-    fetchAccounts: fetchKiroAccounts,
     switchAccount: switchKiroAccount,
   } = useKiroAccountStore();
 
@@ -480,7 +476,6 @@ export function DashboardPage({
   const {
     accounts: cursorAccounts,
     currentAccountId: cursorCurrentId,
-    fetchAccounts: fetchCursorAccounts,
     switchAccount: switchCursorAccount,
   } = useCursorAccountStore();
 
@@ -488,28 +483,24 @@ export function DashboardPage({
   const {
     accounts: grokAccounts,
     currentAccountId: grokCurrentId,
-    fetchAccounts: fetchGrokAccounts,
     switchAccount: switchGrokAccount,
   } = useGrokAccountStore();
 
   const {
     accounts: codebuddyAccounts,
     currentAccountId: codebuddyCurrentId,
-    fetchAccounts: fetchCodebuddyAccounts,
     switchAccount: switchCodebuddyAccount,
   } = useCodebuddyAccountStore();
 
   const {
     accounts: codebuddyCnAccounts,
     currentAccountId: codebuddyCnCurrentId,
-    fetchAccounts: fetchCodebuddyCnAccounts,
     switchAccount: switchCodebuddyCnAccount,
   } = useCodebuddyCnAccountStore();
 
   const {
     accounts: qoderAccounts,
     currentAccountId: qoderCurrentId,
-    fetchAccounts: fetchQoderAccounts,
     switchAccount: switchQoderAccount,
   } = useQoderAccountStore();
 
@@ -523,7 +514,6 @@ export function DashboardPage({
   const {
     accounts: traeAccounts,
     currentAccountId: traeCurrentId,
-    fetchAccounts: fetchTraeAccounts,
   } = useTraeAccountStore();
   const [traeCurrentIdsByPlatform, setTraeCurrentIdsByPlatform] = React.useState<
     Record<TraePlatformId, string | null>
@@ -560,14 +550,12 @@ export function DashboardPage({
   const {
     accounts: workbuddyAccounts,
     currentAccountId: workbuddyCurrentId,
-    fetchAccounts: fetchWorkbuddyAccounts,
     switchAccount: switchWorkbuddyAccount,
   } = useWorkbuddyAccountStore();
 
   const {
     accounts: zedAccounts,
     currentAccountId: zedCurrentId,
-    fetchAccounts: fetchZedAccounts,
     switchAccount: switchZedAccount,
   } = useZedAccountStore();
 
@@ -608,23 +596,7 @@ export function DashboardPage({
     void Promise.allSettled([fetchAgAccounts(), fetchAgCurrent(antigravityRuntimeTarget)]);
     loadDisplayGroups();
 
-    const deferredTasks: Array<() => Promise<unknown>> = [
-      fetchCodexAccounts,
-      fetchCodexCurrent,
-      fetchClaudeAccounts,
-      fetchZedAccounts,
-      fetchGitHubCopilotAccounts,
-      fetchWindsurfAccounts,
-      fetchKiroAccounts,
-      fetchCursorAccounts,
-      fetchGrokAccounts,
-      fetchCodebuddyAccounts,
-      fetchCodebuddyCnAccounts,
-      fetchQoderAccounts,
-      fetchZcodeAccounts,
-      fetchTraeAccounts,
-      fetchWorkbuddyAccounts,
-    ];
+    const deferredTasks: Array<() => Promise<unknown>> = [fetchCodexAccounts, fetchCodexCurrent, fetchZcodeAccounts];
 
     const loadDeferredPlatforms = () => {
       if (disposed) {

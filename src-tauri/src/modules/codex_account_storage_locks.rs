@@ -406,7 +406,7 @@ pub(crate) fn try_acquire_profile_mutation_lease(
                     continue;
                 }
                 return Err(format!(
-                    "另一个 Cockpit Tools 环境正在操作同一个 Codex profile，请等待该操作完成后重试: profile_dir={}",
+                    "另一个 polls 环境正在操作同一个 Codex profile，请等待该操作完成后重试: profile_dir={}",
                     profile_dir.display()
                 ));
             }
@@ -417,7 +417,7 @@ pub(crate) fn try_acquire_profile_mutation_lease(
     }
 
     Err(format!(
-        "另一个 Cockpit Tools 环境正在操作同一个 Codex profile，请稍后重试: profile_dir={}",
+        "另一个 polls 环境正在操作同一个 Codex profile，请稍后重试: profile_dir={}",
         profile_dir.display()
     ))
 }

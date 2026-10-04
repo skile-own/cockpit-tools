@@ -2085,7 +2085,7 @@ export function CodexAccountsOverviewPanel(props: CodexAccountsViewProps) {
                         reportExportModalError(
                           t(
                             "codex.exportFormat.agentIdentityCpaUnsupported",
-                            "Agent Identity 账号不支持 cpa 格式，请使用 Cockpit Tools 或 sub2api 格式导出。",
+                            "Agent Identity 账号不支持 cpa 格式，请使用 polls 或 sub2api 格式导出。",
                           ),
                         );
                         return;

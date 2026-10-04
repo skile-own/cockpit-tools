@@ -19,7 +19,7 @@ const PREPARING: &str = "WorkBuddy 官方加密密钥正在准备，请稍后重
 const KEY_MISMATCH: &str = "WorkBuddy 官方加密密钥已变化，正在重新准备，请稍后重试";
 const INVALID: &str =
     "WorkBuddy 官方加密字段校验失败，已停止覆盖，请更新或重新登录官方客户端后重试";
-const UNSUPPORTED: &str = "WorkBuddy 官方加密格式不受支持，已停止覆盖，请更新 Cockpit Tools 后重试";
+const UNSUPPORTED: &str = "WorkBuddy 官方加密格式不受支持，已停止覆盖，请更新 polls 后重试";
 // Keep the payload confined to an anonymous pipe. Never log stdout/stderr or
 // pass key material in arguments/environment. Hash the base64 TEXT, not bytes.
 const KEY_SCRIPT: &str = r#"

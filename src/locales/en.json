@@ -169,7 +169,7 @@
     "windowsOperation": {
       "title": "Windows operation incomplete",
       "accessDeniedDescription": "Windows denied this operation. The target may be running with higher privileges or stored in a protected location.",
-      "storeLaunchBlockedDescription": "The isolated Store instance could not be confirmed. Cockpit did not fall back to the default account. Re-detect the client path and retry. If it still fails, copy the diagnostics or switch this instance to CLI mode.",
+      "storeLaunchBlockedDescription": "The isolated Store instance could not be confirmed. polls did not fall back to the default account. Re-detect the client path and retry. If it still fails, copy the diagnostics or switch this instance to CLI mode.",
       "repairPath": "Re-detect path and retry",
       "fileInUseDescription": "The target file is in use by another program. Close the program and try again.",
       "programNotFoundDescription": "Windows could not find the program required for this operation. Check the installation or configured path.",
@@ -404,7 +404,7 @@
       "loginSuccess": "Login successful",
       "switchAccount": "Switch Account"
     },
-    "appName": "Cockpit Tools",
+    "appName": "polls",
     "collapse": "Collapse",
     "confirmDelete": "Confirm Delete",
     "confirmDeleteTag": "Confirm Tag Deletion",
@@ -442,7 +442,7 @@
       "backToCurrent": "Back",
       "switchToThisAccount": "Switch",
       "openDetails": "Open details",
-      "openCockpitTools": "Open Cockpit Tools"
+      "openCockpitTools": "Open polls"
     },
     "empty": {
       "title": "No accounts",
@@ -509,17 +509,17 @@
   },
   "sponsors": {
     "pageTitle": "Sponsors",
-    "pageDesc": "Thanks to these sponsors for supporting Cockpit Tools.",
+    "pageDesc": "Thanks to these sponsors for supporting polls.",
     "loading": "Loading sponsors...",
     "emptyTitle": "No sponsors yet",
     "emptyDesc": "The remote sponsor module is currently disabled.",
     "listAriaLabel": "Sponsor list",
-    "defaultDescription": "Thanks for supporting Cockpit Tools.",
+    "defaultDescription": "Thanks for supporting polls.",
     "openSponsor": "Open"
   },
   "relay": {
     "pageTitle": "Exclusive Relay",
-    "pageDesc": "A partnered API service for Cockpit Tools users that can be used with Codex API Key accounts.",
+    "pageDesc": "A partnered API service for polls users that can be used with Codex API Key accounts.",
     "loading": "Loading relay...",
     "emptyTitle": "Relay disabled",
     "emptyDesc": "The remote configuration has not enabled the exclusive relay.",
@@ -549,7 +549,7 @@
   "apiKeyFun": {
     "eyebrow": "Relay",
     "title": "APIKEY.FUN",
-    "description": "The official Cockpit partner relay provides stable, open and cost-effective API access to large models. It supports leading models such as Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi and DeepSeek, and is suitable for unified configuration in Codex, Gemini CLI, Claude Code and other developer tools. Registering via the exclusive Cockpit link gives you a permanent discount of up to 5% on top-ups.",
+    "description": "The official polls partner relay provides stable, open and cost-effective API access to large models. It supports leading models such as Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi and DeepSeek, and is suitable for unified configuration in Codex, Gemini CLI, Claude Code and other developer tools. Registering via the exclusive polls link gives you a permanent discount of up to 5% on top-ups.",
     "register": "Exclusive signup",
     "docs": "Official docs",
     "viewNow": "View now",
@@ -890,18 +890,18 @@
         "summary": "Unprefixed models use the current subscription; prefixed models such as cpa/gpt-5.5 are forwarded to a third-party API. Both depend on the local routing service.",
         "rowSummary": "Unprefixed models use the current subscription; prefixed models such as cpa/gpt-5.5 are forwarded to a third-party API. Both depend on the local routing service.",
         "confirmEnableTitle": "Enable third-party API routing?",
-        "confirmEnableMessage": "Codex model requests will be routed through the local Cockpit Tools service. If the service is not running, both subscription and third-party models may be unavailable.\n\nEnable routing?",
+        "confirmEnableMessage": "Codex model requests will be routed through the local polls service. If the service is not running, both subscription and third-party models may be unavailable.\n\nEnable routing?",
         "confirmEnableAction": "Enable",
         "confirmDisableTitle": "Disable third-party API routing?",
         "confirmDisableMessage": "After this change takes effect, the local gateway will stop, native subscription access will be restored, and third-party models will be unavailable.\n\nDisable routing?",
         "confirmDisableAction": "Disable",
-        "modalTip": "Subscription and third-party models both pass through the local routing service. Keep Cockpit Tools running in the background. The service recovers automatically and falls back to the official configuration after repeated failures.",
+        "modalTip": "Subscription and third-party models both pass through the local routing service. Keep polls running in the background. The service recovers automatically and falls back to the official configuration after repeated failures.",
         "modelRequired": "Each enabled API route must include at least one model.",
         "runningSaveTitle": "When should routing take effect?",
         "runningSaveMessage": "This Codex instance is running. Replacing the local service now will interrupt the current conversation.\n\nChoose Save and restart Codex to apply now, or Save for later to keep the current session unchanged.",
         "saveAndRestart": "Save and restart Codex",
         "saveForLater": "Save for later",
-        "savedForNextLaunch": "Saved. It will take effect the next time you start Codex through Cockpit; the current session remains unchanged.",
+        "savedForNextLaunch": "Saved. It will take effect the next time you start Codex through polls; the current session remains unchanged.",
         "restartRollbackFailed": "The new route failed to start and the original configuration could not be restarted: ",
         "restartRolledBack": "The new route failed to start. The original configuration was restored and Codex restarted: {{error}}"
       },
@@ -1051,7 +1051,7 @@
       "platform": "Platform"
     },
     "title": "Settings",
-    "subtitle": "Customize your Cockpit Tools experience.",
+    "subtitle": "Customize your polls experience.",
     "general": {
       "appearance": "Appearance",
       "language": "Language",
@@ -1111,7 +1111,7 @@
       "floatingCardStartupDesc": "Display the floating account card automatically after app launch",
       "floatingCardAlwaysOnTop": "Keep floating card on top by default",
       "floatingCardAlwaysOnTopDesc": "New floating card windows stay on top when opened",
-      "appAutoLaunch": "Launch Cockpit Tools at login",
+      "appAutoLaunch": "Launch polls at login",
       "appAutoLaunchDesc": "Start the app after sign-in. If Windows shows a PowerShell error at boot, turn this off.",
       "startupWakeupDisabled": "Disabled",
       "startupWakeupImmediate": "Wake up immediately",
@@ -1143,7 +1143,7 @@
       "codexSyncWsl": "Sync Codex to WSL",
       "codexSyncWslDesc": "After switching the default Codex account, also write auth.json and config.toml to the WSL Codex directory.",
       "codexAppUiInjection": "Show API Service quota",
-      "codexAppUiInjectionDesc": "After restarting a Codex instance, the quota badge below the composer follows the selected model: DeepSeek shows the account balance, Grok shows its quota, and GPT models show the weekly and 5-hour quota. Keep Cockpit Tools running in the background; updates stop when it is fully quit or the network is unavailable.",
+      "codexAppUiInjectionDesc": "After restarting a Codex instance, the quota badge below the composer follows the selected model: DeepSeek shows the account balance, Grok shows its quota, and GPT models show the weekly and 5-hour quota. Keep polls running in the background; updates stop when it is fully quit or the network is unavailable.",
       "codexAppUiInjectionPoolLabel": "Accounts",
       "codexAppUiInjectionWeeklyLabel": "Week",
       "codexAppUiInjectionFiveHourLabel": "5h",
@@ -1312,7 +1312,7 @@
       "tokenKeeper": "Auth keep-alive",
       "tokenKeeperDesc": "Refresh account tokens in small batches only when authorization is close to expiry, reducing background request pressure for large account sets.",
       "autoImportFromLocal": "Auto-import local accounts",
-      "autoImportFromLocalDesc": "When enabled, Cockpit Tools immediately scans local client logins and imports them, then keeps importing when the official client switches accounts. The system keychain may prompt once; choose Always Allow.",
+      "autoImportFromLocalDesc": "When enabled, polls immediately scans local client logins and imports them, then keeps importing when the official client switches accounts. The system keychain may prompt once; choose Always Allow.",
       "reducedMotion": "Reduce motion",
       "reducedMotionDesc": "Cut page fades, modal transitions, shadows, blur, and smooth scrolling; keep essential loading feedback",
       "autoImportFromLocalScanning": "Scanning local accounts… you can turn this off anytime",
@@ -1383,7 +1383,7 @@
         "retentionDesc": "Backups older than this are removed during the next check.",
         "retentionUnit": "days",
         "directoryTitle": "Backup Folder",
-        "directoryDesc": "Scheduled backups and Cockpit behavior snapshots are saved here; you can move them to another drive.",
+        "directoryDesc": "Scheduled backups and polls behavior snapshots are saved here; you can move them to another drive.",
         "changeDirectory": "Change Folder",
         "migrating": "Migrating...",
         "migrationConfirm": "Move existing backups from {{oldPath}} to {{newPath}}?\n\nChoosing Cancel will still switch the folder without migrating old files.",
@@ -1530,7 +1530,7 @@
       "passwordSavedPlaceholder": "Saved; leave blank to keep it",
       "clearPassword": "Clear",
       "remoteDirTitle": "Remote Folder",
-      "remoteDirDesc": "Only Cockpit backup files in this folder are managed.",
+      "remoteDirDesc": "Only polls backup files in this folder are managed.",
       "retentionTitle": "Remote Retention Days",
       "retentionDesc": "Backups older than this on the cloud will be removed during the next sync.",
       "retentionUnit": "days",
@@ -1544,7 +1544,7 @@
       "syncAction": "Sync Config",
       "syncLatestConfirm": "Are you sure you want to pull the latest remote backup {{name}} and sync to local? This will overwrite existing local data.",
       "remoteListTitle": "Remote Backups",
-      "remoteListDesc": "Only JSON and ZIP files matching Cockpit auto/manual backup names are shown.",
+      "remoteListDesc": "Only JSON and ZIP files matching polls auto/manual backup names are shown.",
       "emptyTitle": "No remote backups",
       "emptyDesc": "Save settings, then create and upload a backup.",
       "unknownTime": "Unknown",
@@ -1576,7 +1576,7 @@
       }
     },
     "network": {
-      "apiTitle": "Antigravity Cockpit API",
+      "apiTitle": "Antigravity polls API",
       "wsService": "WebSocket Service",
       "wsServiceDesc": "Allow external programs (e.g., VS Code extension) to connect",
       "preferredPort": "Preferred Port",
@@ -1605,7 +1605,7 @@
       "firewallHint": "If the URL is unreachable, check your system firewall settings.",
       "proxyTitle": "Global Proxy",
       "proxyEnabled": "Enable Global Proxy",
-      "proxyEnabledDesc": "Inject proxy environment variables into managed platform processes launched by Cockpit.",
+      "proxyEnabledDesc": "Inject proxy environment variables into managed platform processes launched by polls.",
       "proxyUrl": "Proxy URL",
       "proxyUrlDesc": "Example: http://127.0.0.1:7890 or socks5://127.0.0.1:7890",
       "proxyUrlPlaceholder": "http://127.0.0.1:7890",
@@ -1615,7 +1615,7 @@
       "proxyUrlRequired": "Proxy URL cannot be empty when global proxy is enabled."
     },
     "about": {
-      "appName": "Cockpit Tools",
+      "appName": "polls",
       "slogan": "Professional Account Solution",
       "author": "Author",
       "wechat": "WeChat",
@@ -2036,7 +2036,7 @@
       "importBtn": "Import",
       "oauthAction": "OAuth Authorization",
       "fromExtension": "Import from Plugin",
-      "syncBadge": "Sync Antigravity Cockpit plugin accounts",
+      "syncBadge": "Sync Antigravity polls plugin accounts",
       "fromLocalDB": "Import from Local DB",
       "localDBDesc": "Read login accounts from Antigravity IDE Client on this machine",
       "toolsDescMigrate": "Migrate accounts from ~/.antigravity_tools/",
@@ -2417,7 +2417,7 @@
       "title": "Visible models",
       "description": "Manage visible models, reasoning effort, context windows, and compact limits in one place.",
       "enabledHint": "Uses the current visible-model list. Restart Codex to apply.",
-      "disabledHint": "When disabled, the Cockpit-managed model catalog is removed and official model visibility is restored; available models are determined by the official account entitlement.",
+      "disabledHint": "When disabled, the polls-managed model catalog is removed and official model visibility is restored; available models are determined by the official account entitlement.",
       "models": {
         "title": "Model list",
         "model": "Model",
@@ -2543,7 +2543,7 @@
       "description": "Configure and inspect first; the client changes only after you choose Switch or Start.",
       "notApplied": "Not applied yet",
       "safeHint": "Opening this window does not refresh tokens, close the client, or write sign-in credentials.",
-      "modelConfigHint": "Context windows and compact limits are written per model to the Cockpit-managed model catalog.",
+      "modelConfigHint": "Context windows and compact limits are written per model to the polls-managed model catalog.",
       "enablePerModelHint": "Per-model configuration requires Visible Models. This only changes the draft until you save or start.",
       "enablePerModel": "Enable per-model settings",
       "unsavedConfig": "Model settings have unsaved changes; they will be saved before switching or starting.",
@@ -2726,11 +2726,11 @@
     },
     "exportFormat": {
       "label": "Export Format",
-      "cockpitTools": "Cockpit Tools",
+      "cockpitTools": "polls",
       "authJson": "auth.json",
       "sub2api": "sub2api",
       "cpa": "cpa",
-      "agentIdentityCpaUnsupported": "Agent Identity accounts cannot be exported as cpa. Choose Cockpit Tools or sub2api.",
+      "agentIdentityCpaUnsupported": "Agent Identity accounts cannot be exported as cpa. Choose polls or sub2api.",
       "agentIdentityPrivateKeyNotice": "This export contains an Agent Identity private key that can restore the account on another device. Protect it like a password.",
       "buildFailed": "Unable to create the export: the selected accounts include an unsupported type or incomplete credentials.",
       "downloadAll": "Download All",
@@ -2893,8 +2893,8 @@
       "testAuthFailed": "Service is reachable, but authentication failed: {{detail}}. Check the API service key or account sign-in state.",
       "testServiceUnavailable": "Service is reachable, but currently unavailable: {{detail}}. Check whether the service is enabled, the account collection is empty, or accounts are usable.",
       "gatewayErrors": {
-        "authUnavailable": "No account is currently schedulable; the account may be cooling down, unauthorized, or quota-limited. Check account status in the Cockpit Tools API Service page.",
-        "authNotFound": "No usable account is configured in the account pool. Add or enable an account in the Cockpit Tools API Service page."
+        "authUnavailable": "No account is currently schedulable; the account may be cooling down, unauthorized, or quota-limited. Check account status in the polls API Service page.",
+        "authNotFound": "No usable account is configured in the account pool. Add or enable an account in the polls API Service page."
       },
       "testRateLimited": "Service is reachable, but upstream is rate limited or quota is exhausted: {{detail}}.",
       "testHttpFailed": "Service is reachable, but the request returned HTTP {{status}}: {{detail}}.",
@@ -3190,7 +3190,7 @@
         "placeholder": "Enter one model ID per line, or separate IDs with commas.",
         "editHint": "Fetched models are added to this draft only. Review and edit them before saving.",
         "syncToggle": "Sync Provider Models to Codex",
-        "syncDescription": "After saving, use this list to generate the Cockpit-managed Codex model catalog. Custom catalogs are not overwritten.",
+        "syncDescription": "After saving, use this list to generate the polls-managed Codex model catalog. Custom catalogs are not overwritten.",
         "fetchCredentialsRequired": "Enter the API Key and Base URL first.",
         "fetchEmpty": "The provider returned no models. The current list was kept.",
         "fetchFailed": "Failed to fetch provider models: {{error}}",
@@ -3211,7 +3211,7 @@
       },
       "providers": {
         "cockpit_api": {
-          "name": "Cockpit Api"
+          "name": "polls API"
         },
         "openai_official": {
           "name": "OpenAI Official"
@@ -3307,7 +3307,7 @@
       }
     },
     "cockpitApi": {
-      "panelTitle": "Cockpit Api Service Panel",
+      "panelTitle": "polls API Service Panel",
       "servicePanel": "Service Panel",
       "balance": "Balance",
       "requests": "Requests",
@@ -3499,7 +3499,7 @@
           "contextWindowInvalid": "Context window must be an integer greater than 0.",
           "autoCompactInvalid": "Auto-compact limit must be an integer greater than 0."
         },
-        "modelCatalogDesc": "Visible models and per-model context settings are written to the active Codex Cockpit-managed model catalog."
+        "modelCatalogDesc": "Visible models and per-model context settings are written to the active Codex polls-managed model catalog."
       },
       "testing": "Testing...",
       "testSuccess": "Provider connection is healthy: {{protocol}}, {{model}}, {{latency}}.",
@@ -3698,7 +3698,7 @@
       "closedWithoutLogin": "The official client closed before complete login credentials were detected.",
       "retryImport": "Retry import",
       "tab": "Official login",
-      "desc": "The official client opens your browser for sign-in and handles the authorization callback. Cockpit reads and imports the final credentials after the temporary client closes.",
+      "desc": "The official client opens your browser for sign-in and handles the authorization callback. polls reads and imports the final credentials after the temporary client closes.",
       "note": "Temporary configuration, runtime data and associated auth entries are cleaned up after a successful import. Credentials are retained if the final import fails so you can retry. Default and other instances are unaffected.",
       "start": "Open official client and sign in",
       "cancel": "Cancel sign-in",
@@ -5141,7 +5141,7 @@
       "restoringEntry": "Restoring…",
       "restoreEntryFailed": "Could not restore the desktop proxy relay. Please retry.",
       "restoreEntryPortBusy": "The original proxy port is in use. Free the port and retry; the desktop cannot use a different port automatically.",
-      "restoreEntryNotRunning": "No running desktop using a recorded proxy relay owned by this Cockpit was found.",
+      "restoreEntryNotRunning": "No running desktop using a recorded proxy relay owned by this polls was found.",
       "restoreEntryBusy": "Proxy recovery is already in progress. Please try again shortly.",
       "restoreEntryTimeout": "Proxy recovery timed out. Please retry.",
       "restartHint": "Clients launched through the local relay switch on new connections. Other running clients need one restart. The desktop bridge listens on loopback only but does not isolate other local users. System proxy settings stay unchanged.",
@@ -6384,7 +6384,7 @@
         "1": "Some platforms or capabilities are system-limited. Follow on-page prompts."
       },
       "keywords": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro platforms",
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro platforms",
         "1": "github copilot",
         "2": "windsurf",
         "3": "kiro",
@@ -6402,7 +6402,7 @@
         "2": "Execute \"Switch/Inject\" and verify in client that it takes effect."
       },
       "summary": "The four platform pages share the same structure: account overview + multi-instance, with OAuth, Token/JSON import and switching.",
-      "title": "Codex / GitHub Copilot / Devin / Kiro Platforms"
+      "title": "Codex / Antigravity / ZCode / Devin / Kiro Platforms"
     },
     "quickStart": {
       "cautions": {
@@ -6422,7 +6422,7 @@
       },
       "steps": {
         "0": "Open \"Dashboard\" and confirm the platforms you need are visible.",
-        "1": "Go to target platform page (for example Codex / GitHub Copilot), then add 1 account first.",
+        "1": "Go to target platform page (for example Codex / Antigravity / ZCode), then add 1 account first.",
         "2": "Use \"Switch/Inject\" button to verify account switching takes effect.",
         "3": "Then go to \"Multi-Instance\" and create 1 instance to verify isolation and parallel running."
       },
@@ -6531,14 +6531,14 @@
     "search": "Search ZCode accounts...",
     "flowNotice": {
       "title": "ZCode account guide",
-      "desc": "Cockpit reads and writes ZCode's encrypted local credentials for real account switching and instance binding.",
+      "desc": "polls reads and writes ZCode's encrypted local credentials for real account switching and instance binding.",
       "permission": "Local scope: ~/.zcode/v2/credentials.json and managed instance directories.",
-      "network": "Network scope: OAuth, user info, subscription, and quota APIs. Accounts are not uploaded to a Cockpit service."
+      "network": "Network scope: OAuth, user info, subscription, and quota APIs. Accounts are not uploaded to a polls service."
     },
     "empty": "No ZCode accounts",
     "addAccount": "Add ZCode Account",
     "oauth": {
-      "desc": "Close ZCode, then sign in through the Cockpit authorization window. Cockpit will capture the callback directly.",
+      "desc": "Close ZCode, then sign in through the polls authorization window. polls will capture the callback directly.",
       "title": "ZCode OAuth",
       "item1": "Official Z.ai and BigModel sign-in.",
       "item2": "Saves the account and refreshes plan and model quotas after authorization.",
@@ -6550,7 +6550,7 @@
       "success": "ZCode OAuth sign-in successful"
     },
     "token": {
-      "desc": "Paste a ZCode account JSON exported by Cockpit."
+      "desc": "Paste a ZCode account JSON exported by polls."
     },
     "apiKey": {
       "tab": "API Key",
@@ -7001,7 +7001,7 @@
       "title": "Grok CLI account guide",
       "desc": "Separate GROK_HOME directories are used by default. With official-login sync enabled, OAuth switches for the default instance write the official ~/.grok/auth.json; additional instances stay isolated.",
       "permission": "Local scope: the default ~/.grok/auth.json can be read for import and is written only when the switch is enabled for a default-instance OAuth switch. API keys never overwrite the official login.",
-      "network": "Network scope: OAuth authorization, credential refresh, and account usage queries. Credentials are not uploaded to Cockpit services."
+      "network": "Network scope: OAuth authorization, credential refresh, and account usage queries. Credentials are not uploaded to polls services."
     },
     "empty": "No Grok CLI accounts yet",
     "addAccount": "Add Grok CLI Account",

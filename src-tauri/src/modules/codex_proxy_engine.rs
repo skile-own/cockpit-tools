@@ -1767,7 +1767,7 @@ mod tests {
 
     #[test]
     fn engine_lookup_covers_macos_bundle_resources_without_searching_path() {
-        let exe = PathBuf::from("/Applications/Cockpit Tools.app/Contents/MacOS/cockpit-tools");
+        let exe = PathBuf::from("/Applications/polls.app/Contents/MacOS/cockpit-tools");
         let candidates = engine_candidates(&exe, "mihomo");
         assert!(candidates
             .iter()

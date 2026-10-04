@@ -664,7 +664,7 @@ fn collect_peek_decisions(mode: WatchMode) -> (u32, Vec<PeekDecision>) {
     let mut scanned = 0u32;
     let mut pending = Vec::new();
 
-    for watcher in platform_watchers() {
+    for watcher in platform_watchers().into_iter().filter(|watcher| matches!(watcher.platform, "codex" | "antigravity" | "zcode")) {
         let current_identity = (watcher.peek_identity)();
         let Some(current_identity) = current_identity else {
             if let Ok(mut state) = LAST_IDENTITIES.lock() {

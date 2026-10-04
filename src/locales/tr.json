@@ -169,7 +169,7 @@
     "windowsOperation": {
       "title": "Windows işlemi tamamlanmadı",
       "accessDeniedDescription": "Windows bu işlemi reddetti. Hedef daha yüksek yetkiyle çalışıyor veya korumalı bir konumda olabilir.",
-      "storeLaunchBlockedDescription": "Mağazadan yüklenen yalıtılmış örneğin başlatıldığı doğrulanamadı. Cockpit varsayılan hesabı yedek olarak açmadı. İstemci yolunu yeniden algılayıp tekrar deneyin. Hata sürerse tanılama bilgilerini kopyalayın veya bu örneği CLI moduna geçirin.",
+      "storeLaunchBlockedDescription": "Mağazadan yüklenen yalıtılmış örneğin başlatıldığı doğrulanamadı. polls varsayılan hesabı yedek olarak açmadı. İstemci yolunu yeniden algılayıp tekrar deneyin. Hata sürerse tanılama bilgilerini kopyalayın veya bu örneği CLI moduna geçirin.",
       "repairPath": "Yolu yeniden algıla ve yeniden dene",
       "fileInUseDescription": "Hedef dosya başka bir program tarafından kullanılıyor. Programı kapatıp yeniden deneyin.",
       "programNotFoundDescription": "Windows gerekli programı bulamadı. Kurulumu veya ayarlanan yolu kontrol edin.",
@@ -404,7 +404,7 @@
       "desc": "Bu alan tüm sayfalarda sağ üstte sabitlenir ve kampanya ya da marka reklamları için uygundur.",
       "action": "Ayrıntıları görüntüle"
     },
-    "appName": "Cockpit Tools​",
+    "appName": "polls",
     "collapse": "Daralt",
     "confirmDelete": "Silmeyi Onayla",
     "confirmDeleteTag": "Etiket Silmeyi Onayla",
@@ -462,12 +462,12 @@
   },
   "sponsors": {
     "pageTitle": "Sponsorlar",
-    "pageDesc": "Cockpit Tools'u destekleyen sponsorlara teşekkür ederiz.",
+    "pageDesc": "polls'u destekleyen sponsorlara teşekkür ederiz.",
     "loading": "Sponsorlar yükleniyor...",
     "emptyTitle": "Henüz sponsor yok",
     "emptyDesc": "Uzak sponsor modülü şu anda devre dışı.",
     "listAriaLabel": "Sponsor listesi",
-    "defaultDescription": "Cockpit Tools'u desteklediğiniz için teşekkürler.",
+    "defaultDescription": "polls'u desteklediğiniz için teşekkürler.",
     "openSponsor": "Aç"
   },
   "platformLayout": {
@@ -665,18 +665,18 @@
         "summary": "Ön eki olmayan modeller geçerli aboneliği kullanır; cpa/gpt-5.5 gibi ön ekli modeller üçüncü taraf bir API'ye iletilir. Her ikisi de yerel yönlendirme hizmetine bağlıdır.",
         "rowSummary": "Ön eki olmayan modeller geçerli aboneliği kullanır; cpa/gpt-5.5 gibi ön ekli modeller üçüncü taraf bir API'ye iletilir. Her ikisi de yerel yönlendirme hizmetine bağlıdır.",
         "confirmEnableTitle": "Üçüncü taraf API yönlendirmesi etkinleştirilsin mi?",
-        "confirmEnableMessage": "Codex model istekleri yerel Cockpit Tools hizmeti üzerinden yönlendirilecektir. Hizmet çalışmıyorsa hem abonelik hem de üçüncü taraf modelleri kullanılamayabilir.\n\nYönlendirme etkinleştirilsin mi?",
+        "confirmEnableMessage": "Codex model istekleri yerel polls hizmeti üzerinden yönlendirilecektir. Hizmet çalışmıyorsa hem abonelik hem de üçüncü taraf modelleri kullanılamayabilir.\n\nYönlendirme etkinleştirilsin mi?",
         "confirmEnableAction": "Etkinleştir",
         "confirmDisableTitle": "Üçüncü taraf API yönlendirmesi devre dışı bırakılsın mı?",
         "confirmDisableMessage": "Bu değişiklik yürürlüğe girdikten sonra yerel ağ geçidi durdurulacak, yerel abonelik erişimi geri yüklenecek ve üçüncü taraf modelleri kullanılamayacaktır.\n\nDevre dışı bırakılsın mı?",
         "confirmDisableAction": "Devre dışı bırak",
-        "modalTip": "Hem abonelik hem de üçüncü taraf modelleri yerel yönlendirme hizmetinden geçer. Cockpit Tools'u arka planda çalışır durumda tutun. Hizmet otomatik olarak kurtarılır ve yinelenen arızalardan sonra resmi yapılandırmaya geri döner.",
+        "modalTip": "Hem abonelik hem de üçüncü taraf modelleri yerel yönlendirme hizmetinden geçer. polls'u arka planda çalışır durumda tutun. Hizmet otomatik olarak kurtarılır ve yinelenen arızalardan sonra resmi yapılandırmaya geri döner.",
         "modelRequired": "Etkinleştirilen her API rotası en az bir model içermelidir.",
         "runningSaveTitle": "Yönlendirme ne zaman geçerli olsun?",
         "runningSaveMessage": "Bu Codex örneği çalışıyor. Yerel hizmeti şimdi değiştirmek mevcut görüşmeyi kesintiye uğratacaktır.\n\nŞimdi uygulamak için «Kaydet ve Codex'i yeniden başlat»ı veya mevcut oturumu değiştirmemek için «Daha sonra kaydet»i seçin.",
         "saveAndRestart": "Kaydet ve Codex'i yeniden başlat",
         "saveForLater": "Daha sonra kaydet",
-        "savedForNextLaunch": "Kaydedildi. Değişiklik, Codex'i bir sonraki kez Cockpit üzerinden başlattığınızda uygulanacak; mevcut oturum değişmeyecek.",
+        "savedForNextLaunch": "Kaydedildi. Değişiklik, Codex'i bir sonraki kez polls üzerinden başlattığınızda uygulanacak; mevcut oturum değişmeyecek.",
         "restartRollbackFailed": "Yeni rota başlatılamadı ve orijinal yapılandırma yeniden başlatılamadı: ",
         "restartRolledBack": "Yeni rota başlatılamadı. Orijinal yapılandırma geri yüklendi ve Codex yeniden başlatıldı: {{error}}"
       }
@@ -831,7 +831,7 @@
       "platform": "Platform türü"
     },
     "title": "Uygulama Ayarları",
-    "subtitle": "Cockpit Tools deneyiminizi özelleştirin.",
+    "subtitle": "polls deneyiminizi özelleştirin.",
     "tabs": {
       "general": "Genel",
       "network": "Ağ",
@@ -914,7 +914,7 @@
       "codexSyncWsl": "Codex'i WSL ile eşitle",
       "codexSyncWslDesc": "Varsayılan Codex hesabı değiştirildikten sonra auth.json ve config.toml WSL içindeki Codex dizinine de yazılır.",
       "codexAppUiInjection": "API hizmeti kotası",
-      "codexAppUiInjectionDesc": "Codex örneği yeniden başlatıldıktan sonra oluşturucunun altındaki kota rozeti seçilen modeli izler: DeepSeek hesap bakiyesini, Grok kendi kotasını, GPT modelleri ise haftalık ve 5 saatlik kotayı gösterir. Cockpit Tools arka planda çalışmaya devam etmelidir; uygulama tamamen kapatıldığında veya ağ kullanılamadığında güncellemeler durur.",
+      "codexAppUiInjectionDesc": "Codex örneği yeniden başlatıldıktan sonra oluşturucunun altındaki kota rozeti seçilen modeli izler: DeepSeek hesap bakiyesini, Grok kendi kotasını, GPT modelleri ise haftalık ve 5 saatlik kotayı gösterir. polls arka planda çalışmaya devam etmelidir; uygulama tamamen kapatıldığında veya ağ kullanılamadığında güncellemeler durur.",
       "codexAppUiInjectionPoolLabel": "Hesaplar",
       "codexAppUiInjectionWeeklyLabel": "Hafta",
       "codexAppUiInjectionFiveHourLabel": "5 sa",
@@ -1022,7 +1022,7 @@
       "sideNavLayoutClassic": "Klasik Düzen",
       "antigravityDualSwitchNoRestart": "Yeniden başlatmadan çift geçiş",
       "antigravityDualSwitchNoRestartDesc": "Hesap değiştirirken yerel hesap verisi yazımı ve eklentinin kesintisiz geçişi tek akışta yürütülür; Antigravity IDE yeniden başlatılmaz.",
-      "appAutoLaunch": "Oturum açıldığında Cockpit Tools'u başlat",
+      "appAutoLaunch": "Oturum açıldığında polls'u başlat",
       "appAutoLaunchDesc": "Oturum açınca başlat. Windows açılışında PowerShell hatası görürseniz kapatın.",
       "startupWakeupDisabled": "Devre dışı",
       "startupWakeupImmediate": "Hemen uyandır",
@@ -1171,7 +1171,7 @@
       "firewallHint": "URL erişilemiyorsa sistem güvenlik duvarı ayarlarını kontrol edin.",
       "proxyTitle": "Genel Proxy",
       "proxyEnabled": "Genel proxyyi etkinleştir",
-      "proxyEnabledDesc": "Cockpit tarafından başlatılan yönetilen platform süreçlerine proxy ortam değişkenleri enjekte eder.",
+      "proxyEnabledDesc": "polls tarafından başlatılan yönetilen platform süreçlerine proxy ortam değişkenleri enjekte eder.",
       "proxyUrl": "Proxy URL​",
       "proxyUrlDesc": "Örnek: http://127.0.0.1:7890 veya socks5://127.0.0.1:7890",
       "proxyUrlPlaceholder": "örn. http://127.0.0.1:7890",
@@ -1181,7 +1181,7 @@
       "proxyUrlRequired": "Genel proxy etkin olduğunda proxy URL boş olamaz."
     },
     "about": {
-      "appName": "Cockpit Tools​",
+      "appName": "polls",
       "slogan": "Profesyonel Hesap Yönetimi Çözümü",
       "author": "Yazar",
       "wechat": "WeChat​",
@@ -1381,7 +1381,7 @@
       "passwordSavedPlaceholder": "Kaydedildi; korumak için boş bırakın",
       "clearPassword": "Temizle",
       "remoteDirTitle": "Uzak Klasör",
-      "remoteDirDesc": "Sadece bu klasördeki Cockpit yedekleme dosyaları yönetilir.",
+      "remoteDirDesc": "Sadece bu klasördeki polls yedekleme dosyaları yönetilir.",
       "statusTitle": "Senkronizasyon Durumu",
       "statusDesc": "Uzak yedekten geri yükleme manuel seçim gerektirir ve yerel verileri asla sessizce üzerine yazmaz.",
       "lastUpload": "Son yükleme: {{time}}",
@@ -1392,7 +1392,7 @@
       "syncAction": "Ayarları Senkronize Et",
       "syncLatestConfirm": "En son uzak yedeği {{name}} çekmek ve yerel verilerle senkronize etmek istediğinizden emin misiniz? Bu işlem mevcut yerel verilerin üzerine yazacaktır.",
       "remoteListTitle": "Uzak Yedekler",
-      "remoteListDesc": "Sadece Cockpit otomatik/manuel yedekleme adlarıyla eşleşen JSON ve ZIP dosyaları gösterilir.",
+      "remoteListDesc": "Sadece polls otomatik/manuel yedekleme adlarıyla eşleşen JSON ve ZIP dosyaları gösterilir.",
       "emptyTitle": "Uzak yedek yok",
       "emptyDesc": "Ayarları kaydedin, ardından bir yedek oluşturup yükleyin.",
       "unknownTime": "Bilinmeyen",
@@ -1816,7 +1816,7 @@
       "importBtn": "İçe Aktar",
       "oauthAction": "OAuth Yetkilendirme",
       "fromExtension": "Eklentiden İçe Aktar",
-      "syncBadge": "Antigravity Cockpit eklenti hesaplarını senkronize et",
+      "syncBadge": "Antigravity polls eklenti hesaplarını senkronize et",
       "fromLocalDB": "Yerel Veritabanından İçe Aktar",
       "localDBDesc": "Bu makinedeki Antigravity IDE İstemcisinden giriş hesaplarını oku",
       "toolsDescMigrate": "Hesapları ~/.antigravity_tools/ dizininden taşı",
@@ -2197,7 +2197,7 @@
       "title": "Görünür modeller",
       "description": "Görünür modelleri, akıl yürütme düzeyini, bağlamı ve sıkıştırma eşiğini tek yerden yönetin.",
       "enabledHint": "Güncel görünür model listesini kullanır. Uygulamak için Codex’i yeniden başlatın.",
-      "disabledHint": "Devre dışı bırakıldığında Cockpit tarafından yönetilen model kataloğu kaldırılır ve resmi model görünürlüğü geri yüklenir; kullanılabilir modeller resmi hesap yetkisine bağlıdır.",
+      "disabledHint": "Devre dışı bırakıldığında polls tarafından yönetilen model kataloğu kaldırılır ve resmi model görünürlüğü geri yüklenir; kullanılabilir modeller resmi hesap yetkisine bağlıdır.",
       "models": {
         "title": "Model listesi",
         "model": "Model adı",
@@ -2323,7 +2323,7 @@
       "description": "Önce yapılandırın ve denetleyin; istemci yalnızca Değiştir veya Başlat seçildikten sonra değişir.",
       "notApplied": "Henüz uygulanmadı",
       "safeHint": "Bu pencereyi açmak Token yenilemez, istemciyi kapatmaz veya oturum açma bilgilerini yazmaz.",
-      "modelConfigHint": "Bağlam penceresi ve sıkıştırma eşiği, model başına Cockpit tarafından yönetilen model kataloğuna yazılır.",
+      "modelConfigHint": "Bağlam penceresi ve sıkıştırma eşiği, model başına polls tarafından yönetilen model kataloğuna yazılır.",
       "enablePerModelHint": "Model başına yapılandırma için görünür modeller gerekir. Kaydedene veya başlatana kadar yalnızca taslak değişir.",
       "enablePerModel": "Model başına ayarları etkinleştir",
       "unsavedConfig": "Model ayarlarında kaydedilmemiş değişiklikler var; değiştirme veya başlatmadan önce kaydedilecekler.",
@@ -2439,11 +2439,11 @@
     },
     "exportFormat": {
       "label": "Dışa aktarma biçimi",
-      "cockpitTools": "Cockpit Tools​",
+      "cockpitTools": "polls",
       "authJson": "Resmi auth.json",
       "sub2api": "sub2api biçimi",
       "cpa": "cpa biçimi",
-      "agentIdentityCpaUnsupported": "Agent Identity hesapları cpa biçiminde dışa aktarılamaz. Cockpit Tools veya sub2api kullanın.",
+      "agentIdentityCpaUnsupported": "Agent Identity hesapları cpa biçiminde dışa aktarılamaz. polls veya sub2api kullanın.",
       "agentIdentityPrivateKeyNotice": "Bu dışa aktarım, hesabı başka bir cihazda geri yükleyebilen bir Agent Identity özel anahtarı içerir. Parola gibi koruyun.",
       "buildFailed": "Dışa aktarım oluşturulamıyor: seçilen hesaplarda desteklenmeyen bir tür veya eksik kimlik bilgileri var.",
       "downloadAll": "Tümünü indir",
@@ -2527,8 +2527,8 @@
       "testAuthFailed": "Hizmete erişiliyor ancak kimlik doğrulama başarısız: {{detail}}. API hizmeti anahtarını veya hesap oturum durumunu kontrol edin.",
       "testServiceUnavailable": "Hizmete erişiliyor ancak şu anda kullanılamıyor: {{detail}}. Hizmetin etkin olup olmadığını, hesap koleksiyonunun boş olup olmadığını veya hesapların kullanılabilirliğini kontrol edin.",
       "gatewayErrors": {
-        "authUnavailable": "Şu anda yönlendirilebilir hesap yok. Hesap beklemede, yetkisiz veya kota sınırlı olabilir. Cockpit Tools API hizmetinde durumunu kontrol edin.",
-        "authNotFound": "Hesap havuzunda kullanılabilir hesap yapılandırılmamış. Cockpit Tools API hizmetinde hesap ekleyin veya etkinleştirin."
+        "authUnavailable": "Şu anda yönlendirilebilir hesap yok. Hesap beklemede, yetkisiz veya kota sınırlı olabilir. polls API hizmetinde durumunu kontrol edin.",
+        "authNotFound": "Hesap havuzunda kullanılabilir hesap yapılandırılmamış. polls API hizmetinde hesap ekleyin veya etkinleştirin."
       },
       "testRateLimited": "Hizmete erişiliyor ancak upstream hız sınırında veya kota tükendi: {{detail}}.",
       "testHttpFailed": "Hizmete erişiliyor ancak istek HTTP {{status}} döndürdü: {{detail}}.",
@@ -2833,7 +2833,7 @@
       "closedWithoutLogin": "Resmî istemci, tam giriş bilgileri algılanmadan kapandı.",
       "retryImport": "İçe aktarmayı yinele",
       "tab": "Resmî oturum",
-      "desc": "Resmî istemci giriş için tarayıcıyı açar ve yetkilendirme yanıtını işler. Cockpit, geçici istemci kapandıktan sonra son kimlik bilgilerini okuyup içe aktarır.",
+      "desc": "Resmî istemci giriş için tarayıcıyı açar ve yetkilendirme yanıtını işler. polls, geçici istemci kapandıktan sonra son kimlik bilgilerini okuyup içe aktarır.",
       "note": "Başarılı içe aktarmadan sonra geçici ayarlar, çalışma verileri ve ilgili kimlik doğrulama kayıtları temizlenir. Son içe aktarma başarısız olursa bilgiler yeniden denemek için saklanır. Diğer örnekler etkilenmez.",
       "start": "Resmî istemciyi aç ve oturum aç",
       "cancel": "Oturumu iptal et",
@@ -3513,7 +3513,7 @@
         "placeholder": "Her satıra bir model kimliği girin veya kimlikleri virgülle ayırın.",
         "editHint": "Alınan modeller yalnızca bu taslağa eklenir. Kaydetmeden önce inceleyip düzenleyin.",
         "syncToggle": "Sağlayıcı modellerini Codex ile eşitle",
-        "syncDescription": "Kaydettikten sonra bu liste Cockpit tarafından yönetilen Codex model kataloğunu oluşturur. Özel katalogların üzerine yazılmaz.",
+        "syncDescription": "Kaydettikten sonra bu liste polls tarafından yönetilen Codex model kataloğunu oluşturur. Özel katalogların üzerine yazılmaz.",
         "fetchCredentialsRequired": "Önce API Key ve Base URL girin.",
         "fetchEmpty": "Sağlayıcı model döndürmedi. Mevcut liste korundu.",
         "fetchFailed": "Sağlayıcı modelleri alınamadı: {{error}}",
@@ -3594,7 +3594,7 @@
           "name": "SiliconFlow​"
         },
         "cockpit_api": {
-          "name": "Cockpit Api​"
+          "name": "polls API​"
         }
       },
       "oauthBinding": {
@@ -3802,7 +3802,7 @@
         "contextWindowHint": "model_context_window yazar. Yalnızca Özel modda düzenlenebilir.",
         "partialDetected": "Şu anda yalnızca bir yönetilen alan ayarlanmıştır: model_context_window={{context}}, model_auto_compact_token_limit={{compact}}. Kaydetme, mevcut şemayı kullanarak her iki alanı da yeniden yazacaktır.",
         "notSet": "Ayarlanmadı",
-        "modelCatalogDesc": "Görünür modeller ve modele özel bağlam ayarları etkin Codex için Cockpit tarafından yönetilen model kataloğuna yazılır."
+        "modelCatalogDesc": "Görünür modeller ve modele özel bağlam ayarları etkin Codex için polls tarafından yönetilen model kataloğuna yazılır."
       },
       "testing": "Test ediliyor...",
       "testSuccess": "Sağlayıcı bağlantısı sağlıklı: {{protocol}}, {{model}}, {{latency}}.",
@@ -4134,7 +4134,7 @@
       "saveFailed": "Hesap notu kaydedilemedi: {{error}}"
     },
     "cockpitApi": {
-      "panelTitle": "Cockpit Api hizmet paneli",
+      "panelTitle": "polls API hizmet paneli",
       "servicePanel": "Hizmet paneli",
       "balance": "Bakiye",
       "requests": "İstekler",
@@ -4921,7 +4921,7 @@
       "restoringEntry": "Geri açılıyor…",
       "restoreEntryFailed": "Masaüstü vekil aktarımı geri açılamadı. Yeniden deneyin.",
       "restoreEntryPortBusy": "Önceki vekil bağlantı noktası kullanımda. Noktayı boşaltıp yeniden deneyin; masaüstü otomatik olarak başka bir bağlantı noktasına geçemez.",
-      "restoreEntryNotRunning": "Bu Cockpit örneğine ait kayıtlı vekil girişini kullanan çalışan bir masaüstü bulunamadı.",
+      "restoreEntryNotRunning": "Bu polls örneğine ait kayıtlı vekil girişini kullanan çalışan bir masaüstü bulunamadı.",
       "restoreEntryBusy": "Vekil geri yükleniyor. Biraz sonra yeniden deneyin.",
       "restoreEntryTimeout": "Vekil geri yükleme zaman aşımına uğradı. Yeniden deneyin.",
       "restartHint": "Yerel aktarıcıyla açılan istemciler yeni bağlantılarda geçer. Diğer açık istemciler bir kez yeniden başlatılmalıdır. Masaüstü köprüsü yalnızca geri döngüde dinler, ancak diğer yerel kullanıcıları yalıtmaz. Sistem vekili değişmez.",
@@ -6060,11 +6060,11 @@
     "navTitle": "Kullanım Kılavuzu",
     "providers": {
       "cautions": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro içinde riskli veya toplu işlemden önce veri yedeği alın.",
-        "1": "Codex / GitHub Copilot / Devin / Kiro çalıştırmadan önce filtre ve hedef kapsamını doğrulayın."
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro içinde riskli veya toplu işlemden önce veri yedeği alın.",
+        "1": "Codex / Antigravity / ZCode / Devin / Kiro çalıştırmadan önce filtre ve hedef kapsamını doğrulayın."
       },
       "keywords": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro platformları",
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro platformları",
         "1": "rehber",
         "2": "akış",
         "3": "hesap",
@@ -6072,17 +6072,17 @@
         "5": "sorun giderme"
       },
       "outcomes": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro ile nelerin çözüldüğünü anlayın.",
-        "1": "Codex / GitHub Copilot / Devin / Kiro içinde önerilen akışı kullanarak hataları azaltın.",
-        "2": "Ölçeklemeden önce Codex / GitHub Copilot / Devin / Kiro içinde bir başarılı çalıştırma doğrulayın."
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro ile nelerin çözüldüğünü anlayın.",
+        "1": "Codex / Antigravity / ZCode / Devin / Kiro içinde önerilen akışı kullanarak hataları azaltın.",
+        "2": "Ölçeklemeden önce Codex / Antigravity / ZCode / Devin / Kiro içinde bir başarılı çalıştırma doğrulayın."
       },
       "steps": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro sayfasını açın.",
-        "1": "Codex / GitHub Copilot / Devin / Kiro için temel kurulum ve gerekli bağları tamamlayın.",
-        "2": "Beklenen sonucu doğrulamak için Codex / GitHub Copilot / Devin / Kiro içinde bir manuel işlem çalıştırın."
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro sayfasını açın.",
+        "1": "Codex / Antigravity / ZCode / Devin / Kiro için temel kurulum ve gerekli bağları tamamlayın.",
+        "2": "Beklenen sonucu doğrulamak için Codex / Antigravity / ZCode / Devin / Kiro içinde bir manuel işlem çalıştırın."
       },
-      "summary": "Bu bölüm, günlük akışta Codex / GitHub Copilot / Devin / Kiro kullanımını açıklar.",
-      "title": "Codex / GitHub Copilot / Devin / Kiro platformları"
+      "summary": "Bu bölüm, günlük akışta Codex / Antigravity / ZCode / Devin / Kiro kullanımını açıklar.",
+      "title": "Codex / Antigravity / ZCode / Devin / Kiro platformları"
     },
     "quickStart": {
       "cautions": {
@@ -6548,14 +6548,14 @@
     "search": "ZCode hesaplarını ara...",
     "flowNotice": {
       "title": "ZCode hesap yönetimi",
-      "desc": "Cockpit, gerçek hesap geçişi ve örnek bağlama için ZCode'un şifreli yerel kimlik bilgilerini okur ve geri yazar.",
+      "desc": "polls, gerçek hesap geçişi ve örnek bağlama için ZCode'un şifreli yerel kimlik bilgilerini okur ve geri yazar.",
       "permission": "Yerel kapsam: ~/.zcode/v2/credentials.json ve yönetilen örnek dizinleri.",
-      "network": "Ağ kapsamı: OAuth, kullanıcı, abonelik ve kota API'leri. Hesaplar Cockpit hizmetine yüklenmez."
+      "network": "Ağ kapsamı: OAuth, kullanıcı, abonelik ve kota API'leri. Hesaplar polls hizmetine yüklenmez."
     },
     "empty": "ZCode hesabı yok",
     "addAccount": "ZCode Hesabı Ekle",
     "oauth": {
-      "desc": "ZCode'u kapatıp Cockpit yetkilendirme penceresinde oturum açın; geri çağrıyı Cockpit doğrudan alır.",
+      "desc": "ZCode'u kapatıp polls yetkilendirme penceresinde oturum açın; geri çağrıyı polls doğrudan alır.",
       "title": "ZCode OAuth Yetkilendirmesi",
       "item1": "Resmî Z.ai ve BigModel oturumu.",
       "item2": "Hesabı kaydeder, planı ve model kotalarını yeniler.",
@@ -6567,7 +6567,7 @@
       "success": "ZCode OAuth oturumu açıldı"
     },
     "token": {
-      "desc": "Cockpit tarafından dışa aktarılan ZCode hesap JSON'unu yapıştırın."
+      "desc": "polls tarafından dışa aktarılan ZCode hesap JSON'unu yapıştırın."
     },
     "apiKey": {
       "tab": "API Anahtarı",
@@ -6694,7 +6694,7 @@
       "backToCurrent": "Geri",
       "switchToThisAccount": "Geç",
       "openDetails": "Ayrıntıları aç",
-      "openCockpitTools": "Cockpit Tools'u aç"
+      "openCockpitTools": "polls'u aç"
     },
     "empty": {
       "title": "Hesap yok",
@@ -6824,7 +6824,7 @@
   },
   "relay": {
     "pageTitle": "Özel aktarım",
-    "pageDesc": "Cockpit Tools kullanıcıları için Codex API Key hesaplarıyla kullanılabilen iş ortaklığı API servisi.",
+    "pageDesc": "polls kullanıcıları için Codex API Key hesaplarıyla kullanılabilen iş ortaklığı API servisi.",
     "loading": "Aktarım yükleniyor...",
     "emptyTitle": "Aktarım kapalı",
     "emptyDesc": "Uzak yapılandırma özel aktarımı etkinleştirmedi.",
@@ -6854,7 +6854,7 @@
   "apiKeyFun": {
     "eyebrow": "Ara geçiş",
     "title": "APIKEY.FUN relay",
-    "description": "Cockpit resmi iş ortağı ara geçiş hizmeti, büyük model API erişimi için kararlı, açık ve yüksek fiyat-performanslı bir çözüm sunar. Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi, DeepSeek gibi ana akım modelleri destekler; Codex, Gemini CLI, Claude Code ve diğer geliştirici araçlarında tek tip yapılandırma için uygundur. Cockpit özel bağlantısıyla kaydolarak yüklemelerde kalıcı olarak %5’e varan indirim alabilirsiniz.",
+    "description": "polls resmi iş ortağı ara geçiş hizmeti, büyük model API erişimi için kararlı, açık ve yüksek fiyat-performanslı bir çözüm sunar. Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi, DeepSeek gibi ana akım modelleri destekler; Codex, Gemini CLI, Claude Code ve diğer geliştirici araçlarında tek tip yapılandırma için uygundur. polls özel bağlantısıyla kaydolarak yüklemelerde kalıcı olarak %5’e varan indirim alabilirsiniz.",
     "register": "Özel kayıt linki",
     "docs": "Resmi doküman",
     "viewNow": "Hemen bak",
@@ -7001,7 +7001,7 @@
       "title": "Grok CLI Hesap Yönetimi",
       "desc": "Varsayılan olarak ayrı GROK_HOME dizinleri kullanılır. Eşitleme açıkken varsayılan örnekteki OAuth değişikliği ~/.grok/auth.json dosyasına yazılır; ek örnekler yalıtılmış kalır.",
       "permission": "Yerel kapsam: ~/.grok/auth.json içe aktarma için okunabilir ve yalnızca eşitleme açıkken varsayılan örnekte OAuth değişiminde yazılır. API anahtarları resmî oturumun üzerine yazmaz.",
-      "network": "Ağ kapsamı: OAuth yetkilendirmesi, kimlik bilgisi yenileme ve hesap kullanım sorguları. Kimlik bilgileri Cockpit hizmetlerine yüklenmez."
+      "network": "Ağ kapsamı: OAuth yetkilendirmesi, kimlik bilgisi yenileme ve hesap kullanım sorguları. Kimlik bilgileri polls hizmetlerine yüklenmez."
     },
     "empty": "Henüz Grok CLI hesabı yok",
     "addAccount": "Grok CLI Hesabı Ekle",

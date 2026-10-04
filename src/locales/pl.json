@@ -169,7 +169,7 @@
     "windowsOperation": {
       "title": "Operacja Windows nie została ukończona",
       "accessDeniedDescription": "Windows odmówił wykonania operacji. Program może działać z wyższymi uprawnieniami lub znajdować się w chronionej lokalizacji.",
-      "storeLaunchBlockedDescription": "Nie udało się potwierdzić uruchomienia izolowanej instancji ze sklepu. Cockpit nie użył konta domyślnego. Ponownie wykryj ścieżkę klienta i spróbuj jeszcze raz. Jeśli błąd się powtórzy, skopiuj dane diagnostyczne lub przełącz tę instancję w tryb CLI.",
+      "storeLaunchBlockedDescription": "Nie udało się potwierdzić uruchomienia izolowanej instancji ze sklepu. polls nie użył konta domyślnego. Ponownie wykryj ścieżkę klienta i spróbuj jeszcze raz. Jeśli błąd się powtórzy, skopiuj dane diagnostyczne lub przełącz tę instancję w tryb CLI.",
       "repairPath": "Wykryj ścieżkę ponownie i spróbuj ponownie",
       "fileInUseDescription": "Plik jest używany przez inny program. Zamknij go i spróbuj ponownie.",
       "programNotFoundDescription": "Windows nie znalazł wymaganego programu. Sprawdź instalację lub skonfigurowaną ścieżkę.",
@@ -404,7 +404,7 @@
       "desc": "Ten obszar jest przypięty w prawym górnym rogu na wszystkich stronach i nadaje się do kampanii lub reklam marki.",
       "action": "Zobacz szczegóły"
     },
-    "appName": "Cockpit Tools​",
+    "appName": "polls",
     "collapse": "Zwiń",
     "confirmDelete": "Potwierdź usunięcie",
     "confirmDeleteTag": "Potwierdź usunięcie tagu",
@@ -462,12 +462,12 @@
   },
   "sponsors": {
     "pageTitle": "Sponsorzy",
-    "pageDesc": "Dziękujemy tym sponsorom za wsparcie Cockpit Tools.",
+    "pageDesc": "Dziękujemy tym sponsorom za wsparcie polls.",
     "loading": "Ładowanie sponsorów...",
     "emptyTitle": "Brak sponsorów",
     "emptyDesc": "Zdalny moduł sponsorów jest obecnie wyłączony.",
     "listAriaLabel": "Lista sponsorów",
-    "defaultDescription": "Dziękujemy za wsparcie Cockpit Tools.",
+    "defaultDescription": "Dziękujemy za wsparcie polls.",
     "openSponsor": "Otwórz"
   },
   "platformLayout": {
@@ -665,18 +665,18 @@
         "summary": "Modele bez prefiksu korzystają z bieżącej subskrypcji; modele z prefiksem, takie jak cpa/gpt-5.5, są przekazywane do zewnętrznego API. Oba zależą od lokalnej usługi routingu.",
         "rowSummary": "Modele bez prefiksu korzystają z bieżącej subskrypcji; modele z prefiksem, takie jak cpa/gpt-5.5, są przekazywane do zewnętrznego API. Oba zależą od lokalnej usługi routingu.",
         "confirmEnableTitle": "Włączyć routing API innych firm?",
-        "confirmEnableMessage": "Żądania modeli Codex będą kierowane przez lokalną usługę Cockpit Tools. Jeśli usługa nie działa, zarówno modele subskrypcyjne, jak i zewnętrzne mogą być niedostępne.\n\nWłączyć routing?",
+        "confirmEnableMessage": "Żądania modeli Codex będą kierowane przez lokalną usługę polls. Jeśli usługa nie działa, zarówno modele subskrypcyjne, jak i zewnętrzne mogą być niedostępne.\n\nWłączyć routing?",
         "confirmEnableAction": "Włącz",
         "confirmDisableTitle": "Wyłączyć routing API innych firm?",
         "confirmDisableMessage": "Gdy ta zmiana wejdzie w życie, lokalna brama zostanie zatrzymana, bezpośredni dostęp do oficjalnej subskrypcji zostanie przywrócony, a modele innych firm będą niedostępne.\n\nWyłączyć routing?",
         "confirmDisableAction": "Wyłącz",
-        "modalTip": "Zarówno modele subskrypcyjne, jak i innych firm przechodzą przez lokalną usługę routingu. Pozostaw Cockpit Tools uruchomione w tle. Usługa odzyskuje sprawność automatycznie, a po wielokrotnych niepowodzeniach powraca do oficjalnej konfiguracji.",
+        "modalTip": "Zarówno modele subskrypcyjne, jak i innych firm przechodzą przez lokalną usługę routingu. Pozostaw polls uruchomione w tle. Usługa odzyskuje sprawność automatycznie, a po wielokrotnych niepowodzeniach powraca do oficjalnej konfiguracji.",
         "modelRequired": "Każda włączona trasa API musi zawierać co najmniej jeden model.",
         "runningSaveTitle": "Kiedy routing ma wejść w życie?",
         "runningSaveMessage": "Ta instancja Codex jest uruchomiona. Zastąpienie lokalnej usługi teraz przerwie bieżącą rozmowę.\n\nWybierz „Zapisz i zrestartuj Codex”, aby zastosować teraz, lub „Zapisz na później”, aby zachować bieżącą sesję bez zmian.",
         "saveAndRestart": "Zapisz i zrestartuj Codex",
         "saveForLater": "Zapisz na później",
-        "savedForNextLaunch": "Zapisano. Zmiana zostanie zastosowana przy następnym uruchomieniu Codex przez Cockpit; bieżąca sesja pozostanie bez zmian.",
+        "savedForNextLaunch": "Zapisano. Zmiana zostanie zastosowana przy następnym uruchomieniu Codex przez polls; bieżąca sesja pozostanie bez zmian.",
         "restartRollbackFailed": "Nie udało się uruchomić nowej trasy i nie można zrestartować pierwotnej konfiguracji: ",
         "restartRolledBack": "Nie udało się uruchomić nowej trasy. Przywrócono pierwotną konfigurację i zrestartowano Codex: {{error}}"
       }
@@ -831,7 +831,7 @@
       "platform": "Platforma"
     },
     "title": "Ustawienia aplikacji",
-    "subtitle": "Dostosuj działanie narzędzi Cockpit Tools.",
+    "subtitle": "Dostosuj działanie narzędzi polls.",
     "tabs": {
       "general": "Ogólne",
       "network": "Sieć",
@@ -914,7 +914,7 @@
       "codexSyncWsl": "Synchronizuj Codex z WSL",
       "codexSyncWslDesc": "Po przełączeniu domyślnego konta Codex pliki auth.json i config.toml są też zapisywane w katalogu Codex w WSL.",
       "codexAppUiInjection": "Limit usługi API",
-      "codexAppUiInjectionDesc": "Po ponownym uruchomieniu instancji Codex plakietka limitu pod kompozytorem podąża za wybranym modelem: DeepSeek pokazuje saldo konta, Grok swój limit, a modele GPT tygodniowy i 5-godzinny limit. Cockpit Tools musi działać w tle; aktualizacje zatrzymują się po całkowitym zamknięciu aplikacji lub przy braku sieci.",
+      "codexAppUiInjectionDesc": "Po ponownym uruchomieniu instancji Codex plakietka limitu pod kompozytorem podąża za wybranym modelem: DeepSeek pokazuje saldo konta, Grok swój limit, a modele GPT tygodniowy i 5-godzinny limit. polls musi działać w tle; aktualizacje zatrzymują się po całkowitym zamknięciu aplikacji lub przy braku sieci.",
       "codexAppUiInjectionPoolLabel": "Konta",
       "codexAppUiInjectionWeeklyLabel": "Tydzień",
       "codexAppUiInjectionFiveHourLabel": "5 godz.",
@@ -1022,7 +1022,7 @@
       "sideNavLayoutClassic": "Układ klasyczny",
       "antigravityDualSwitchNoRestart": "Podwójne przełączanie bez restartu",
       "antigravityDualSwitchNoRestartDesc": "Podczas przełączania konta zapis lokalnych danych i płynne przełączenie przez rozszerzenie są wykonywane w jednym przebiegu, bez restartu Antigravity IDE.",
-      "appAutoLaunch": "Uruchamiaj Cockpit Tools po zalogowaniu",
+      "appAutoLaunch": "Uruchamiaj polls po zalogowaniu",
       "appAutoLaunchDesc": "Uruchom po zalogowaniu. Jeśli Windows zgłasza błąd PowerShell przy starcie, wyłącz.",
       "startupWakeupDisabled": "Wyłączone",
       "startupWakeupImmediate": "Wybudź natychmiast",
@@ -1171,7 +1171,7 @@
       "firewallHint": "Jeśli URL jest niedostępny, sprawdź ustawienia zapory systemowej.",
       "proxyTitle": "Globalny serwer proxy",
       "proxyEnabled": "Włącz globalny serwer proxy",
-      "proxyEnabledDesc": "Wstrzykuje zmienne środowiskowe proxy do zarządzanych procesów platform uruchamianych przez Cockpit.",
+      "proxyEnabledDesc": "Wstrzykuje zmienne środowiskowe proxy do zarządzanych procesów platform uruchamianych przez polls.",
       "proxyUrl": "Adres URL proxy",
       "proxyUrlDesc": "Przykład: http://127.0.0.1:7890 lub socks5://127.0.0.1:7890",
       "proxyUrlPlaceholder": "np. http://127.0.0.1:7890",
@@ -1181,7 +1181,7 @@
       "proxyUrlRequired": "Adres URL proxy nie może być pusty, gdy globalny proxy jest włączony."
     },
     "about": {
-      "appName": "Cockpit Tools​",
+      "appName": "polls",
       "slogan": "Profesjonalne rozwiązanie do zarządzania kontami",
       "author": "Autor",
       "wechat": "WeChat​",
@@ -1381,7 +1381,7 @@
       "passwordSavedPlaceholder": "Zapisano; pozostaw puste, aby zachować",
       "clearPassword": "Wyczyść",
       "remoteDirTitle": "Katalog zdalny",
-      "remoteDirDesc": "Zarządzane są tylko pliki kopii zapasowych Cockpit w tym katalogu.",
+      "remoteDirDesc": "Zarządzane są tylko pliki kopii zapasowych polls w tym katalogu.",
       "statusTitle": "Status synchronizacji",
       "statusDesc": "Przywracanie zdalne wymaga ręcznego wyboru i nigdy nie nadpisuje cicho danych lokalnych.",
       "lastUpload": "Ostatnie przesłanie: {{time}}",
@@ -1392,7 +1392,7 @@
       "syncAction": "Synchronizuj konfigurację",
       "syncLatestConfirm": "Czy na pewno chcesz pobrać najnowszą zdalną kopię zapasową {{name}} i zsynchronizować ją lokalnie? Spowoduje to nadpisanie istniejących danych lokalnych.",
       "remoteListTitle": "Kopie zapasowe zdalne",
-      "remoteListDesc": "Wyświetlane są tylko pliki JSON i ZIP pasujące do nazw automatycznych/ręcznych kopii zapasowych Cockpit.",
+      "remoteListDesc": "Wyświetlane są tylko pliki JSON i ZIP pasujące do nazw automatycznych/ręcznych kopii zapasowych polls.",
       "emptyTitle": "Brak zdalnych kopii zapasowych",
       "emptyDesc": "Zapisz ustawienia, a następnie utwórz i prześlij kopię zapasową.",
       "unknownTime": "Nieznany",
@@ -1816,7 +1816,7 @@
       "importBtn": "Importuj",
       "oauthAction": "Autoryzacja OAuth",
       "fromExtension": "Import z wtyczki",
-      "syncBadge": "Synchronizuj konta wtyczki Antigravity Cockpit",
+      "syncBadge": "Synchronizuj konta wtyczki Antigravity polls",
       "fromLocalDB": "Import z lokalnej bazy danych",
       "localDBDesc": "Odczytaj konta logowania z klienta Antigravity IDE na tym urządzeniu",
       "toolsDescMigrate": "Migracja kont z ~/.antigravity_tools/",
@@ -2197,7 +2197,7 @@
       "title": "Widoczne modele",
       "description": "Zarządzaj w jednym miejscu widocznymi modelami, poziomem rozumowania, kontekstem i progiem kompresji.",
       "enabledHint": "Używa bieżącej listy widocznych modeli. Uruchom ponownie Codex, aby zastosować zmianę.",
-      "disabledHint": "Po wyłączeniu katalog modeli zarządzany przez Cockpit zostanie usunięty, a oficjalna widoczność modeli przywrócona; dostępne modele określają uprawnienia oficjalnego konta.",
+      "disabledHint": "Po wyłączeniu katalog modeli zarządzany przez polls zostanie usunięty, a oficjalna widoczność modeli przywrócona; dostępne modele określają uprawnienia oficjalnego konta.",
       "models": {
         "title": "Lista modeli",
         "model": "Pozycja modelu",
@@ -2323,7 +2323,7 @@
       "description": "Najpierw sprawdź ustawienia; klient zmieni się dopiero po wybraniu przełączenia lub uruchomienia.",
       "notApplied": "Jeszcze nie zastosowano",
       "safeHint": "Otwarcie tego okna nie odświeża Token, nie zamyka klienta ani nie zapisuje danych logowania.",
-      "modelConfigHint": "Okno kontekstu i próg kompresji są zapisywane osobno dla każdego modelu w katalogu zarządzanym przez Cockpit.",
+      "modelConfigHint": "Okno kontekstu i próg kompresji są zapisywane osobno dla każdego modelu w katalogu zarządzanym przez polls.",
       "enablePerModelHint": "Konfiguracja per model wymaga włączenia Widocznych modeli; zmiany pozostają szkicem do zapisania lub uruchomienia.",
       "enablePerModel": "Włącz ustawienia per model",
       "unsavedConfig": "Ustawienia modeli mają niezapisane zmiany; zostaną zapisane przed przełączeniem lub uruchomieniem.",
@@ -2439,11 +2439,11 @@
     },
     "exportFormat": {
       "label": "Format eksportu",
-      "cockpitTools": "Cockpit Tools​",
+      "cockpitTools": "polls",
       "authJson": "Oficjalny auth.json",
       "sub2api": "Format sub2api",
       "cpa": "Format cpa",
-      "agentIdentityCpaUnsupported": "Kont Agent Identity nie można eksportować w formacie cpa. Użyj Cockpit Tools lub sub2api.",
+      "agentIdentityCpaUnsupported": "Kont Agent Identity nie można eksportować w formacie cpa. Użyj polls lub sub2api.",
       "agentIdentityPrivateKeyNotice": "Ten eksport zawiera klucz prywatny Agent Identity, który umożliwia odtworzenie konta na innym urządzeniu. Chroń go jak hasło.",
       "buildFailed": "Nie można utworzyć eksportu: wybrane konta mają nieobsługiwany typ lub niekompletne dane uwierzytelniające.",
       "downloadAll": "Pobierz wszystko",
@@ -2527,8 +2527,8 @@
       "testAuthFailed": "Usługa jest osiągalna, ale uwierzytelnianie nie powiodło się: {{detail}}. Sprawdź klucz usługi API lub stan logowania konta.",
       "testServiceUnavailable": "Usługa jest osiągalna, ale obecnie niedostępna: {{detail}}. Sprawdź, czy usługa jest włączona, kolekcja kont nie jest pusta i konta są używalne.",
       "gatewayErrors": {
-        "authUnavailable": "Obecnie nie ma konta dostępnego do routingu. Konto może być w czasie oczekiwania, bez autoryzacji lub ograniczone limitem. Sprawdź jego stan w usłudze API Cockpit Tools.",
-        "authNotFound": "W puli kont nie skonfigurowano użytecznego konta. Dodaj lub włącz konto w usłudze API Cockpit Tools."
+        "authUnavailable": "Obecnie nie ma konta dostępnego do routingu. Konto może być w czasie oczekiwania, bez autoryzacji lub ograniczone limitem. Sprawdź jego stan w usłudze API polls.",
+        "authNotFound": "W puli kont nie skonfigurowano użytecznego konta. Dodaj lub włącz konto w usłudze API polls."
       },
       "testRateLimited": "Usługa jest osiągalna, ale upstream jest ograniczony lub limit został wyczerpany: {{detail}}.",
       "testHttpFailed": "Usługa jest osiągalna, ale żądanie zwróciło HTTP {{status}}: {{detail}}.",
@@ -2833,7 +2833,7 @@
       "closedWithoutLogin": "Oficjalny klient zamknął się przed wykryciem kompletnych danych logowania.",
       "retryImport": "Ponów import",
       "tab": "Logowanie oficjalne",
-      "desc": "Oficjalny klient otwiera przeglądarkę do logowania i obsługuje odpowiedź autoryzacji. Cockpit odczytuje i importuje końcowe dane po zamknięciu klienta tymczasowego.",
+      "desc": "Oficjalny klient otwiera przeglądarkę do logowania i obsługuje odpowiedź autoryzacji. polls odczytuje i importuje końcowe dane po zamknięciu klienta tymczasowego.",
       "note": "Po udanym imporcie usuwane są tymczasowe ustawienia, dane aplikacji i powiązane wpisy uwierzytelniania. Jeśli końcowy import się nie powiedzie, dane logowania pozostają do ponowienia próby. Inne instancje pozostają bez zmian.",
       "start": "Otwórz oficjalny klient i zaloguj się",
       "cancel": "Anuluj logowanie",
@@ -3513,7 +3513,7 @@
         "placeholder": "Wpisz jeden identyfikator modelu w każdym wierszu lub rozdziel identyfikatory przecinkami.",
         "editHint": "Pobrane modele trafią tylko do tej wersji roboczej. Sprawdź i edytuj je przed zapisaniem.",
         "syncToggle": "Synchronizuj modele dostawcy z Codex",
-        "syncDescription": "Po zapisaniu ta lista posłuży do utworzenia katalogu modeli Codex zarządzanego przez Cockpit. Własne katalogi nie zostaną nadpisane.",
+        "syncDescription": "Po zapisaniu ta lista posłuży do utworzenia katalogu modeli Codex zarządzanego przez polls. Własne katalogi nie zostaną nadpisane.",
         "fetchCredentialsRequired": "Najpierw wpisz API Key i Base URL.",
         "fetchEmpty": "Dostawca nie zwrócił żadnych modeli. Zachowano bieżącą listę.",
         "fetchFailed": "Nie udało się pobrać modeli dostawcy: {{error}}",
@@ -3594,7 +3594,7 @@
           "name": "SiliconFlow​"
         },
         "cockpit_api": {
-          "name": "Cockpit Api​"
+          "name": "polls API​"
         }
       },
       "oauthBinding": {
@@ -3802,7 +3802,7 @@
         "contextWindowHint": "Zapisuje model_context_window. Można edytować tylko w trybie niestandardowym.",
         "partialDetected": "Aktualnie ustawione jest tylko jedno pole zarządzane: model_context_window={{context}}, model_auto_compact_token_limit={{compact}}. Zapisanie spowoduje przepisanie obu pól według aktualnego schematu.",
         "notSet": "Nie ustawiono",
-        "modelCatalogDesc": "Widoczne modele i ich ustawienia kontekstu są zapisywane w katalogu modeli aktywnego Codex zarządzanym przez Cockpit."
+        "modelCatalogDesc": "Widoczne modele i ich ustawienia kontekstu są zapisywane w katalogu modeli aktywnego Codex zarządzanym przez polls."
       },
       "testing": "Testowanie...",
       "testSuccess": "Połączenie dostawcy działa poprawnie: {{protocol}}, {{model}}, {{latency}}.",
@@ -4134,7 +4134,7 @@
       "saveFailed": "Nie udało się zapisać notatki konta: {{error}}"
     },
     "cockpitApi": {
-      "panelTitle": "Panel usługi Cockpit Api",
+      "panelTitle": "Panel usługi polls API",
       "servicePanel": "Panel usługi",
       "balance": "Saldo",
       "requests": "Żądania",
@@ -4921,7 +4921,7 @@
       "restoringEntry": "Przywracanie…",
       "restoreEntryFailed": "Nie udało się przywrócić przekaźnika proxy aplikacji. Spróbuj ponownie.",
       "restoreEntryPortBusy": "Pierwotny port proxy jest zajęty. Zwolnij go i spróbuj ponownie; aplikacja nie może automatycznie użyć innego portu.",
-      "restoreEntryNotRunning": "Nie znaleziono uruchomionej aplikacji korzystającej z zapisanego wejścia proxy tej instancji Cockpit.",
+      "restoreEntryNotRunning": "Nie znaleziono uruchomionej aplikacji korzystającej z zapisanego wejścia proxy tej instancji polls.",
       "restoreEntryBusy": "Przywracanie proxy już trwa. Spróbuj ponownie za chwilę.",
       "restoreEntryTimeout": "Upłynął limit czasu przywracania proxy. Spróbuj ponownie.",
       "restartHint": "Klienty uruchomione przez lokalnego pośrednika przełączą nowe połączenia. Pozostałe działające klienty wymagają jednego restartu. Most klienta nasłuchuje tylko na interfejsie zwrotnym, ale nie izoluje innych lokalnych użytkowników. Proxy systemowe pozostaje bez zmian.",
@@ -6060,11 +6060,11 @@
     "navTitle": "Podręcznik użytkownika",
     "providers": {
       "cautions": {
-        "0": "Przed ryzykownymi lub masowymi akcjami w Codex / GitHub Copilot / Devin / Kiro wykonaj kopię zapasową.",
-        "1": "Przed uruchomieniem w Codex / GitHub Copilot / Devin / Kiro sprawdź filtry i zakres celu."
+        "0": "Przed ryzykownymi lub masowymi akcjami w Codex / Antigravity / ZCode / Devin / Kiro wykonaj kopię zapasową.",
+        "1": "Przed uruchomieniem w Codex / Antigravity / ZCode / Devin / Kiro sprawdź filtry i zakres celu."
       },
       "keywords": {
-        "0": "Platformy Codex / GitHub Copilot / Devin / Kiro",
+        "0": "Platformy Codex / Antigravity / ZCode / Devin / Kiro",
         "1": "przewodnik",
         "2": "przepływ",
         "3": "konto",
@@ -6072,17 +6072,17 @@
         "5": "diagnoza"
       },
       "outcomes": {
-        "0": "Zrozum, co daje Codex / GitHub Copilot / Devin / Kiro.",
-        "1": "Stosuj zalecany przepływ w Codex / GitHub Copilot / Devin / Kiro, aby ograniczyć błędy.",
-        "2": "Przed skalowaniem potwierdź jedno udane wykonanie w Codex / GitHub Copilot / Devin / Kiro."
+        "0": "Zrozum, co daje Codex / Antigravity / ZCode / Devin / Kiro.",
+        "1": "Stosuj zalecany przepływ w Codex / Antigravity / ZCode / Devin / Kiro, aby ograniczyć błędy.",
+        "2": "Przed skalowaniem potwierdź jedno udane wykonanie w Codex / Antigravity / ZCode / Devin / Kiro."
       },
       "steps": {
-        "0": "Otwórz stronę Codex / GitHub Copilot / Devin / Kiro.",
-        "1": "Ukończ podstawową konfigurację i wymagane powiązania w Codex / GitHub Copilot / Devin / Kiro.",
-        "2": "Wykonaj jedną ręczną operację w Codex / GitHub Copilot / Devin / Kiro, aby zweryfikować wynik."
+        "0": "Otwórz stronę Codex / Antigravity / ZCode / Devin / Kiro.",
+        "1": "Ukończ podstawową konfigurację i wymagane powiązania w Codex / Antigravity / ZCode / Devin / Kiro.",
+        "2": "Wykonaj jedną ręczną operację w Codex / Antigravity / ZCode / Devin / Kiro, aby zweryfikować wynik."
       },
-      "summary": "Ta sekcja wyjaśnia użycie Codex / GitHub Copilot / Devin / Kiro w codziennym workflow.",
-      "title": "Platformy Codex / GitHub Copilot / Devin / Kiro"
+      "summary": "Ta sekcja wyjaśnia użycie Codex / Antigravity / ZCode / Devin / Kiro w codziennym workflow.",
+      "title": "Platformy Codex / Antigravity / ZCode / Devin / Kiro"
     },
     "quickStart": {
       "cautions": {
@@ -6548,14 +6548,14 @@
     "search": "Szukaj kont ZCode...",
     "flowNotice": {
       "title": "Informacje o kontach ZCode",
-      "desc": "Cockpit odczytuje i zapisuje zaszyfrowane lokalne dane logowania ZCode w celu rzeczywistej zmiany konta i powiązania instancji.",
+      "desc": "polls odczytuje i zapisuje zaszyfrowane lokalne dane logowania ZCode w celu rzeczywistej zmiany konta i powiązania instancji.",
       "permission": "Zakres lokalny: ~/.zcode/v2/credentials.json oraz katalogi zarządzanych instancji.",
-      "network": "Zakres sieciowy: API OAuth, użytkownika, subskrypcji i limitów. Konta nie są wysyłane do usługi Cockpit."
+      "network": "Zakres sieciowy: API OAuth, użytkownika, subskrypcji i limitów. Konta nie są wysyłane do usługi polls."
     },
     "empty": "Brak kont ZCode",
     "addAccount": "Dodaj konto ZCode",
     "oauth": {
-      "desc": "Zamknij ZCode i zaloguj się w oknie autoryzacji Cockpit; Cockpit odbierze wywołanie zwrotne bezpośrednio.",
+      "desc": "Zamknij ZCode i zaloguj się w oknie autoryzacji polls; polls odbierze wywołanie zwrotne bezpośrednio.",
       "title": "OAuth ZCode",
       "item1": "Oficjalne logowanie Z.ai i BigModel.",
       "item2": "Zapisuje konto oraz odświeża plan i limity modeli.",
@@ -6567,7 +6567,7 @@
       "success": "Logowanie OAuth ZCode powiodło się"
     },
     "token": {
-      "desc": "Wklej JSON konta ZCode wyeksportowany przez Cockpit."
+      "desc": "Wklej JSON konta ZCode wyeksportowany przez polls."
     },
     "apiKey": {
       "tab": "Klucz API",
@@ -6694,7 +6694,7 @@
       "backToCurrent": "Wróć",
       "switchToThisAccount": "Przełącz",
       "openDetails": "Otwórz szczegóły",
-      "openCockpitTools": "Otwórz Cockpit Tools"
+      "openCockpitTools": "Otwórz polls"
     },
     "empty": {
       "title": "Brak kont",
@@ -6824,7 +6824,7 @@
   },
   "relay": {
     "pageTitle": "Ekskluzywny relay",
-    "pageDesc": "Partnerska usługa API dla użytkowników Cockpit Tools, dostępna dla kont Codex API Key.",
+    "pageDesc": "Partnerska usługa API dla użytkowników polls, dostępna dla kont Codex API Key.",
     "loading": "Ładowanie relay...",
     "emptyTitle": "Relay wyłączony",
     "emptyDesc": "Zdalna konfiguracja nie włączyła ekskluzywnego relay.",
@@ -6854,7 +6854,7 @@
   "apiKeyFun": {
     "eyebrow": "Pośrednik",
     "title": "Relay APIKEY.FUN",
-    "description": "Oficjalny partnerski relay Cockpit zapewnia stabilny, otwarty i opłacalny dostęp API do dużych modeli. Obsługuje główne modele, takie jak Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi i DeepSeek, i nadaje się do jednolitej konfiguracji w Codex, Gemini CLI, Claude Code oraz innych narzędziach deweloperskich. Rejestrując się przez ekskluzywny link Cockpit, możesz uzyskać stałą zniżkę do 5% na doładowania.",
+    "description": "Oficjalny partnerski relay polls zapewnia stabilny, otwarty i opłacalny dostęp API do dużych modeli. Obsługuje główne modele, takie jak Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi i DeepSeek, i nadaje się do jednolitej konfiguracji w Codex, Gemini CLI, Claude Code oraz innych narzędziach deweloperskich. Rejestrując się przez ekskluzywny link polls, możesz uzyskać stałą zniżkę do 5% na doładowania.",
     "register": "Link ekskluzywny",
     "docs": "Oficjalna dokumentacja",
     "viewNow": "Zobacz teraz",
@@ -7001,7 +7001,7 @@
       "title": "Zarządzanie kontami Grok CLI",
       "desc": "Domyślnie używane są oddzielne katalogi GROK_HOME. Przy włączonej synchronizacji zmiana konta OAuth w instancji domyślnej zapisuje ~/.grok/auth.json; dodatkowe instancje pozostają odizolowane.",
       "permission": "Zakres lokalny: ~/.grok/auth.json może być odczytany podczas importu i jest zapisywany tylko przy włączonej synchronizacji podczas zmiany OAuth instancji domyślnej. Klucze API nie nadpisują oficjalnego logowania.",
-      "network": "Zakres sieciowy: autoryzacja OAuth, odnawianie poświadczeń i sprawdzanie użycia konta. Poświadczenia nie są wysyłane do usług Cockpit."
+      "network": "Zakres sieciowy: autoryzacja OAuth, odnawianie poświadczeń i sprawdzanie użycia konta. Poświadczenia nie są wysyłane do usług polls."
     },
     "empty": "Brak kont Grok CLI",
     "addAccount": "Dodaj konto Grok CLI",

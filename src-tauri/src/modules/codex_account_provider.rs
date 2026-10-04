@@ -39,7 +39,7 @@ static CODEX_BATCH_IMPORT_SESSIONS: std::sync::LazyLock<
 const CODEX_QUOTA_ALERT_COOLDOWN_SECONDS: i64 = 300;
 const ACCOUNT_CHECK_URL: &str = "https://chatgpt.com/backend-api/accounts/check/v4-2023-04-27";
 const API_KEY_LOGIN_PLAN_TYPE: &str = "API_KEY";
-const COCKPIT_API_LOGIN_PLAN_TYPE: &str = "Cockpit Api";
+const COCKPIT_API_LOGIN_PLAN_TYPE: &str = "polls API";
 const COCKPIT_API_DEFAULT_ACCOUNT_NAME: &str = "Codex API";
 const API_KEY_EMAIL_PREFIX: &str = "api-key";
 const API_KEY_AUTH_MODE: &str = "apikey";

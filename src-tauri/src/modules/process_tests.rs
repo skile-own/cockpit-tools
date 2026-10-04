@@ -362,7 +362,7 @@ mod legacy_platform_adapter_cleanup_tests {
     #[test]
     fn ignores_current_sidecar_and_official_apps() {
         let sidecar =
-            " 64680 1805 /Applications/Cockpit Tools.app/Contents/MacOS/cockpit-cliproxy --parent-pid 1805";
+            " 64680 1805 /Applications/polls.app/Contents/MacOS/cockpit-cliproxy --parent-pid 1805";
         assert_eq!(
             orphaned_legacy_platform_adapter_pid_from_ps_line(sidecar, 99999),
             None
@@ -415,7 +415,7 @@ mod managed_sidecar_port_cleanup_tests {
     fn requires_expected_sidecar_binary_and_config_path() {
         let config =
             Path::new("/Users/demo/.antigravity_cockpit/codex_local_access_sidecar/config.json");
-        let command = "/Applications/Cockpit Tools.app/Contents/MacOS/cockpit-cliproxy --config /Users/demo/.antigravity_cockpit/codex_local_access_sidecar/config.json --parent-pid 1805";
+        let command = "/Applications/polls.app/Contents/MacOS/cockpit-cliproxy --config /Users/demo/.antigravity_cockpit/codex_local_access_sidecar/config.json --parent-pid 1805";
         assert!(managed_sidecar_command_matches(
             command,
             "cockpit-cliproxy",
@@ -436,7 +436,7 @@ mod managed_sidecar_port_cleanup_tests {
     #[test]
     fn normalizes_windows_process_arguments() {
         assert_eq!(
-            normalized_process_argument(r#""C:\Program Files\Cockpit Tools\cockpit-cliproxy.exe""#),
+            normalized_process_argument(r#""C:\Program Files\polls\cockpit-cliproxy.exe""#),
             "c:/program files/cockpit tools/cockpit-cliproxy.exe"
         );
     }

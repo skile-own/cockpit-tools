@@ -1,9 +1,10 @@
+import { PollsLogo } from '../components/icons/PollsLogo';
 import { UnlockFireworksOverlay } from '../components/UnlockFireworksOverlay';
 import { SettingsAccountTransferSection } from '../components/SettingsAccountTransferSection';
 import { SettingsWebdavSyncSection } from '../components/SettingsWebdavSyncSection';
 import { SettingsInstanceCleanupSection } from '../components/SettingsInstanceCleanupSection';
 import './settings/Settings.css';
-import { Github, User, Rocket, Save, AlertCircle, RefreshCw, Heart, MessageSquare, FileText, Download, X } from 'lucide-react';
+import { Github, User, Save, AlertCircle, RefreshCw, Heart, MessageSquare, FileText, Download, X } from 'lucide-react';
 import type { PlatformId } from '../types/platform';
 import type { useSettingsPageController } from "./SettingsPage";
 import { SettingsGeneralPanel } from "./SettingsGeneralPanel";
@@ -119,7 +120,7 @@ export function SettingsPageView(props: SettingsPageViewProps) {
         {/* === Network Tab === */}
         {activeTab === 'network' && (
           <>
-            <div className="group-title">Antigravity Cockpit API</div>
+            <div className="group-title">Antigravity API</div>
             <div className="settings-group">
               <div className="settings-row">
                 <div className="row-label">
@@ -403,7 +404,7 @@ export function SettingsPageView(props: SettingsPageViewProps) {
                 onClick={handleAboutAvatarTap}
                 onMouseDown={(event) => event.preventDefault()}
               >
-                <Rocket size={40} />
+                <PollsLogo size={48} />
               </div>
               <div className="app-info">
                 <h2>{t('settings.about.appName')}</h2>
@@ -464,10 +465,10 @@ export function SettingsPageView(props: SettingsPageViewProps) {
               </button>
               
               
-              <button className="credit-item" onClick={() => openLink('https://github.com/jlcodes99/cockpit-tools')}>
+              <button className="credit-item" onClick={() => openLink('https://github.com/skile-own/cockpit-tools')}>
                 <div className="credit-icon" style={{ color: '#0f172a' }}><Github size={24} /></div>
                 <h3>{t('settings.about.github')}</h3>
-                <p>cockpit-tools</p>
+                <p>polls</p>
               </button>
 
               <button className="credit-item" onClick={() => openLink('https://github.com/jlcodes99/cockpit-tools/blob/main/docs/DONATE.md')}>
@@ -476,7 +477,7 @@ export function SettingsPageView(props: SettingsPageViewProps) {
                 <p>{t('settings.about.sponsorDesc', 'Donate')}</p>
               </button>
 
-              <button className="credit-item" onClick={() => openLink('https://github.com/jlcodes99/cockpit-tools/issues')}>
+              <button className="credit-item" onClick={() => openLink('https://github.com/skile-own/cockpit-tools/issues')}>
                 <div className="credit-icon" style={{ color: '#3b82f6' }}><MessageSquare size={24} /></div>
                 <h3>{t('settings.about.feedback', '意见反馈')}</h3>
                 <p>{t('settings.about.feedbackDesc', 'Issues')}</p>

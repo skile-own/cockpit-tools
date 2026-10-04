@@ -1,4 +1,5 @@
-import { Settings, Rocket, GaugeCircle, LayoutGrid, SlidersHorizontal, FileText, ChevronDown, PanelLeftClose, PanelLeftOpen, ShieldCheck } from 'lucide-react';
+import { PollsLogo } from '../icons/PollsLogo';
+import { Settings, GaugeCircle, LayoutGrid, SlidersHorizontal, FileText, ChevronDown, PanelLeftClose, PanelLeftOpen, ShieldCheck } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useState, useRef, useCallback, useEffect, useLayoutEffect, useMemo, type CSSProperties } from 'react';
 import { createPortal } from 'react-dom';
@@ -81,7 +82,7 @@ const PAGE_PLATFORM_MAP: Partial<Record<Page, PlatformId>> = {
 };
 
 const APP_DISPLAY_NAME =
-  import.meta.env.VITE_COCKPIT_TOOLS_PROFILE === 'dev' ? 'Cockpit Tools Dev' : 'Cockpit Tools';
+  import.meta.env.VITE_COCKPIT_TOOLS_PROFILE === 'dev' ? 'polls dev' : 'polls';
 
 const CLASSIC_NAV_MIN_SCALE = 0.5;
 const CLASSIC_NAV_SCALE_EPSILON = 0.004;
@@ -900,7 +901,7 @@ export function SideNav({
             onClick={handleLogoClick}
             title={hasBreakoutSession ? t('breakout.resumeGameNav', '继续游戏') : undefined}
           >
-            <Rocket size={isClassicLayout ? classicBrandLogoIconSize : 20} />
+            <PollsLogo size={isClassicLayout ? classicBrandLogoIconSize : 28} />
             {hasBreakoutSession && <span className="rocket-session-indicator" aria-hidden="true" />}
             {!hasBreakoutSession && easterEggClickCount > 0 && (
               <span className="rocket-click-count">{easterEggClickCount}</span>

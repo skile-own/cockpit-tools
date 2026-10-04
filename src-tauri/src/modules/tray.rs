@@ -216,30 +216,10 @@ pub(crate) enum PlatformId {
 }
 
 impl PlatformId {
-    pub(crate) fn default_order() -> [Self; 18] {
-        [
-            Self::Claude,
-            Self::Codex,
-            Self::Antigravity,
-            Self::Zed,
-            Self::GitHubCopilot,
-            Self::Windsurf,
-            Self::Kiro,
-            Self::Cursor,
-            Self::Grok,
-            Self::Codebuddy,
-            Self::CodebuddyCn,
-            Self::Qoder,
-            Self::Zcode,
-            Self::Trae,
-            Self::TraeSolo,
-            Self::TraeCn,
-            Self::TraeSoloCn,
-            Self::Workbuddy,
-        ]
-    }
+    pub(crate) fn default_order() -> [Self; 3] { [Self::Codex, Self::Antigravity, Self::Zcode] }
 
     pub(crate) fn from_str(value: &str) -> Option<Self> {
+        if !crate::modules::tray_layout::SUPPORTED_PLATFORM_IDS.contains(&value) { return None; }
         match value {
             crate::modules::tray_layout::PLATFORM_ANTIGRAVITY => Some(Self::Antigravity),
             crate::modules::tray_layout::PLATFORM_CODEX => Some(Self::Codex),
@@ -504,7 +484,7 @@ pub fn create_tray_skeleton<R: Runtime>(
     let builder = TrayIconBuilder::with_id(TRAY_ID)
         .icon(tray_icon)
         .show_menu_on_left_click(false)
-        .tooltip("Cockpit Tools")
+        .tooltip("polls")
         .on_menu_event(handle_menu_event)
         .on_tray_icon_event(handle_tray_event);
 
@@ -874,6 +854,7 @@ fn sanitize_platform_list(ids: &[String]) -> Vec<PlatformId> {
     let mut seen = HashSet::new();
 
     for raw in ids {
+        if !crate::modules::tray_layout::SUPPORTED_PLATFORM_IDS.contains(&raw.trim()) { continue; }
         let Some(platform) = PlatformId::from_str(raw.trim()) else {
             continue;
         };

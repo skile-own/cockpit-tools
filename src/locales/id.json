@@ -169,7 +169,7 @@
     "windowsOperation": {
       "title": "Operasi Windows belum selesai",
       "accessDeniedDescription": "Windows menolak operasi ini. Target mungkin berjalan dengan izin lebih tinggi atau berada di lokasi terlindungi.",
-      "storeLaunchBlockedDescription": "Startup instans terisolasi versi Store tidak dapat dikonfirmasi. Cockpit tidak beralih ke akun bawaan. Deteksi ulang lokasi klien lalu coba lagi. Jika masih gagal, salin informasi diagnostik atau ubah instans ini ke mode CLI.",
+      "storeLaunchBlockedDescription": "Startup instans terisolasi versi Store tidak dapat dikonfirmasi. polls tidak beralih ke akun bawaan. Deteksi ulang lokasi klien lalu coba lagi. Jika masih gagal, salin informasi diagnostik atau ubah instans ini ke mode CLI.",
       "repairPath": "Deteksi ulang jalur dan coba lagi",
       "fileInUseDescription": "File target sedang digunakan program lain. Tutup program tersebut lalu coba lagi.",
       "programNotFoundDescription": "Windows tidak menemukan program yang diperlukan. Periksa instalasi atau jalur yang diatur.",
@@ -404,7 +404,7 @@
       "loginSuccess": "Login berhasil",
       "switchAccount": "Ganti Akun"
     },
-    "appName": "Cockpit Tools​",
+    "appName": "polls",
     "collapse": "Ciutkan",
     "confirmDelete": "Konfirmasi Hapus",
     "confirmDeleteTag": "Konfirmasi Hapus Tag",
@@ -442,7 +442,7 @@
       "backToCurrent": "Kembali",
       "switchToThisAccount": "Ganti",
       "openDetails": "Buka detail",
-      "openCockpitTools": "Buka Cockpit Tools"
+      "openCockpitTools": "Buka polls"
     },
     "empty": {
       "title": "Belum ada akun",
@@ -509,12 +509,12 @@
   },
   "sponsors": {
     "pageTitle": "Sponsor",
-    "pageDesc": "Terima kasih kepada sponsor berikut yang mendukung Cockpit Tools.",
+    "pageDesc": "Terima kasih kepada sponsor berikut yang mendukung polls.",
     "loading": "Memuat sponsor...",
     "emptyTitle": "Belum ada sponsor",
     "emptyDesc": "Modul sponsor jarak jauh saat ini dinonaktifkan.",
     "listAriaLabel": "Daftar sponsor",
-    "defaultDescription": "Terima kasih telah mendukung Cockpit Tools.",
+    "defaultDescription": "Terima kasih telah mendukung polls.",
     "openSponsor": "Buka"
   },
   "platformLayout": {
@@ -724,18 +724,18 @@
         "summary": "Model tanpa awalan menggunakan langganan saat ini; model dengan awalan seperti cpa/gpt-5.5 diteruskan ke API pihak ketiga. Keduanya bergantung pada layanan perutean lokal.",
         "rowSummary": "Model tanpa awalan menggunakan langganan saat ini; model dengan awalan seperti cpa/gpt-5.5 diteruskan ke API pihak ketiga. Keduanya bergantung pada layanan perutean lokal.",
         "confirmEnableTitle": "Aktifkan perutean API pihak ketiga?",
-        "confirmEnableMessage": "Permintaan model Codex akan dirutekan melalui layanan Cockpit Tools lokal. Jika layanan tidak berjalan, model langganan dan pihak ketiga mungkin tidak tersedia.\n\nAktifkan perutean?",
+        "confirmEnableMessage": "Permintaan model Codex akan dirutekan melalui layanan polls lokal. Jika layanan tidak berjalan, model langganan dan pihak ketiga mungkin tidak tersedia.\n\nAktifkan perutean?",
         "confirmEnableAction": "Aktifkan",
         "confirmDisableTitle": "Nonaktifkan perutean API pihak ketiga?",
         "confirmDisableMessage": "Setelah perubahan ini berlaku, gateway lokal akan berhenti, akses langganan resmi akan dipulihkan, dan model pihak ketiga tidak akan tersedia.\n\nNonaktifkan perutean?",
         "confirmDisableAction": "Nonaktifkan",
-        "modalTip": "Model langganan dan pihak ketiga keduanya melewati layanan perutean lokal. Biarkan Cockpit Tools berjalan di latar belakang. Layanan pulih secara otomatis dan beralih kembali ke konfigurasi resmi setelah kegagalan berulang.",
+        "modalTip": "Model langganan dan pihak ketiga keduanya melewati layanan perutean lokal. Biarkan polls berjalan di latar belakang. Layanan pulih secara otomatis dan beralih kembali ke konfigurasi resmi setelah kegagalan berulang.",
         "modelRequired": "Setiap rute API yang diaktifkan harus menyertakan setidaknya satu model.",
         "runningSaveTitle": "Kapan perutean harus berlaku?",
         "runningSaveMessage": "Instans Codex ini sedang berjalan. Mengganti layanan lokal sekarang akan memutus percakapan saat ini.\n\nPilih «Simpan dan mulai ulang Codex» untuk menerapkan sekarang, atau «Simpan untuk nanti» untuk mempertahankan sesi saat ini.",
         "saveAndRestart": "Simpan dan mulai ulang Codex",
         "saveForLater": "Simpan untuk nanti",
-        "savedForNextLaunch": "Tersimpan. Perubahan akan berlaku saat Codex berikutnya dijalankan melalui Cockpit; sesi saat ini tetap tidak berubah.",
+        "savedForNextLaunch": "Tersimpan. Perubahan akan berlaku saat Codex berikutnya dijalankan melalui polls; sesi saat ini tetap tidak berubah.",
         "restartRollbackFailed": "Rute baru gagal dimulai dan konfigurasi asli tidak dapat dimulai ulang: ",
         "restartRolledBack": "Rute baru gagal dimulai. Konfigurasi asli telah dipulihkan dan Codex dimulai ulang: {{error}}"
       }
@@ -878,7 +878,7 @@
       "platform": "Jenis platform"
     },
     "title": "Pengaturan",
-    "subtitle": "Sesuaikan pengalaman Cockpit Tools Anda.",
+    "subtitle": "Sesuaikan pengalaman polls Anda.",
     "tabs": {
       "general": "Umum",
       "network": "Jaringan",
@@ -939,7 +939,7 @@
       "floatingCardStartupDesc": "Tampilkan kartu akun mengambang secara otomatis setelah aplikasi diluncurkan",
       "floatingCardAlwaysOnTop": "Kartu mengambang selalu di atas secara bawaan",
       "floatingCardAlwaysOnTopDesc": "Jendela kartu mengambang baru tetap di atas saat dibuka",
-      "appAutoLaunch": "Jalankan Cockpit Tools saat login",
+      "appAutoLaunch": "Jalankan polls saat login",
       "appAutoLaunchDesc": "Mulai setelah login. Jika Windows menampilkan error PowerShell saat boot, matikan.",
       "startupWakeupDisabled": "Nonaktif",
       "startupWakeupImmediate": "Bangunkan segera",
@@ -971,7 +971,7 @@
       "codexSyncWsl": "Sinkronkan Codex ke WSL",
       "codexSyncWslDesc": "Setelah mengganti akun Codex default, auth.json dan config.toml juga ditulis ke direktori Codex di WSL.",
       "codexAppUiInjection": "Kuota layanan API",
-      "codexAppUiInjectionDesc": "Setelah instans Codex dimulai ulang, lencana kuota di bawah composer mengikuti model yang dipilih: DeepSeek menampilkan saldo akun, Grok menampilkan kuotanya, dan model GPT menampilkan kuota mingguan dan 5 jam. Cockpit Tools harus tetap berjalan di latar belakang; pembaruan berhenti jika aplikasi ditutup sepenuhnya atau jaringan tidak tersedia.",
+      "codexAppUiInjectionDesc": "Setelah instans Codex dimulai ulang, lencana kuota di bawah composer mengikuti model yang dipilih: DeepSeek menampilkan saldo akun, Grok menampilkan kuotanya, dan model GPT menampilkan kuota mingguan dan 5 jam. polls harus tetap berjalan di latar belakang; pembaruan berhenti jika aplikasi ditutup sepenuhnya atau jaringan tidak tersedia.",
       "codexAppUiInjectionPoolLabel": "Akun",
       "codexAppUiInjectionWeeklyLabel": "Minggu",
       "codexAppUiInjectionFiveHourLabel": "5 jam",
@@ -1189,7 +1189,7 @@
       "codexHideRelayQuotaDesc": "Menyembunyikan panel kuota relay / New API di ringkasan akun Codex."
     },
     "network": {
-      "apiTitle": "API Antigravity Cockpit",
+      "apiTitle": "API Antigravity polls",
       "wsService": "Layanan WebSocket",
       "wsServiceDesc": "Izinkan program eksternal (misalnya ekstensi VS Code) untuk terhubung",
       "preferredPort": "Port yang Diinginkan",
@@ -1218,7 +1218,7 @@
       "firewallHint": "Jika URL tidak dapat dijangkau, periksa pengaturan firewall sistem Anda.",
       "proxyTitle": "Proxy Global",
       "proxyEnabled": "Aktifkan Proxy Global",
-      "proxyEnabledDesc": "Masukkan variabel lingkungan proxy ke proses platform yang dikelola oleh Cockpit.",
+      "proxyEnabledDesc": "Masukkan variabel lingkungan proxy ke proses platform yang dikelola oleh polls.",
       "proxyUrl": "URL Proxy",
       "proxyUrlDesc": "Contoh: http://127.0.0.1:7890 atau socks5://127.0.0.1:7890",
       "proxyUrlPlaceholder": "http://127.0.0.1:7890​",
@@ -1228,7 +1228,7 @@
       "proxyUrlRequired": "URL Proxy tidak boleh kosong saat proxy global diaktifkan."
     },
     "about": {
-      "appName": "Cockpit Tools​",
+      "appName": "polls",
       "slogan": "Solusi Akun Profesional",
       "author": "Pengembang",
       "wechat": "WeChat​",
@@ -1428,7 +1428,7 @@
       "passwordSavedPlaceholder": "Disimpan; biarkan kosong untuk mempertahankan",
       "clearPassword": "Bersihkan",
       "remoteDirTitle": "Folder Jarak Jauh",
-      "remoteDirDesc": "Hanya file cadangan Cockpit di folder ini yang dikelola.",
+      "remoteDirDesc": "Hanya file cadangan polls di folder ini yang dikelola.",
       "statusTitle": "Status Sinkronisasi",
       "statusDesc": "Pemulihan jarak jauh memerlukan pemilihan manual dan tidak pernah menimpa data lokal secara diam-diam.",
       "lastUpload": "Unggahan terakhir: {{time}}",
@@ -1439,7 +1439,7 @@
       "syncAction": "Sinkronisasi Konfigurasi",
       "syncLatestConfirm": "Apakah Anda yakin ingin mengunduh cadangan jarak jauh terbaru {{name}} dan menyinkronkannya secara lokal? Ini akan menimpa data lokal yang ada.",
       "remoteListTitle": "Cadangan Jarak Jauh",
-      "remoteListDesc": "Hanya file JSON dan ZIP yang cocok dengan nama cadangan otomatis/manual Cockpit yang ditampilkan.",
+      "remoteListDesc": "Hanya file JSON dan ZIP yang cocok dengan nama cadangan otomatis/manual polls yang ditampilkan.",
       "emptyTitle": "Tidak ada cadangan jarak jauh",
       "emptyDesc": "Simpan pengaturan, lalu buat dan unggah cadangan.",
       "unknownTime": "Tidak diketahui",
@@ -1863,7 +1863,7 @@
       "importBtn": "Impor",
       "oauthAction": "Otorisasi OAuth",
       "fromExtension": "Impor dari Plugin",
-      "syncBadge": "Sinkronkan akun plugin Antigravity Cockpit",
+      "syncBadge": "Sinkronkan akun plugin Antigravity polls",
       "fromLocalDB": "Impor dari DB Lokal",
       "localDBDesc": "Baca akun login dari Antigravity IDE Client di mesin ini",
       "toolsDescMigrate": "Migrasi akun dari ~/.antigravity_tools/",
@@ -2244,7 +2244,7 @@
       "title": "Model yang terlihat",
       "description": "Kelola model yang terlihat, tingkat penalaran, konteks, dan ambang pemadatan di satu tempat.",
       "enabledHint": "Menggunakan daftar model yang terlihat saat ini. Mulai ulang Codex untuk menerapkan.",
-      "disabledHint": "Saat dinonaktifkan, katalog model yang dikelola Cockpit dihapus dan visibilitas model resmi dipulihkan; model yang tersedia ditentukan oleh hak akses akun resmi.",
+      "disabledHint": "Saat dinonaktifkan, katalog model yang dikelola polls dihapus dan visibilitas model resmi dipulihkan; model yang tersedia ditentukan oleh hak akses akun resmi.",
       "models": {
         "title": "Daftar model",
         "model": "Model AI",
@@ -2370,7 +2370,7 @@
       "description": "Periksa pengaturan terlebih dahulu; klien baru berubah setelah Anda memilih ganti atau mulai.",
       "notApplied": "Belum diterapkan",
       "safeHint": "Membuka jendela ini tidak menyegarkan Token, menutup klien, atau menulis kredensial masuk.",
-      "modelConfigHint": "Jendela konteks dan batas pemadatan disimpan per model dalam katalog yang dikelola Cockpit.",
+      "modelConfigHint": "Jendela konteks dan batas pemadatan disimpan per model dalam katalog yang dikelola polls.",
       "enablePerModelHint": "Konfigurasi per model memerlukan Model Terlihat; perubahan tetap berupa draf sampai disimpan atau dimulai.",
       "enablePerModel": "Aktifkan setelan per model",
       "unsavedConfig": "Setelan model memiliki perubahan yang belum disimpan; perubahan akan disimpan sebelum mengganti atau memulai.",
@@ -2489,11 +2489,11 @@
     },
     "exportFormat": {
       "label": "Format ekspor",
-      "cockpitTools": "Cockpit Tools​",
+      "cockpitTools": "polls",
       "authJson": "auth.json resmi",
       "sub2api": "Format sub2api",
       "cpa": "Format cpa",
-      "agentIdentityCpaUnsupported": "Akun Agent Identity tidak dapat diekspor dalam format cpa. Gunakan Cockpit Tools atau sub2api.",
+      "agentIdentityCpaUnsupported": "Akun Agent Identity tidak dapat diekspor dalam format cpa. Gunakan polls atau sub2api.",
       "agentIdentityPrivateKeyNotice": "Ekspor ini berisi kunci privat Agent Identity yang dapat memulihkan akun di perangkat lain. Lindungi seperti kata sandi.",
       "buildFailed": "Ekspor tidak dapat dibuat: akun yang dipilih memiliki jenis yang tidak didukung atau kredensial yang tidak lengkap.",
       "downloadAll": "Unduh semua",
@@ -2577,8 +2577,8 @@
       "testAuthFailed": "Layanan dapat dijangkau, tetapi autentikasi gagal: {{detail}}. Periksa kunci layanan API atau status masuk akun.",
       "testServiceUnavailable": "Layanan dapat dijangkau, tetapi saat ini tidak tersedia: {{detail}}. Periksa apakah layanan aktif, koleksi akun kosong, atau akun dapat digunakan.",
       "gatewayErrors": {
-        "authUnavailable": "Tidak ada akun yang dapat dirutekan saat ini. Akun mungkin sedang cooldown, tidak terautentikasi, atau dibatasi kuota. Periksa statusnya di layanan API Cockpit Tools.",
-        "authNotFound": "Tidak ada akun yang dapat digunakan di kumpulan akun. Tambahkan atau aktifkan akun di layanan API Cockpit Tools."
+        "authUnavailable": "Tidak ada akun yang dapat dirutekan saat ini. Akun mungkin sedang cooldown, tidak terautentikasi, atau dibatasi kuota. Periksa statusnya di layanan API polls.",
+        "authNotFound": "Tidak ada akun yang dapat digunakan di kumpulan akun. Tambahkan atau aktifkan akun di layanan API polls."
       },
       "testRateLimited": "Layanan dapat dijangkau, tetapi upstream dibatasi atau kuota habis: {{detail}}.",
       "testHttpFailed": "Layanan dapat dijangkau, tetapi permintaan mengembalikan HTTP {{status}}: {{detail}}.",
@@ -2894,7 +2894,7 @@
         "placeholder": "Masukkan satu ID model per baris atau pisahkan ID dengan koma.",
         "editHint": "Model yang diambil hanya dimasukkan ke draf ini. Tinjau dan edit sebelum menyimpan.",
         "syncToggle": "Sinkronkan model penyedia ke Codex",
-        "syncDescription": "Setelah disimpan, daftar ini digunakan untuk membuat katalog model Codex yang dikelola Cockpit. Katalog khusus tidak ditimpa.",
+        "syncDescription": "Setelah disimpan, daftar ini digunakan untuk membuat katalog model Codex yang dikelola polls. Katalog khusus tidak ditimpa.",
         "fetchCredentialsRequired": "Masukkan API Key dan Base URL terlebih dahulu.",
         "fetchEmpty": "Penyedia tidak mengembalikan model. Daftar saat ini tetap dipertahankan.",
         "fetchFailed": "Gagal mengambil model penyedia: {{error}}",
@@ -2975,7 +2975,7 @@
           "name": "SiliconFlow​"
         },
         "cockpit_api": {
-          "name": "Cockpit Api​"
+          "name": "polls API​"
         }
       },
       "oauthBinding": {
@@ -3014,7 +3014,7 @@
       "closedWithoutLogin": "Klien resmi ditutup sebelum kredensial lengkap terdeteksi.",
       "retryImport": "Ulangi impor",
       "tab": "Login resmi",
-      "desc": "Klien resmi membuka browser untuk login dan menangani respons otorisasi. Cockpit membaca dan mengimpor kredensial akhir setelah klien sementara ditutup.",
+      "desc": "Klien resmi membuka browser untuk login dan menangani respons otorisasi. polls membaca dan mengimpor kredensial akhir setelah klien sementara ditutup.",
       "note": "Setelah impor berhasil, konfigurasi sementara, data aplikasi, dan entri autentikasi terkait dihapus. Jika impor akhir gagal, kredensial disimpan agar dapat dicoba lagi. Instans lain tidak terpengaruh.",
       "start": "Buka klien resmi dan masuk",
       "cancel": "Batalkan login",
@@ -3849,7 +3849,7 @@
         "contextWindowHint": "Menulis model_context_window. Hanya dapat diedit dalam mode Kustom.",
         "partialDetected": "Hanya satu bidang terkelola yang saat ini disetel: model_context_window={{context}}, model_auto_compact_token_limit={{compact}}. Menyimpan akan menulis ulang kedua bidang menggunakan skema saat ini.",
         "notSet": "Tidak disetel",
-        "modelCatalogDesc": "Model yang terlihat dan pengaturan konteks per model ditulis ke katalog model Codex aktif yang dikelola Cockpit."
+        "modelCatalogDesc": "Model yang terlihat dan pengaturan konteks per model ditulis ke katalog model Codex aktif yang dikelola polls."
       },
       "testing": "Menguji...",
       "testSuccess": "Koneksi penyedia normal: {{protocol}}, {{model}}, {{latency}}.",
@@ -4181,7 +4181,7 @@
       "saveFailed": "Gagal menyimpan catatan akun: {{error}}"
     },
     "cockpitApi": {
-      "panelTitle": "Panel layanan Cockpit Api",
+      "panelTitle": "Panel layanan polls API",
       "servicePanel": "Panel layanan",
       "balance": "Saldo",
       "requests": "Permintaan",
@@ -4968,7 +4968,7 @@
       "restoringEntry": "Memulihkan…",
       "restoreEntryFailed": "Relai proksi desktop tidak dapat dipulihkan. Coba lagi.",
       "restoreEntryPortBusy": "Port proksi semula sedang digunakan. Bebaskan port lalu coba lagi; desktop tidak dapat memakai port lain secara otomatis.",
-      "restoreEntryNotRunning": "Tidak ditemukan desktop aktif yang memakai pintu masuk proksi tercatat milik Cockpit ini.",
+      "restoreEntryNotRunning": "Tidak ditemukan desktop aktif yang memakai pintu masuk proksi tercatat milik polls ini.",
       "restoreEntryBusy": "Pemulihan proksi sedang berlangsung. Coba lagi sebentar.",
       "restoreEntryTimeout": "Pemulihan proksi kehabisan waktu. Coba lagi.",
       "restartHint": "Klien yang dibuka melalui penerus lokal beralih pada koneksi baru. Klien aktif lainnya perlu sekali dimulai ulang. Jembatan desktop hanya mendengarkan pada loopback, tetapi tidak mengisolasi pengguna lokal lain. Proksi sistem tidak berubah.",
@@ -6211,7 +6211,7 @@
         "1": "Beberapa platform atau kemampuan dibatasi sistem. Ikuti petunjuk di halaman."
       },
       "keywords": {
-        "0": "Codex / GitHub Copilot / Devin / Kiro platforms​",
+        "0": "Codex / Antigravity / ZCode / Devin / Kiro platforms​",
         "1": "github copilot​",
         "2": "windsurf​",
         "3": "kiro​",
@@ -6229,7 +6229,7 @@
         "2": "Jalankan \"Ganti/Injeksi\" dan verifikasi di klien bahwa itu berlaku."
       },
       "summary": "Keempat halaman platform berbagi struktur yang sama: ringkasan akun + multi-instansi, dengan OAuth, impor Token/JSON dan penggantian.",
-      "title": "Platform Codex / GitHub Copilot / Devin / Kiro"
+      "title": "Platform Codex / Antigravity / ZCode / Devin / Kiro"
     },
     "quickStart": {
       "cautions": {
@@ -6249,7 +6249,7 @@
       },
       "steps": {
         "0": "Buka \"Dasbor\" dan konfirmasi platform yang Anda butuhkan terlihat.",
-        "1": "Buka halaman platform target (misalnya Codex / GitHub Copilot), lalu tambahkan 1 akun terlebih dahulu.",
+        "1": "Buka halaman platform target (misalnya Codex / Antigravity / ZCode), lalu tambahkan 1 akun terlebih dahulu.",
         "2": "Gunakan tombol \"Ganti/Injeksi\" untuk memverifikasi penggantian akun berlaku.",
         "3": "Kemudian buka \"Multi-Instansi\" dan buat 1 instansi untuk memverifikasi isolasi dan menjalankan paralel."
       },
@@ -6358,14 +6358,14 @@
     "search": "Cari akun ZCode...",
     "flowNotice": {
       "title": "Panduan akun ZCode",
-      "desc": "Cockpit membaca dan menulis ulang kredensial lokal terenkripsi ZCode untuk pergantian akun nyata dan pengikatan instans.",
+      "desc": "polls membaca dan menulis ulang kredensial lokal terenkripsi ZCode untuk pergantian akun nyata dan pengikatan instans.",
       "permission": "Cakupan lokal: ~/.zcode/v2/credentials.json dan direktori instans terkelola.",
-      "network": "Cakupan jaringan: API OAuth, pengguna, langganan, dan kuota. Akun tidak diunggah ke layanan Cockpit."
+      "network": "Cakupan jaringan: API OAuth, pengguna, langganan, dan kuota. Akun tidak diunggah ke layanan polls."
     },
     "empty": "Belum ada akun ZCode",
     "addAccount": "Tambah Akun ZCode",
     "oauth": {
-      "desc": "Tutup ZCode, lalu masuk melalui jendela otorisasi Cockpit; Cockpit akan menerima callback secara langsung.",
+      "desc": "Tutup ZCode, lalu masuk melalui jendela otorisasi polls; polls akan menerima callback secara langsung.",
       "title": "OAuth ZCode",
       "item1": "Login resmi melalui Z.ai dan BigModel.",
       "item2": "Menyimpan akun dan memperbarui paket serta kuota model.",
@@ -6377,7 +6377,7 @@
       "success": "Login OAuth ZCode berhasil"
     },
     "token": {
-      "desc": "Tempel JSON akun ZCode yang diekspor oleh Cockpit."
+      "desc": "Tempel JSON akun ZCode yang diekspor oleh polls."
     },
     "apiKey": {
       "tab": "Kunci API",
@@ -6824,7 +6824,7 @@
   },
   "relay": {
     "pageTitle": "Relay eksklusif",
-    "pageDesc": "Layanan API mitra untuk pengguna Cockpit Tools yang dapat digunakan dengan akun API Key Codex.",
+    "pageDesc": "Layanan API mitra untuk pengguna polls yang dapat digunakan dengan akun API Key Codex.",
     "loading": "Memuat relay...",
     "emptyTitle": "Relay nonaktif",
     "emptyDesc": "Konfigurasi jarak jauh belum mengaktifkan relay eksklusif.",
@@ -6854,7 +6854,7 @@
   "apiKeyFun": {
     "eyebrow": "Perantara",
     "title": "Relay APIKEY.FUN",
-    "description": "Relay mitra resmi Cockpit menyediakan akses API model besar yang stabil, terbuka, dan hemat biaya. Layanan ini mendukung model utama seperti Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi, dan DeepSeek, serta cocok untuk konfigurasi terpadu di Codex, Gemini CLI, Claude Code, dan alat pengembang lainnya. Dengan mendaftar melalui tautan eksklusif Cockpit, Anda bisa mendapatkan diskon isi ulang permanen hingga 5%.",
+    "description": "Relay mitra resmi polls menyediakan akses API model besar yang stabil, terbuka, dan hemat biaya. Layanan ini mendukung model utama seperti Claude, ChatGPT, Grok, Gemini, Zhipu GLM, Kimi, dan DeepSeek, serta cocok untuk konfigurasi terpadu di Codex, Gemini CLI, Claude Code, dan alat pengembang lainnya. Dengan mendaftar melalui tautan eksklusif polls, Anda bisa mendapatkan diskon isi ulang permanen hingga 5%.",
     "register": "Tautan eksklusif",
     "docs": "Dokumen resmi",
     "viewNow": "Lihat sekarang",
@@ -7001,7 +7001,7 @@
       "title": "Pengelolaan akun Grok CLI",
       "desc": "Secara bawaan, GROK_HOME terpisah digunakan. Saat sinkronisasi aktif, peralihan OAuth pada instans default menulis ke ~/.grok/auth.json; instans tambahan tetap terisolasi.",
       "permission": "Cakupan lokal: ~/.grok/auth.json dapat dibaca untuk impor dan hanya ditulis saat sinkronisasi aktif pada peralihan OAuth instans default. API Key tidak menimpa login resmi.",
-      "network": "Cakupan jaringan: otorisasi OAuth, penyegaran kredensial, dan kueri penggunaan akun. Kredensial tidak diunggah ke layanan Cockpit."
+      "network": "Cakupan jaringan: otorisasi OAuth, penyegaran kredensial, dan kueri penggunaan akun. Kredensial tidak diunggah ke layanan polls."
     },
     "empty": "Belum ada akun Grok CLI",
     "addAccount": "Tambah akun Grok CLI",
